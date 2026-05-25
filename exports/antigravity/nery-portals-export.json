@@ -1,0 +1,136 @@
+{
+  "name": "NERY Paid News Portals",
+  "version": "1.0.0",
+  "generatedAt": "2026-05-24",
+  "officialLanding": {
+    "status": "published",
+    "deliveryMode": "byte-for-byte-static-document",
+    "sourcePath": "C:\\Users\\Adm\\.gemini\\antigravity\\scratch\\nery\\index.html",
+    "route": "/",
+    "staticDocument": "public/index.html",
+    "preserveEmbeddedNewsView": true,
+    "preserveEmbeddedSanitationView": true,
+    "font": "DM Sans",
+    "fontWeights": [400, 500, 600],
+    "assets": [
+      {
+        "file": "index.html",
+        "sha256": "E51D37688B6F6D82B6005A0B713B0ED05891A011C7255BFC9C640FEB6C5CF97E"
+      },
+      {
+        "file": "vídeo hero section.mp4",
+        "sha256": "ABCD518EF7B351A43B671DED64DCEBBE5FDAB10A9E6A835D107B49A413078A10"
+      },
+      {
+        "file": "imagem construdata.webp",
+        "sha256": "57482E1671835EFE300E9A00AB247DBF586E4D3A226100696BB2D07A46B785B3"
+      },
+      {
+        "file": "imagem jurimetria.jpg",
+        "sha256": "E10290B6991C976DD0E59815350BF5A2478EAE5AD2F809F595FE5A768A34D354"
+      },
+      {
+        "file": "IMG_9652.JPG",
+        "sha256": "58C00DEB4B85FCD09F85A86F78BC2828F059BF8DD035A41B8A32163E9191B857"
+      }
+    ]
+  },
+  "portalApplication": {
+    "font": "Inter",
+    "fontWeights": [300, 400, 500, 600],
+    "productTheme": "light",
+    "publicNewsEntry": "officialLanding embedded Nery Notícias view",
+    "staticSanitationDemo": {
+      "route": "/portal-saneamento.html",
+      "file": "public/portal-saneamento.html",
+      "sha256": "CCEAE2701257FDB45AD85D7420F1407A51C099D16AA511C64F5FB06ABFCEC40E",
+      "status": "public-static-demo-labelled-not-connected-to-feed"
+    }
+  },
+  "products": [
+    {
+      "code": "regulatorio",
+      "name": "Portal de Notícias Regulatórias",
+      "showcaseRoute": "/regulatorio",
+      "feedRoute": "/noticias/regulatorio",
+      "checkoutRoute": "/pricing?product=regulatorio",
+      "stripePriceEnv": "STRIPE_REGULATORIO_PRICE_ID"
+    },
+    {
+      "code": "saneamento",
+      "name": "Portal de Notícias de Saneamento",
+      "showcaseRoute": "/saneamento",
+      "feedRoute": "/noticias/saneamento",
+      "checkoutRoute": "/pricing?product=saneamento",
+      "stripePriceEnv": "STRIPE_SANEAMENTO_PRICE_ID"
+    }
+  ],
+  "publicContract": {
+    "name": "PublicTeaser",
+    "fields": ["id", "product", "sourceCode", "sourceName", "title", "publishedAt"]
+  },
+  "subscriberContract": {
+    "name": "SubscriberArticle",
+    "fields": [
+      "id",
+      "slug",
+      "productCodes",
+      "sourceCode",
+      "sourceName",
+      "sector",
+      "contentType",
+      "titleOriginal",
+      "subtitleOriginal",
+      "titleNery",
+      "summary",
+      "officialUrl",
+      "imageUrl",
+      "imageCredit",
+      "publishedAt",
+      "tags",
+      "contentMode"
+    ]
+  },
+  "ingestion": {
+    "function": "ingest-news",
+    "scheduleUtc": ["09:00", "16:00", "22:00"],
+    "scheduleBrasilia": ["06:00", "13:00", "19:00"],
+    "deduplication": ["official_url", "content_hash"],
+    "edgeSecret": "INGEST_CRON_SECRET",
+    "initialPublicationMode": "needs_review_only",
+    "writingMode": "short_nery_alert_with_official_link_no_ai",
+    "privacyReview": "Articles with personal-data signals remain in review.",
+    "imageRule": "Disabled initially; only stored later when permission and required credit are registered."
+  },
+  "sources": {
+    "regulatorio": ["ANA", "ANAC", "ANCINE", "ANEEL", "ANM", "ANP", "ANS", "ANATEL", "ANTAQ", "ANTT", "ANVISA", "ANPD"],
+    "saneamento": ["ANA", "CIDADES_SNSA", "SENADO", "TRATA_BRASIL", "IAS", "ABCON_SINDCON", "CVM", "SABESP_RI", "SANEPAR_RI", "COPASA_RI", "AEGEA_RI", "BRK_RI"]
+  },
+  "requiredEnvironment": [
+    "NEXT_PUBLIC_SITE_URL",
+    "NEXT_PUBLIC_SUPABASE_URL",
+    "NEXT_PUBLIC_SUPABASE_ANON_KEY",
+    "SUPABASE_SERVICE_ROLE_KEY",
+    "STRIPE_SECRET_KEY",
+    "STRIPE_REGULATORIO_PRICE_ID",
+    "STRIPE_SANEAMENTO_PRICE_ID",
+    "STRIPE_WEBHOOK_SECRET"
+  ],
+  "implementationFiles": [
+    "public/index.html",
+    "public/vídeo hero section.mp4",
+    "public/imagem construdata.webp",
+    "public/imagem jurimetria.jpg",
+    "public/IMG_9652.JPG",
+    "public/portal-saneamento.html",
+    "app/privacidade/page.tsx",
+    "lib/catalog.ts",
+    "lib/news.ts",
+    "lib/subscriptions.ts",
+    "app/api/stripe/checkout/route.ts",
+    "app/api/stripe/webhook/route.ts",
+    "supabase/migrations/001_regulatory_news.sql",
+    "supabase/migrations/002_ingestion_cron.sql",
+    "supabase/functions/ingest-news/index.ts"
+  ]
+}

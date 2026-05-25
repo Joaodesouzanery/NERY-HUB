@@ -1,0 +1,1220 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NERY — Software que transforma dados em decisão</title>
+  <meta name="description" content="A Nery Tecnologia desenvolve sistemas sob medida para organizações que operam em ambientes críticos. Cada processo funciona, cada dado é confiável, cada decisão é rastreável.">
+  
+  <!-- A FONTE FOO MUDADA PARA DM SANS: Ela possui os mesmos traços neo-grotescos geométricos da fonte da Palantir (g de um andar, y reto, t plano) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
+  
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --white: #ffffff;
+      --off-white: #fafafa;
+      --light-grey: #f5f5f5;
+      --border: rgba(0,0,0,0.1); 
+      --text-grey: #666;
+      --text-med: #444;
+      --text-dark: #000000;
+      --black: #000;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      overflow-x: hidden;
+      background: var(--white);
+      color: var(--text-dark);
+      font-weight: 400;
+      letter-spacing: -0.01em; 
+    }
+
+    /* ─── Animações Base ───────────────── */
+    .fade-up {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1), transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .fade-up.in-view { opacity: 1; transform: translateY(0); }
+    .delay-1 { transition-delay: 0.1s; }
+    .delay-2 { transition-delay: 0.2s; }
+    .delay-3 { transition-delay: 0.3s; }
+    .delay-4 { transition-delay: 0.4s; }
+
+    .container {
+      width: 100%;
+      max-width: 1440px;
+      margin: 0 auto;
+      padding: 0 80px;
+    }
+
+    /* ─── TOP NAV (Dinâmico Dark/Light) ────────────────────────────────────── */
+    #main-nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 9999;
+      height: 72px;
+      display: flex;
+      align-items: center;
+      transition: background 0.4s, border-color 0.4s, backdrop-filter 0.4s;
+      border-bottom: 1px solid rgba(255,255,255,0.15);
+    }
+    .nav-logo, .nav-links a {
+      color: #fff;
+      transition: color 0.4s;
+    }
+    .nav-inner { display: flex; align-items: center; justify-content: space-between; width: 100%; }
+
+    .nav-logo {
+      font-size: 20px;
+      font-weight: 500;
+      letter-spacing: -0.03em;
+      cursor: pointer;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .nav-logo:hover { opacity: 0.7; }
+    .nav-logo .slash { opacity: 0.5; font-weight: 400; }
+    .nav-logo .sub { font-weight: 400; font-size: 18px; letter-spacing: -0.02em; }
+
+    .nav-links { display: flex; align-items: center; gap: 32px; list-style: none; }
+    
+    /* Animação Hover no Link (Estilo Palantir Underline) */
+    .nav-links a {
+      position: relative;
+      font-size: 14px;
+      font-weight: 500;
+      text-decoration: none;
+      opacity: 0.8;
+      cursor: pointer;
+      display: inline-block;
+    }
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 1px;
+      bottom: -2px;
+      left: 0;
+      background-color: currentColor;
+      transition: width 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .nav-links a:hover { opacity: 1; }
+    .nav-links a:hover::after { width: 100%; }
+
+    .nav-actions { display: flex; align-items: center; gap: 16px; }
+
+    .btn-nav {
+      font-family: inherit;
+      font-size: 13px;
+      font-weight: 600;
+      padding: 10px 24px;
+      border: 1px solid rgba(255,255,255,0.5);
+      background: transparent;
+      color: #fff;
+      cursor: pointer;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      border-radius: 0;
+    }
+    .btn-nav:hover { background: #fff; color: #000; border-color: #fff; }
+
+    /* Estado Scrolled ou Theme-Light (Texto Escuro) */
+    #main-nav.scrolled, #main-nav.theme-light {
+      background: rgba(255,255,255,0.98);
+      border-bottom: 1px solid var(--border);
+    }
+    #main-nav.scrolled .nav-logo, #main-nav.theme-light .nav-logo,
+    #main-nav.scrolled .nav-links a, #main-nav.theme-light .nav-links a {
+      color: var(--text-dark);
+    }
+    #main-nav.scrolled .btn-nav, #main-nav.theme-light .btn-nav {
+      color: var(--text-dark);
+      border-color: var(--text-dark);
+    }
+    #main-nav.scrolled .btn-nav:hover, #main-nav.theme-light .btn-nav:hover {
+      background: var(--text-dark); color: var(--white);
+    }
+
+    .mobile-menu-btn { display: none; background: none; border: none; cursor: pointer; color: inherit; }
+
+    /* ─── VIEWS ──────────────────────────────────────── */
+    .view { display: none; }
+    .view.active { display: block; }
+
+    /* ═══════════════════════════════════════════════════
+       LANDING PAGE
+    ═══════════════════════════════════════════════════ */
+    #view-landing { padding-top: 0; }
+
+    /* ─── Hero (Centralizada, Texto Branco, Sem quebras forçadas) ───────────────────────────────────────── */
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 72px 40px 0;
+      overflow: hidden;
+      background-color: var(--black); 
+    }
+    .hero-video-bg {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      object-fit: cover;
+      z-index: 0;
+      pointer-events: none;
+    }
+    .hero-overlay {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.4); /* Escurece o vídeo pare destacar o texto branco no meio */
+      z-index: 1;
+      pointer-events: none;
+    }
+    .hero .container {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .hero-title {
+      font-size: clamp(28px, 4.5vw, 64px);
+      font-weight: 400; 
+      letter-spacing: -0.04em;
+      line-height: 1.1;
+      margin-bottom: 24px;
+      max-width: 1000px;
+      color: #ffffff;
+    }
+    .hero-sub {
+      font-size: clamp(16px, 1.8vw, 20px);
+      line-height: 1.6;
+      color: rgba(255,255,255,0.85);
+      font-weight: 400;
+      max-width: 700px;
+      margin-bottom: 48px;
+    }
+    .hero-ctas { display: flex; gap: 16px; flex-wrap: wrap; justify-content: center; }
+    
+    .btn-solid-hero {
+      font-family: inherit;
+      font-size: 15px;
+      font-weight: 500;
+      letter-spacing: -0.01em;
+      padding: 16px 36px;
+      background: #ffffff;
+      color: #000000;
+      border: 1px solid #ffffff;
+      cursor: pointer;
+      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .btn-solid-hero:hover { background: transparent; color: #ffffff; }
+    
+    .btn-outline-hero {
+      font-family: inherit;
+      font-size: 15px;
+      font-weight: 500;
+      letter-spacing: -0.01em;
+      padding: 16px 36px;
+      background: transparent;
+      color: #ffffff;
+      border: 1px solid #ffffff;
+      cursor: pointer;
+      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .btn-outline-hero:hover { background: #ffffff; color: #000000; }
+
+    /* Botões para o resto do site */
+    .btn-solid {
+      font-family: inherit;
+      font-size: 15px;
+      font-weight: 500;
+      letter-spacing: -0.01em;
+      padding: 16px 36px;
+      background: var(--text-dark);
+      color: var(--white);
+      border: 1px solid var(--text-dark);
+      cursor: pointer;
+      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .btn-solid:hover { background: transparent; color: var(--text-dark); }
+
+    /* ─── Sections ────────────────────────────────────── */
+    .section { padding: 120px 0; }
+    .section + .section { border-top: 1px solid var(--border); }
+
+    .section-eyebrow {
+      font-size: 12px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: var(--text-grey);
+      margin-bottom: 24px;
+      font-weight: 600;
+    }
+    .section-title {
+      font-size: clamp(40px, 5.5vw, 72px);
+      font-weight: 400;
+      letter-spacing: -0.04em;
+      line-height: 1.1;
+      color: var(--text-dark);
+      margin-bottom: 24px;
+    }
+    .section-desc {
+      font-size: clamp(16px, 1.8vw, 20px);
+      color: var(--text-med);
+      line-height: 1.6;
+      max-width: 680px;
+    }
+
+    /* ─── O Que Fazemos (Animação de Hover adicionada) ──────────────────────────────── */
+    .whatwedo-header { margin-bottom: 80px; }
+    .whatwedo-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 40px;
+    }
+    .whatwedo-card {
+      background: var(--white);
+      padding: 40px;
+      border: 1px solid var(--border);
+      cursor: pointer;
+      transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.4s ease;
+    }
+    .whatwedo-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 40px rgba(0,0,0,0.06);
+      border-color: var(--text-dark);
+    }
+    .whatwedo-card h3 {
+      font-size: 24px;
+      font-weight: 500;
+      margin-bottom: 16px;
+      letter-spacing: -0.03em;
+      color: var(--text-dark);
+    }
+    .whatwedo-card p {
+      font-size: 16px;
+      color: var(--text-med);
+      line-height: 1.6;
+    }
+
+    /* ─── Plataformas (Grid 3 colunas) ──────── */
+    .platforms-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 40px;
+      margin-top: 64px;
+    }
+    
+    .platform-card {
+      background: #1a1a1a;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      border-radius: 12px;
+      overflow: hidden;
+      cursor: pointer;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    }
+    .platform-card:hover { transform: translateY(-8px); box-shadow: 0 20px 40px rgba(0,0,0,0.3); }
+    .platform-card-img {
+      width: 100%;
+      height: 220px;
+      background: #222;
+      object-fit: cover;
+      display: block;
+    }
+    .platform-card-content {
+      padding: 32px;
+      background: #111;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+    .platform-card-name {
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 12px;
+      font-weight: 600;
+      color: #ccc;
+    }
+    .platform-card-title {
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 1.4;
+      letter-spacing: -0.02em;
+      color: #fff;
+    }
+    .platform-card-cta {
+      margin-top: auto;
+      padding-top: 24px;
+      font-size: 16px;
+      font-weight: 600;
+      color: #fff;
+      text-decoration: underline;
+      letter-spacing: 0.02em;
+    }
+
+    /* ─── Testimonials ────────────────────────────── */
+    .testimonials-section {
+      padding: 120px 0;
+      background: #fcfcfc;
+      border-top: 1px solid var(--border);
+    }
+    .testimonials-header {
+      text-align: left;
+      margin-bottom: 64px;
+    }
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 40px;
+    }
+    .testimonial-card {
+      background: var(--white); 
+      padding: 48px;
+      display: flex;
+      flex-direction: column;
+      border: 2px solid rgba(0,0,0,0.1);
+      border-radius: 16px;
+      box-shadow: 0 10px 40px -10px rgba(0,0,0,0.06);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+    .testimonial-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 50px -15px rgba(0,0,0,0.1);
+    }
+    .testimonial-quote {
+      font-size: 20px;
+      line-height: 1.5;
+      color: var(--text-dark);
+      margin-bottom: 40px;
+      flex-grow: 1;
+      font-weight: 400;
+    }
+    .testimonial-quote::before {
+      content: '“';
+      font-size: 64px;
+      color: #e5e5e5;
+      font-family: serif;
+      line-height: 0;
+      display: block;
+      margin-bottom: 32px;
+      margin-top: 16px;
+    }
+    .testimonial-author-wrapper {
+      border-top: 1px solid rgba(0,0,0,0.1);
+      padding-top: 24px;
+    }
+    .testimonial-author {
+      font-size: 20px;
+      font-weight: 500;
+      color: var(--text-dark);
+      margin-bottom: 4px;
+      letter-spacing: -0.02em;
+    }
+    .testimonial-role {
+      font-size: 12px;
+      font-weight: 600;
+      color: #ff6b35; 
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    /* ─── Por que a Nery ─────────────────────────────── */
+    .why-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      margin-top: 64px;
+    }
+    .why-text {
+      font-size: 18px;
+      color: var(--text-dark);
+      line-height: 1.6;
+    }
+    .why-quote {
+      padding: 48px;
+      border-left: 2px solid var(--text-dark);
+      background: var(--off-white);
+    }
+    .why-quote blockquote {
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 1.4;
+      color: var(--text-dark);
+      margin-bottom: 24px;
+      letter-spacing: -0.02em;
+    }
+    .why-quote cite {
+      font-size: 14px;
+      color: var(--text-grey);
+      font-style: normal;
+      display: block;
+      line-height: 1.5;
+      font-weight: 600;
+    }
+
+    /* ─── Sobre a Empresa ────────────────────────────── */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      margin-top: 64px;
+    }
+    .about-text {
+      font-size: 18px;
+      color: var(--text-dark);
+      line-height: 1.6;
+    }
+    .about-text p + p { margin-top: 24px; }
+    .about-values { display: flex; flex-direction: column; gap: 0; }
+    .about-value {
+      padding: 32px 0;
+      border-top: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 20px;
+      transition: background 0.4s ease;
+    }
+    .about-value:hover { background: var(--off-white); padding-left: 16px; padding-right: 16px; }
+    .about-value:last-child { border-bottom: 1px solid var(--border); }
+    .about-value h4 {
+      font-size: 18px;
+      font-weight: 500;
+      color: var(--text-dark);
+      letter-spacing: -0.02em;
+    }
+    .about-value p {
+      font-size: 15px;
+      color: var(--text-med);
+      max-width: 320px;
+      text-align: right;
+      line-height: 1.5;
+    }
+
+    /* ─── Footer Landing ─────────────────────────────── */
+    .site-footer {
+      padding: 100px 0 48px;
+      border-top: 1px solid var(--border);
+      background: var(--white);
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 60px;
+      margin-bottom: 80px;
+    }
+    .footer-brand .fbrand-name {
+      font-size: 24px;
+      font-weight: 500;
+      letter-spacing: -0.04em;
+      margin-bottom: 20px;
+      display: block;
+      color: var(--text-dark);
+    }
+    .footer-brand p { font-size: 15px; color: var(--text-med); line-height: 1.6; }
+    .footer-col h5 {
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      color: var(--text-grey);
+      margin-bottom: 24px;
+      text-transform: uppercase;
+    }
+    .footer-col a {
+      display: inline-block;
+      font-size: 15px;
+      color: var(--text-dark);
+      text-decoration: none;
+      margin-bottom: 16px;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+    .footer-col a:hover { transform: translateX(5px); }
+    .footer-bottom {
+      border-top: 1px solid var(--border);
+      padding-top: 32px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+      font-size: 13px;
+      color: var(--text-grey);
+    }
+
+    /* ═══════════════════════════════════════════════════
+       BLOG PAGE (Portais de Notícias Nery)
+    ═══════════════════════════════════════════════════ */
+    #view-blog { padding-top: 72px; background: var(--white); }
+
+    .blog-hero {
+      padding: 120px 0 80px;
+      border-bottom: 1px solid var(--border);
+    }
+    .blog-hero-top { margin-bottom: 64px; }
+    .blog-hero-title {
+      font-size: clamp(64px, 10vw, 120px);
+      font-weight: 400;
+      letter-spacing: -0.05em;
+      color: var(--text-dark);
+      line-height: 1;
+    }
+    .blog-hero-bottom {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+    }
+    .blog-hero-desc {
+      font-size: 20px;
+      color: var(--text-dark);
+      line-height: 1.6;
+      font-weight: 400;
+      letter-spacing: -0.01em;
+    }
+    .blog-hero-links {
+      display: flex;
+      flex-direction: column;
+    }
+    .blog-hero-links a {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 24px 0;
+      border-top: 1px solid var(--border);
+      color: var(--text-dark);
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: 500;
+      letter-spacing: -0.02em;
+      transition: background 0.4s ease, padding-left 0.4s ease;
+    }
+    .blog-hero-links a:last-child { border-bottom: 1px solid var(--border); }
+    .blog-hero-links a:hover { background: var(--off-white); padding-left: 16px; }
+
+    /* Teaser Cards (PublicTeaser structure com animação de Hover fina) */
+    .posts-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 40px;
+    }
+    .news-card {
+      background: var(--white);
+      display: flex;
+      flex-direction: column;
+      cursor: pointer;
+      transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.4s ease;
+      border: 1px solid var(--border);
+      position: relative;
+      overflow: hidden;
+    }
+    .news-card-image {
+      width: 100%;
+      height: 200px;
+      background-color: var(--light-grey);
+      object-fit: cover;
+    }
+    .news-card-content {
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+    .news-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 40px rgba(0,0,0,0.06);
+      border-color: var(--text-dark);
+    }
+    .news-card-tag {
+      font-size: 12px;
+      letter-spacing: 0.05em;
+      color: var(--text-dark);
+      margin-bottom: 8px;
+      font-weight: 600;
+    }
+    .news-card-date {
+      font-size: 13px;
+      color: var(--text-grey);
+      margin-bottom: 24px;
+    }
+    .news-card-title {
+      font-size: 22px;
+      font-weight: 400;
+      letter-spacing: -0.03em;
+      line-height: 1.35;
+      color: var(--text-dark);
+      transition: color 0.3s ease;
+    }
+    .news-card:hover .news-card-title {
+      text-decoration: underline;
+    }
+
+    /* ─── Responsive ─────────────────────────────────── */
+    @media (max-width: 1024px) {
+      .container { padding: 0 40px; }
+      .whatwedo-grid { grid-template-columns: 1fr; }
+      .whatwedo-card { padding: 40px !important; }
+      .why-content, .about-grid, .blog-hero-bottom { grid-template-columns: 1fr; gap: 48px; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+      .posts-grid { grid-template-columns: 1fr 1fr; }
+      .platforms-grid { grid-template-columns: 1fr 1fr; }
+      .testimonials-grid { grid-template-columns: 1fr 1fr; }
+    }
+
+    @media (max-width: 768px) {
+      .container { padding: 0 24px; }
+      .nav-links, .btn-nav { display: none; }
+      .mobile-menu-btn { display: block; }
+      .hero { min-height: 90vh; padding-bottom: 60px; }
+      .hero-title { font-size: clamp(32px, 8vw, 48px); }
+      .hero-ctas { flex-direction: column; width: 100%; gap: 16px; }
+      .btn-solid-hero, .btn-outline-hero { width: 100%; text-align: center; justify-content: center; }
+      .section { padding: 80px 0; }
+      .platforms-grid { grid-template-columns: 1fr; }
+      .testimonials-header { margin-bottom: 32px; }
+      .testimonials-grid { grid-template-columns: 1fr; }
+      .testimonial-quote { font-size: 16px; margin-bottom: 24px; }
+      .testimonial-quote::before { margin-bottom: 16px; font-size: 48px; }
+      .posts-grid { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr; gap: 40px; }
+      .about-value { flex-direction: column; gap: 8px; }
+      .about-value p { text-align: left; max-width: 100%; }
+      .why-quote { padding: 32px 24px; }
+      .btn-solid, .btn-outline { width: 100%; text-align: center; }
+      #main-nav .nav-logo { color: var(--text-dark); } /* Failsafe no mobile */
+    }
+  </style>
+</head>
+<body id="app-body">
+
+  <!-- ═══ NAVIGATION ══════════════════════════════════ -->
+  <nav id="main-nav">
+    <div class="container nav-inner">
+      <a class="nav-logo fade-up" id="nav-logo" onclick="switchView('landing')">
+        <span>NERY</span>
+        <span class="slash" id="logo-slash" style="display:none">&nbsp;/&nbsp;</span>
+        <span class="sub" id="logo-sub" style="display:none">Notícias</span>
+      </a>
+
+      <ul class="nav-links fade-up delay-1">
+        <li><a onclick="switchView('landing'); scrollToSection('sec-whatwedo')">O que fazemos</a></li>
+        <li><a onclick="switchView('landing'); scrollToSection('sec-platforms')">Plataformas</a></li>
+        <li><a onclick="switchView('landing'); scrollToSection('sec-why')">Por que a Nery</a></li>
+        <li><a onclick="switchView('landing'); scrollToSection('sec-about')">Sobre</a></li>
+        <li><a onclick="switchView('blog')">Notícias</a></li>
+      </ul>
+
+      <div class="nav-actions fade-up delay-2">
+        <button class="btn-nav" onclick="window.open('https://www.linkedin.com/in/joão-de-souza-nery-4380262b0', '_blank')">Fale Conosco</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════════════
+       VIEW: LANDING PAGE
+  ════════════════════════════════════════════════════ -->
+  <div id="view-landing" class="view active">
+
+    <!-- Hero Centralizada e Escura -->
+    <section class="hero">
+      <!-- Vídeo local adaptado -->
+      <video class="hero-video-bg" autoplay loop muted playsinline>
+        <source src="vídeo hero section.mp4" type="video/mp4">
+      </video>
+      <div class="hero-overlay"></div>
+      
+      <div class="container fade-up delay-1">
+        <!-- Sem quebras de linha forçadas, alinhamento central e limites consertados -->
+        <h1 class="hero-title">Software que transforma<br>dados em decisão.</h1>
+        <p class="hero-sub">
+          <span style="font-size: 1.15em; font-weight: 500; color: #fff; display: block; margin-bottom: 12px;">Construído para quem não pode errar.</span>
+          A Nery Tecnologia desenvolve sistemas sob medida para organizações públicas e privadas que operam em ambientes críticos, em que cada processo precisa funcionar, cada dado precisa ser confiável e cada decisão precisa ser rastreável.
+        </p>
+        <div class="hero-ctas">
+          <button class="btn-solid-hero" onclick="window.open('https://www.linkedin.com/in/joão-de-souza-nery-4380262b0', '_blank')">Fale com um Especialista</button>
+          <button class="btn-outline-hero" onclick="scrollToSection('sec-whatwedo')">Conheça Nossas Soluções</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Plataformas (Grid 3 colunas) -->
+    <section class="section" id="sec-platforms">
+      <div class="container">
+        <p class="section-eyebrow fade-up">Plataformas</p>
+        
+        <div class="platforms-grid fade-up delay-1">
+          <!-- Card 1 -->
+          <div class="platform-card" onclick="window.open('https://www.construdata.software/', '_blank')">
+            <img src="imagem construdata.webp" alt="ConstruData" class="platform-card-img">
+            <div class="platform-card-content">
+              <span class="platform-card-name">ConstruData</span>
+              <h3 class="platform-card-title">Gestão inteligente e em tempo real para controle de obras e planejamento urbano</h3>
+              <span class="platform-card-cta">Clique e conheça ↗</span>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="platform-card">
+            <img src="imagem jurimetria.jpg" alt="Jurimetria Regulatória" class="platform-card-img">
+            <div class="platform-card-content">
+              <span class="platform-card-name">Jurimetria Regulatória</span>
+              <h3 class="platform-card-title">Conformidade e auditoria automatizadas com alinhamento imediato com marcos</h3>
+              <span class="platform-card-cta">Conheça a solução ↗</span>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="platform-card">
+            <img src="IMG_9652.JPG" alt="Cursus" class="platform-card-img">
+            <div class="platform-card-content">
+              <span class="platform-card-name">Cursus</span>
+              <h3 class="platform-card-title">Funciona para Fazendas, Obras e Logística em geral com visibilidade completa</h3>
+              <span class="platform-card-cta">Conheça a solução ↗</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- O que fazemos -->
+    <section class="section" id="sec-whatwedo">
+      <div class="container">
+        <div class="whatwedo-header fade-up">
+          <p class="section-eyebrow">O que fazemos</p>
+          <h2 class="section-title">Software sob medida.<br>Nenhum atalho.</h2>
+          <p class="section-desc">
+            Não vendemos plataformas genéricas. Construímos sistemas a partir da complexidade real do seu negócio — integrando fontes de dados legadas, automatizando fluxos críticos e entregando interfaces que as equipes realmente usam.
+          </p>
+        </div>
+        <div class="whatwedo-grid">
+          <div class="whatwedo-card fade-up delay-1">
+            <h3>Desenvolvimento sob medida</h3>
+            <p>Sistemas projetados para o seu processo, não o contrário. Cada módulo é construído para se encaixar perfeitamente na realidade operacional da sua organização.</p>
+          </div>
+          <div class="whatwedo-card fade-up delay-2">
+            <h3>Integração de dados</h3>
+            <p>Unificação de fontes heterogêneas em um único fluxo operacional. Conectamos sistemas legados, APIs modernas e bancos de dados em uma visão consolidada.</p>
+          </div>
+          <div class="whatwedo-card fade-up delay-1">
+            <h3>Setor público e privado</h3>
+            <p>Experiência comprovada em conformidade regulatória, LGPD e ambientes de missão crítica — onde não há espaço para falhas ou improvisos.</p>
+          </div>
+          <div class="whatwedo-card fade-up delay-2">
+            <h3>Inteligência operacional</h3>
+            <p>Dashboards e automações que transformam volume em visibilidade. Dados brutos viram insights acionáveis para quem toma decisão.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Por que a Nery -->
+    <section class="section" id="sec-why">
+      <div class="container">
+        <p class="section-eyebrow fade-up">Por que a Nery</p>
+        <h2 class="section-title fade-up">Outros entregam software.<br>Nós entregamos sistemas que funcionam.</h2>
+        <div class="why-content">
+          <div class="why-text fade-up delay-1">
+            <p>A diferença entre um software que passa na homologação e um software que transforma uma operação está na profundidade do entendimento do problema. É aí que trabalhamos.</p>
+            <div style="margin-top: 32px; padding: 24px; border: 1px solid var(--border); background: var(--off-white);">
+              <h4 style="font-size: 16px; margin-bottom: 8px; font-weight: 500;">Nossa Metodologia em Ação.</h4>
+              <p style="font-size: 15px; color: var(--text-med); line-height: 1.5; margin-bottom: 16px;">
+                Acesse o conteúdo e entenda como pensamos o ciclo de vida dos nossos projetos do início ao fim.
+              </p>
+              <a href="https://www.linkedin.com/feed/update/urn:li:activity:7454469394803531776" target="_blank" style="font-size: 14px; font-weight: 600; color: var(--text-dark); text-decoration: underline;">Ver Publicação no LinkedIn ↗</a>
+            </div>
+          </div>
+          <div class="why-quote fade-up delay-2">
+            <blockquote>
+              "O sistema da Nery substituiu três planilhas críticas e dois processos manuais. Em 60 dias, nossa equipe tinha visibilidade em tempo real do que levava semanas para consolidar."
+            </blockquote>
+            <cite>— Diretor de Operações, empresa de infraestrutura</cite>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Depoimentos (What Partners talk about us) -->
+    <section class="testimonials-section">
+      <div class="container fade-up">
+        <div class="testimonials-header">
+          <h2 class="section-title" style="margin-bottom: 0;">O que nossos parceiros dizem<br>sobre nós</h2>
+        </div>
+        
+        <div class="testimonials-grid fade-up delay-1">
+          <!-- Card 1 -->
+          <div class="testimonial-card">
+            <p class="testimonial-quote">"A plataforma coloca o dado de campo no centro da decisão, sem depender de consolidação manual."</p>
+            <div class="testimonial-author-wrapper">
+              <h4 class="testimonial-author">Felipe Nery</h4>
+              <span class="testimonial-role">ENGENHEIRO</span>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="testimonial-card">
+            <p class="testimonial-quote">"Quando RDO, planejamento e medição conversam, a gestão deixa de discutir planilha e passa a discutir decisão."</p>
+            <div class="testimonial-author-wrapper">
+              <h4 class="testimonial-author">Fabrizzio de Paoli</h4>
+              <span class="testimonial-role">CONSÓRCIO SE LIGA NA REDE</span>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="testimonial-card">
+            <p class="testimonial-quote">"O valor está em rastrear origem, pendência e responsabilidade antes que o problema chegue ao fechamento."</p>
+            <div class="testimonial-author-wrapper">
+              <h4 class="testimonial-author">Matheus Marques</h4>
+              <span class="testimonial-role">VILA RICA ENGENHARIA</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sobre a Empresa -->
+    <section class="section" id="sec-about">
+      <div class="container">
+        <p class="section-eyebrow fade-up">Sobre a Empresa</p>
+        <h2 class="section-title fade-up">A camada invisível que move<br>organizações inteiras.</h2>
+        <div class="about-grid">
+          <div class="about-text fade-up delay-1">
+            <p>
+              A Nery Tecnologia nasceu com uma convicção: o verdadeiro potencial de uma organização está nos seus dados — mas só se realiza quando esses dados se tornam operação. Não somos uma empresa de consultoria que entrega relatórios. Somos engenheiros de software que constroem sistemas que funcionam no mundo real.
+            </p>
+            <p>
+              Atuamos como a camada estrutural entre os dados brutos e as decisões que movem empresas, governos e operações críticas. Nossa tecnologia amplifica a inteligência humana em vez de substituí-la, respeitando a privacidade dos dados dos nossos parceiros com governança intransigente.
+            </p>
+          </div>
+          <div class="about-values">
+            <div class="about-value fade-up delay-1">
+              <h4>Engenharia de verdade</h4>
+              <p>Código nosso, de ponta a ponta. Sem dependência de terceiros.</p>
+            </div>
+            <div class="about-value fade-up delay-2">
+              <h4>Privacidade radical</h4>
+              <p>Nunca vendemos dados. Nunca venderemos.</p>
+            </div>
+            <div class="about-value fade-up delay-3">
+              <h4>Foco em resultado</h4>
+              <p>Se não funciona em produção, não funciona.</p>
+            </div>
+            <div class="about-value fade-up delay-4">
+              <h4>Parceria de longo prazo</h4>
+              <p>Construímos junto. Evoluímos junto.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Landing -->
+    <footer class="site-footer" id="sec-contact">
+      <div class="container fade-up">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <span class="fbrand-name">NERY</span>
+            <p>Software que transforma dados em decisão.<br>Construído para quem não pode errar.</p>
+          </div>
+          <div class="footer-col">
+            <h5>Soluções</h5>
+            <a href="#">Infraestrutura e Obras</a>
+            <a href="#">Governança Regulatória</a>
+            <a href="#">Operações Logísticas</a>
+          </div>
+          <div class="footer-col">
+            <h5>A Empresa</h5>
+            <a href="#">Quem Somos</a>
+            <a onclick="switchView('blog')">Notícias & Portais</a>
+            <a href="#">Contato</a>
+          </div>
+          <div class="footer-col">
+            <h5>Legal</h5>
+            <a href="#">Privacidade</a>
+            <a href="#">Termos de Serviço</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>&copy; 2026 Nery Tecnologia. Todos os direitos reservados.</span>
+          <span>Desenvolvido no Brasil</span>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════
+       VIEW: NERY PORTALS (Substitui o antigo "Blog")
+  ════════════════════════════════════════════════════ -->
+  <div id="view-blog" class="view">
+    <div class="container">
+      <div class="blog-hero fade-up">
+        <div class="blog-hero-top">
+          <a onclick="switchView('landing')" style="cursor:pointer; display:inline-flex; align-items:center; gap:8px; font-size:15px; font-weight:600; color:var(--text-grey); margin-bottom:32px; text-decoration:none;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+            Voltar para a Página Inicial
+          </a>
+          <h1 class="blog-hero-title">Nery Notícias</h1>
+        </div>
+        <div class="blog-hero-bottom">
+          <div class="blog-hero-desc">
+            Inteligência operacional em tempo real. Nossos portais agregam, consolidam e monitoram publicações de fontes primárias essenciais para a sua tomada de decisão. Acesso direto a dados de agências reguladoras e do setor de saneamento.
+          </div>
+          <div class="blog-hero-links">
+            <a href="/regulatorio">Portal Regulatório <span>&rarr;</span></a>
+            <a style="cursor:pointer;" onclick="switchView('landing-saneamento')">Portal Saneamento <span>&rarr;</span></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Portal Regulatório Showcase -->
+      <section class="section fade-up">
+        <p class="section-eyebrow">Acesso Exclusivo</p>
+        <h2 class="section-title">Portal de Notícias Regulatórias</h2>
+        <p class="section-desc">Monitore normativas e decisões de dezenas de agências federais (ANA, ANAC, ANEEL, ANVISA, etc.) em uma única plataforma estruturada.</p>
+        
+        <div class="posts-grid" style="margin-top: 64px;">
+          <article class="news-card fade-up delay-1" onclick="window.location.href='/noticias/regulatorio'">
+            <div class="news-card-image"></div>
+            <div class="news-card-content">
+              <div class="news-card-tag">ANEEL</div>
+              <p class="news-card-date">Hoje, 09:00</p>
+              <h3 class="news-card-title">Nova resolução normativa estabelece regras para compartilhamento de infraestrutura</h3>
+            </div>
+          </article>
+          <article class="news-card fade-up delay-2" onclick="window.location.href='/noticias/regulatorio'">
+            <div class="news-card-image"></div>
+            <div class="news-card-content">
+              <div class="news-card-tag">ANVISA</div>
+              <p class="news-card-date">Ontem, 16:30</p>
+              <h3 class="news-card-title">Atualização no marco regulatório de inteligência artificial em dispositivos médicos</h3>
+            </div>
+          </article>
+          <article class="news-card fade-up delay-3" onclick="window.location.href='/noticias/regulatorio'">
+            <div class="news-card-image"></div>
+            <div class="news-card-content">
+              <div class="news-card-tag">CVM</div>
+              <p class="news-card-date">Ontem, 10:15</p>
+              <h3 class="news-card-title">Instrução sobre divulgação de riscos climáticos entra em audiência pública</h3>
+            </div>
+          </article>
+        </div>
+
+        <div style="margin-top: 64px;" class="fade-up">
+          <button onclick="window.location.href='/pricing?product=regulatorio'" class="btn-solid">Assinar Portal Regulatório</button>
+        </div>
+      </section>
+
+      <!-- Portal de Saneamento Showcase -->
+      <section class="section fade-up">
+        <p class="section-eyebrow">Acesso Exclusivo</p>
+        <h2 class="section-title">Portal de Notícias de Saneamento</h2>
+        <p class="section-desc">Acompanhe editais, leilões, decisões da ANA e movimentações estratégicas de companhias como Sabesp, Sanepar e Copasa.</p>
+        
+        <div class="posts-grid" style="margin-top: 64px;">
+          <article class="news-card fade-up delay-1" onclick="window.location.href='/noticias/saneamento'">
+            <div class="news-card-image"></div>
+            <div class="news-card-content">
+              <div class="news-card-tag">ANA</div>
+              <p class="news-card-date">Hoje, 13:00</p>
+              <h3 class="news-card-title">Padrões de referência para regulação de perdas de água em sistemas de abastecimento</h3>
+            </div>
+          </article>
+          <article class="news-card fade-up delay-2" onclick="window.location.href='/noticias/saneamento'">
+            <div class="news-card-image"></div>
+            <div class="news-card-content">
+              <div class="news-card-tag">SABESP_RI</div>
+              <p class="news-card-date">Ontem, 18:45</p>
+              <h3 class="news-card-title">Comunicado ao Mercado: Atualização sobre plano de investimentos 2026-2030</h3>
+            </div>
+          </article>
+          <article class="news-card fade-up delay-3" onclick="window.location.href='/noticias/saneamento'">
+            <div class="news-card-image"></div>
+            <div class="news-card-content">
+              <div class="news-card-tag">SENADO</div>
+              <p class="news-card-date">22 Mai 2026</p>
+              <h3 class="news-card-title">Comissão aprova novos incentivos para universalização do esgotamento sanitário</h3>
+            </div>
+          </article>
+        </div>
+
+        <div style="margin-top: 64px;" class="fade-up">
+          <button onclick="switchView('landing-saneamento')" class="btn-solid">Assinar Portal Saneamento</button>
+        </div>
+      </section>
+    </div>
+
+    <!-- Footer Portals -->
+    <footer class="site-footer">
+      <div class="container fade-up">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <span class="fbrand-name">NERY</span>
+            <p>Software que transforma dados em decisão.</p>
+          </div>
+          <div class="footer-col">
+            <h5>Produtos</h5>
+            <a href="/regulatorio">Portal Regulatório</a>
+            <a href="/saneamento">Portal Saneamento</a>
+          </div>
+          <div class="footer-col">
+            <h5>Navegação</h5>
+            <a onclick="switchView('landing')">Página Inicial</a>
+            <a href="#">Suporte</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>&copy; 2026 Nery Tecnologia. Todos os direitos reservados.</span>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════
+       VIEW: LANDING SANEAMENTO (Página de Venda 9,99)
+  ════════════════════════════════════════════════════ -->
+  <div id="view-landing-saneamento" class="view" style="padding-top: 72px; background: var(--white);">
+    <div class="container">
+      
+      <!-- Hero -->
+      <div class="blog-hero fade-up" style="border-bottom: none; padding-bottom: 40px; padding-top: 80px;">
+        <div class="blog-hero-top">
+          <a onclick="switchView('blog')" style="cursor:pointer; display:inline-flex; align-items:center; gap:8px; font-size:15px; font-weight:600; color:var(--text-grey); margin-bottom:32px; text-decoration:none;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+            Voltar para Portais
+          </a>
+          <h1 class="blog-hero-title" style="font-size: clamp(48px, 8vw, 96px);">Inteligência de Mercado:<br>Portal Saneamento</h1>
+        </div>
+        <div class="blog-hero-bottom" style="grid-template-columns: 1fr; max-width: 900px;">
+          <div class="blog-hero-desc" style="font-size: 24px; color: var(--text-med);">
+            Todas as decisões, editais, leilões e movimentações estratégicas consolidadas em uma única plataforma. O que você leva horas para garimpar, nós entregamos estruturado.
+          </div>
+        </div>
+      </div>
+
+      <!-- Features -->
+      <section class="section fade-up" style="padding: 40px 0;">
+        <div class="whatwedo-grid">
+           <div class="whatwedo-card">
+              <h3>Cobertura Regulatória (ANA)</h3>
+              <p>Monitore normas de referência para regulação de perdas, tarifas e metas de universalização assim que são publicadas pela agência.</p>
+           </div>
+           <div class="whatwedo-card">
+              <h3>Editais e Leilões</h3>
+              <p>Acompanhamento contínuo de novas concessões, parcerias público-privadas e licitações no setor de saneamento básico em todo o Brasil.</p>
+           </div>
+           <div class="whatwedo-card">
+              <h3>Movimentações de Mercado</h3>
+              <p>Fatos relevantes e comunicados de grandes players como Sabesp, Sanepar e Copasa, centralizados sem o ruído da mídia em geral.</p>
+           </div>
+           <div class="whatwedo-card">
+              <h3>Acervo Consolidado</h3>
+              <p>Acesse o histórico completo de notícias e normativas para embasar sua tomada de decisão com um contexto estruturado.</p>
+           </div>
+        </div>
+      </section>
+
+      <!-- Pricing / CTA -->
+      <section class="section fade-up" style="padding: 80px 0; border-top: 1px solid var(--border);">
+        <div style="background: var(--off-white); border: 1px solid var(--border); border-radius: 16px; padding: 80px 40px; text-align: center; max-width: 800px; margin: 0 auto; box-shadow: 0 10px 40px rgba(0,0,0,0.03);">
+          <p class="section-eyebrow" style="margin-bottom: 16px;">Assinatura Mensal</p>
+          <h2 style="font-size: 40px; font-weight: 500; margin-bottom: 16px; letter-spacing: -0.03em; color: var(--text-dark);">Acesso Total ao Portal</h2>
+          <div style="font-size: 72px; font-weight: 400; margin-bottom: 24px; color: var(--text-dark); letter-spacing: -0.04em;">
+            R$ 9,99<span style="font-size: 20px; font-weight: 400; color: var(--text-grey); letter-spacing: 0;"> / mês</span>
+          </div>
+          <p style="font-size: 18px; color: var(--text-med); margin-bottom: 48px; line-height: 1.6; max-width: 500px; margin-left: auto; margin-right: auto;">
+            Cancele a qualquer momento. Acesso imediato a toda a inteligência e clipping estratégico diário.
+          </p>
+          <button class="btn-solid" style="font-size: 16px; padding: 20px 48px; width: 100%; max-width: 400px;" onclick="window.location.href='portal-saneamento.html'">Assinar e Acessar Agora</button>
+        </div>
+      </section>
+
+    </div>
+  </div>
+
+  <!-- ═══ SCRIPTS ═══════════════════════════════════ -->
+  <script>
+    // Configuração de Scroll e Navbar
+    const nav = document.getElementById('main-nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 20);
+    });
+
+    // Troca de Views (Landing vs Portals)
+    function switchView(name) {
+      document.querySelectorAll('.view').forEach(v => v.classList.remove('active'));
+      document.getElementById('view-' + name).classList.add('active');
+
+      const logoSlash = document.getElementById('logo-slash');
+      const logoSub = document.getElementById('logo-sub');
+
+      // Se for pra tela de blog (clara), força a nav a ter texto preto
+      if (name === 'blog') {
+        logoSlash.style.display = 'inline';
+        logoSub.style.display = 'inline';
+        nav.classList.add('theme-light'); 
+      } else {
+        logoSlash.style.display = 'none';
+        logoSub.style.display = 'none';
+        nav.classList.remove('theme-light');
+      }
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      
+      // Re-trigger animations in new view
+      setTimeout(() => {
+        document.querySelectorAll('.fade-up').forEach(el => {
+          el.classList.remove('in-view');
+          observer.observe(el);
+        });
+      }, 100);
+    }
+
+    function scrollToSection(id) {
+      setTimeout(() => {
+        const el = document.getElementById(id);
+        if (el) {
+          const offset = 80;
+          const top = el.getBoundingClientRect().top + window.pageYOffset - offset;
+          window.scrollTo({ top, behavior: 'smooth' });
+        }
+      }, 100);
+    }
+
+    // Intersection Observer para as animações fade-up tipo Palantir
+    const observerOptions = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.15
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in-view');
+          observer.unobserve(entry.target); // Anima apenas uma vez ao descer
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.fade-up').forEach(el => {
+      observer.observe(el);
+    });
+  </script>
+</body>
+</html>
