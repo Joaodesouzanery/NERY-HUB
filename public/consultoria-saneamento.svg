@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" width="800" height="520" role="img" aria-label="Saneamento">
+  <defs>
+    <linearGradient id="gSan" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1b2a2e"/>
+      <stop offset="0.55" stop-color="#111d20"/>
+      <stop offset="1" stop-color="#0a0f10"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="520" fill="url(#gSan)"/>
+  <g stroke="#ffffff" stroke-opacity="0.06" stroke-width="1">
+    <path d="M0 130 H800 M0 260 H800 M0 390 H800 M160 0 V520 M320 0 V520 M480 0 V520 M640 0 V520"/>
+  </g>
+  <!-- gota / water drop -->
+  <path d="M400 120 C400 120 320 240 320 300 A80 80 0 1 0 480 300 C480 240 400 120 400 120 Z"
+        fill="none" stroke="#ffffff" stroke-opacity="0.18" stroke-width="6" stroke-linejoin="round"/>
+  <path d="M360 320 a40 40 0 0 0 40 40" fill="none" stroke="#ffffff" stroke-opacity="0.14" stroke-width="5" stroke-linecap="round"/>
+  <!-- ondas / waves -->
+  <g fill="none" stroke="#ffffff" stroke-opacity="0.12" stroke-width="5" stroke-linecap="round">
+    <path d="M120 440 q40 -30 80 0 t80 0 t80 0 t80 0 t80 0 t80 0"/>
+    <path d="M120 470 q40 -30 80 0 t80 0 t80 0 t80 0 t80 0 t80 0" stroke-opacity="0.07"/>
+  </g>
+</svg>

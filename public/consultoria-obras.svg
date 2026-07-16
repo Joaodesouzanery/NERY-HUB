@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" width="800" height="520" role="img" aria-label="Obras e Infraestrutura">
+  <defs>
+    <linearGradient id="gObras" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2b2620"/>
+      <stop offset="0.55" stop-color="#1a1712"/>
+      <stop offset="1" stop-color="#0c0b09"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="520" fill="url(#gObras)"/>
+  <g stroke="#ffffff" stroke-opacity="0.06" stroke-width="1">
+    <path d="M0 130 H800 M0 260 H800 M0 390 H800 M160 0 V520 M320 0 V520 M480 0 V520 M640 0 V520"/>
+  </g>
+  <g fill="none" stroke="#ffffff" stroke-opacity="0.16" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+    <!-- guindaste / crane -->
+    <path d="M300 430 V150"/>
+    <path d="M270 430 L330 430"/>
+    <path d="M270 200 L330 200 L300 150 Z" stroke-opacity="0.10"/>
+    <path d="M230 150 L560 150"/>
+    <path d="M300 150 L360 110 L300 90"/>
+    <path d="M470 150 V210"/>
+    <path d="M450 210 H490 V250 H450 Z"/>
+    <!-- prédios / buildings -->
+    <path d="M520 430 V300 H600 V430" stroke-opacity="0.12"/>
+    <path d="M600 430 V250 H680 V430" stroke-opacity="0.12"/>
+  </g>
+  <line x1="120" y1="430" x2="700" y2="430" stroke="#ffffff" stroke-opacity="0.22" stroke-width="4"/>
+</svg>

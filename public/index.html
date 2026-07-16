@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>NERY — Software que transforma dados em decisão</title>
-  <meta name="description" content="A Nery Tecnologia desenvolve sistemas sob medida para organizações que operam em ambientes críticos. Cada processo funciona, cada dado é confiável, cada decisão é rastreável.">
+  <meta name="description" content="O Grupo Nery desenvolve sistemas sob medida para organizações que operam em ambientes críticos. Cada processo funciona, cada dado é confiável, cada decisão é rastreável.">
   
   <!-- A FONTE FOO MUDADA PARA DM SANS: Ela possui os mesmos traços neo-grotescos geométricos da fonte da Palantir (g de um andar, y reto, t plano) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -168,7 +168,7 @@
       text-align: center;
       padding: 72px 40px 0;
       overflow: hidden;
-      background-color: var(--black); 
+      background-color: #241f1b; /* tom quente escuro combinando com o poster, evita flash preto */
     }
     .hero-video-bg {
       position: absolute;
@@ -668,34 +668,19 @@
       text-decoration: underline;
     }
 
-    /* ─── Hero Loading (frase sobre o preto antes do vídeo) ───────── */
-    .hero-loading {
-      position: absolute;
-      inset: 0;
-      z-index: 5;
-      background: #000;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 40px;
-      transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1);
-    }
-    .hero-loading.hidden {
-      opacity: 0;
-      pointer-events: none;
-    }
-    .hero-loading p {
+    /* ─── Hero Phrase (frase de destaque sobre o vídeo) ───────── */
+    .hero-phrase {
       max-width: 820px;
-      font-size: clamp(20px, 3vw, 36px);
-      line-height: 1.35;
-      letter-spacing: -0.03em;
-      color: rgba(255,255,255,0.55);
+      margin: 0 auto 28px;
+      font-size: clamp(18px, 2.2vw, 26px);
+      line-height: 1.45;
+      letter-spacing: -0.02em;
+      color: rgba(255,255,255,0.82);
       font-weight: 400;
     }
-    .hero-loading p strong {
+    .hero-phrase strong {
       color: #ffffff;
-      font-weight: 500;
+      font-weight: 600;
     }
 
     /* ─── Modal (Plataformas) ──────────────────────────── */
@@ -789,32 +774,6 @@
     }
     .modal-group li strong { color: var(--text-dark); font-weight: 600; }
 
-    /* ─── Consultoria ──────────────────────────────────── */
-    .consultoria-card {
-      margin-top: 64px;
-      background: var(--off-white);
-      border: 1px solid var(--border);
-      border-left: 3px solid var(--text-dark);
-      border-radius: 16px;
-      padding: 56px;
-      display: grid;
-      grid-template-columns: 1fr 1.4fr;
-      gap: 48px;
-      align-items: center;
-    }
-    .consultoria-card h3 {
-      font-size: clamp(26px, 3vw, 34px);
-      font-weight: 500;
-      letter-spacing: -0.03em;
-      color: var(--text-dark);
-      line-height: 1.15;
-    }
-    .consultoria-card p {
-      font-size: 18px;
-      color: var(--text-med);
-      line-height: 1.65;
-    }
-
     /* ─── Clientes (Esteira / Marquee) ─────────────────── */
     .clientes-section {
       padding: 100px 0;
@@ -833,40 +792,39 @@
     .clientes-track {
       display: flex;
       align-items: center;
-      gap: 32px;
+      gap: 64px;
       width: max-content;
       animation: clientes-scroll 50s linear infinite;
     }
     .clientes-marquee:hover .clientes-track { animation-play-state: paused; }
-    .cliente-tile {
+    .cliente-logo {
       flex-shrink: 0;
-      width: 190px;
-      height: 110px;
-      background: var(--white);
-      border: 1px solid var(--border);
-      border-radius: 12px;
+      height: 56px;
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 22px 28px;
-      box-shadow: 0 6px 20px rgba(0,0,0,0.04);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
-    .cliente-tile:hover { transform: translateY(-4px); box-shadow: 0 12px 30px rgba(0,0,0,0.08); }
-    .cliente-tile img {
-      max-height: 100%;
-      max-width: 100%;
+    .cliente-logo img {
+      max-height: 56px;
+      max-width: 170px;
       width: auto;
       object-fit: contain;
+      opacity: 0.75;
+      transition: opacity 0.3s ease, transform 0.3s ease;
     }
-    .cliente-tile.text-tile span {
-      font-size: 17px;
-      font-weight: 600;
+    .cliente-logo img:hover { opacity: 1; transform: scale(1.04); }
+    /* Engelfer tem muito respiro no arquivo — exibir maior */
+    .cliente-logo img.logo-lg { max-height: 78px; max-width: 220px; }
+    .cliente-logo.text-logo span {
+      font-size: 20px;
+      font-weight: 700;
       letter-spacing: -0.02em;
       color: var(--text-dark);
-      text-align: center;
-      line-height: 1.2;
+      opacity: 0.75;
+      white-space: nowrap;
+      transition: opacity 0.3s ease;
     }
+    .cliente-logo.text-logo:hover span { opacity: 1; }
     @keyframes clientes-scroll {
       from { transform: translateX(0); }
       to { transform: translateX(-50%); }
@@ -904,11 +862,63 @@
       .about-value p { text-align: left; max-width: 100%; }
       .why-quote { padding: 32px 24px; }
       .btn-solid, .btn-outline { width: 100%; text-align: center; }
-      #main-nav .nav-logo { color: var(--text-dark); } /* Failsafe no mobile */
-      .consultoria-card { grid-template-columns: 1fr; gap: 24px; padding: 40px 28px; }
       .modal-card { padding: 32px 24px; }
-      .clientes-track { gap: 20px; }
-      .cliente-tile { width: 150px; height: 90px; padding: 18px 22px; }
+      .clientes-track { gap: 44px; }
+      .cliente-logo, .cliente-logo img { height: 40px; max-height: 40px; }
+      .cliente-logo img { max-width: 130px; }
+      .cliente-logo img.logo-lg { max-height: 58px; max-width: 170px; }
+      .cliente-logo.text-logo span { font-size: 17px; }
+      .hero-phrase { font-size: clamp(16px, 4.5vw, 20px); }
+    }
+
+    /* ─── Menu Mobile (Hambúrguer + Drawer) ────────────── */
+    .mobile-menu-btn {
+      display: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: inherit;
+      padding: 8px;
+      z-index: 10001;
+    }
+    .mobile-menu-btn svg { display: block; }
+    #mobile-menu {
+      position: fixed;
+      inset: 0;
+      z-index: 9998;
+      background: rgba(255,255,255,0.98);
+      backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 96px 32px 48px;
+      transform: translateX(100%);
+      transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    #mobile-menu.open { transform: translateX(0); }
+    #mobile-menu a {
+      font-size: 22px;
+      font-weight: 500;
+      letter-spacing: -0.02em;
+      color: var(--text-dark);
+      text-decoration: none;
+      padding: 18px 0;
+      border-bottom: 1px solid var(--border);
+      cursor: pointer;
+    }
+    #mobile-menu .mobile-cta {
+      margin-top: 32px;
+      border: none;
+      text-align: center;
+      background: var(--text-dark);
+      color: var(--white);
+      padding: 18px;
+      font-weight: 600;
+      font-size: 16px;
+    }
+    @media (min-width: 769px) {
+      #mobile-menu { display: none; }
     }
   </style>
 </head>
@@ -927,16 +937,30 @@
         <li><a onclick="switchView('landing'); scrollToSection('sec-whatwedo')">O que fazemos</a></li>
         <li><a onclick="switchView('landing'); scrollToSection('sec-platforms')">Plataformas</a></li>
         <li><a onclick="switchView('landing'); scrollToSection('sec-consultoria')">Consultoria</a></li>
-        <li><a onclick="switchView('landing'); scrollToSection('sec-why')">Por que a Nery</a></li>
+        <li><a onclick="switchView('landing'); scrollToSection('sec-why')">Por que o Grupo Nery</a></li>
         <li><a onclick="switchView('landing'); scrollToSection('sec-about')">Sobre</a></li>
         <li><a onclick="switchView('blog')">Notícias</a></li>
       </ul>
 
       <div class="nav-actions fade-up delay-2">
         <button class="btn-nav" onclick="window.open('https://www.linkedin.com/in/joão-de-souza-nery-4380262b0', '_blank')">Fale Conosco</button>
+        <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Abrir menu" aria-expanded="false" onclick="toggleMobileMenu()">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
       </div>
     </div>
   </nav>
+
+  <!-- Menu Mobile (Drawer) -->
+  <div id="mobile-menu">
+    <a onclick="closeMobileMenu(); switchView('landing'); scrollToSection('sec-whatwedo')">O que fazemos</a>
+    <a onclick="closeMobileMenu(); switchView('landing'); scrollToSection('sec-platforms')">Plataformas</a>
+    <a onclick="closeMobileMenu(); switchView('landing'); scrollToSection('sec-consultoria')">Consultoria</a>
+    <a onclick="closeMobileMenu(); switchView('landing'); scrollToSection('sec-why')">Por que o Grupo Nery</a>
+    <a onclick="closeMobileMenu(); switchView('landing'); scrollToSection('sec-about')">Sobre</a>
+    <a onclick="closeMobileMenu(); switchView('blog')">Notícias</a>
+    <a class="mobile-cta" onclick="closeMobileMenu()" href="https://www.linkedin.com/in/joão-de-souza-nery-4380262b0" target="_blank">Fale Conosco</a>
+  </div>
 
   <!-- ═══════════════════════════════════════════════════
        VIEW: LANDING PAGE
@@ -946,22 +970,17 @@
     <!-- Hero Centralizada e Escura -->
     <section class="hero">
       <!-- Vídeo local adaptado -->
-      <video class="hero-video-bg" id="hero-video" autoplay loop muted playsinline>
+      <video class="hero-video-bg" id="hero-video" autoplay loop muted playsinline poster="hero-poster.jpg">
         <source src="vídeo hero section.mp4" type="video/mp4">
       </video>
       <div class="hero-overlay"></div>
 
-      <!-- Frase exibida sobre o preto até o vídeo começar -->
-      <div class="hero-loading" id="hero-loading">
-        <p>Boas tecnologias te permitem fazer coisas mais rapidamente. <strong>Ótimas tecnologias te permitem fazer coisas que você não conseguia antes.</strong></p>
-      </div>
-      
       <div class="container fade-up delay-1">
         <!-- Sem quebras de linha forçadas, alinhamento central e limites consertados -->
         <h1 class="hero-title">Software que transforma<br>dados em decisão.</h1>
+        <p class="hero-phrase">Boas tecnologias te permitem fazer coisas mais rapidamente. <strong>Ótimas tecnologias te permitem fazer coisas que você não conseguia antes.</strong></p>
         <p class="hero-sub">
-          <span style="font-size: 1.15em; font-weight: 500; color: #fff; display: block; margin-bottom: 12px;">Construído para quem não pode errar.</span>
-          A Nery Tecnologia desenvolve sistemas sob medida para organizações públicas e privadas que operam em ambientes críticos, em que cada processo precisa funcionar, cada dado precisa ser confiável e cada decisão precisa ser rastreável.
+          O Grupo Nery desenvolve sistemas sob medida para organizações públicas e privadas que operam em ambientes críticos, em que cada processo precisa funcionar, cada dado precisa ser confiável e cada decisão precisa ser rastreável.
         </p>
         <div class="hero-ctas">
           <button class="btn-solid-hero" onclick="window.open('https://www.linkedin.com/in/joão-de-souza-nery-4380262b0', '_blank')">Fale com um Especialista</button>
@@ -1013,12 +1032,36 @@
     <section class="section" id="sec-consultoria">
       <div class="container">
         <p class="section-eyebrow fade-up">Consultoria</p>
-        <h2 class="section-title fade-up">Estratégia que vira<br>resultado na operação.</h2>
-        <p class="section-desc fade-up delay-1">Além do software, atuamos ao lado da sua equipe para elevar o desempenho de obras e operações críticas.</p>
+        <h2 class="section-title fade-up">Transformação Corporativa.</h2>
+        <p class="section-desc fade-up delay-1">Trabalhamos em parceria com nossos clientes na elaboração e implementação de programas de melhoria de desempenho operacional, baseados em aumento de receitas, redução de custos, melhoria de capital de giro e otimização de investimentos e ativos — buscando, assim, maior lucratividade e rentabilidade.</p>
 
-        <div class="consultoria-card fade-up delay-1">
-          <h3>Transformação Corporativa para Obras</h3>
-          <p>Trabalhamos em parceria com nossos clientes na elaboração e implementação de programas de melhoria de desempenho operacional para obras, baseados em iniciativas de aumento de receitas, redução de custos, melhoria de capital de giro e otimização de investimentos e ativos — buscando, assim, maior lucratividade e rentabilidade.</p>
+        <div class="platforms-grid fade-up delay-1">
+          <!-- Card 1 — Obras (foco) -->
+          <div class="platform-card">
+            <img src="consultoria-obras.svg" alt="Obras & Infraestrutura" class="platform-card-img">
+            <div class="platform-card-content">
+              <span class="platform-card-name">Obras &amp; Infraestrutura</span>
+              <h3 class="platform-card-title">Ganhos de produtividade, controle de custos e otimização de ativos ao longo de todo o ciclo da obra.</h3>
+            </div>
+          </div>
+
+          <!-- Card 2 — Saneamento -->
+          <div class="platform-card">
+            <img src="consultoria-saneamento.svg" alt="Saneamento" class="platform-card-img">
+            <div class="platform-card-content">
+              <span class="platform-card-name">Saneamento</span>
+              <h3 class="platform-card-title">Eficiência operacional e financeira para concessionárias e operadores de saneamento.</h3>
+            </div>
+          </div>
+
+          <!-- Card 3 — Agro & Logística -->
+          <div class="platform-card">
+            <img src="consultoria-agro.svg" alt="Agronegócio & Logística" class="platform-card-img">
+            <div class="platform-card-content">
+              <span class="platform-card-name">Agronegócio &amp; Logística</span>
+              <h3 class="platform-card-title">Redução de custos e otimização de capital de giro em operações de agro e logística.</h3>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -1028,35 +1071,35 @@
       <div class="container">
         <div class="clientes-header fade-up">
           <p class="section-eyebrow" style="margin-bottom: 16px;">Clientes</p>
-          <h2 class="section-title" style="margin-bottom: 0;">Quem confia na Nery.</h2>
+          <h2 class="section-title" style="margin-bottom: 0;">Quem confia no Grupo Nery.</h2>
         </div>
       </div>
       <div class="clientes-marquee fade-up delay-1">
         <div class="clientes-track">
           <!-- Conjunto 1 -->
-          <div class="cliente-tile"><img src="clientes/wcr.png" alt="WCR Saneamento"></div>
-          <div class="cliente-tile"><img src="clientes/consorcio-se-liga.jpg" alt="Consórcio Se Liga na Rede"></div>
-          <div class="cliente-tile"><img src="clientes/compizzo.jpeg" alt="Compizzo"></div>
-          <div class="cliente-tile"><img src="clientes/engelfer.png" alt="Engelfer"></div>
-          <div class="cliente-tile"><img src="clientes/vila-rica.jpeg" alt="Vila Rica Engenharia"></div>
-          <div class="cliente-tile"><img src="clientes/iris.png" alt="IRIS"></div>
-          <div class="cliente-tile"><img src="clientes/circle.png" alt="Circle"></div>
-          <div class="cliente-tile"><img src="clientes/sauz.jpeg" alt="Sauz"></div>
-          <div class="cliente-tile"><img src="clientes/conab.svg" alt="CONAB"></div>
-          <div class="cliente-tile"><img src="clientes/crt.png" alt="CRT"></div>
-          <div class="cliente-tile text-tile"><span>Pissu Produções</span></div>
+          <div class="cliente-logo"><img src="clientes/wcr.png" alt="WCR Saneamento"></div>
+          <div class="cliente-logo"><img src="clientes/consorcio-se-liga.png" alt="Consórcio Se Liga na Rede"></div>
+          <div class="cliente-logo"><img src="clientes/compizzo.png" alt="Compizzo"></div>
+          <div class="cliente-logo"><img src="clientes/engelfer.png" alt="Engelfer" class="logo-lg"></div>
+          <div class="cliente-logo"><img src="clientes/vila-rica.png" alt="Vila Rica Engenharia"></div>
+          <div class="cliente-logo"><img src="clientes/iris.png" alt="IRIS"></div>
+          <div class="cliente-logo"><img src="clientes/circle.png" alt="Circle"></div>
+          <div class="cliente-logo"><img src="clientes/sauz.png" alt="Sauz"></div>
+          <div class="cliente-logo"><img src="clientes/conab.svg" alt="CONAB"></div>
+          <div class="cliente-logo"><img src="clientes/crt.png" alt="CRT"></div>
+          <div class="cliente-logo text-logo"><span>Pissu Produções</span></div>
           <!-- Conjunto 2 (duplicado para loop contínuo) -->
-          <div class="cliente-tile" aria-hidden="true"><img src="clientes/wcr.png" alt=""></div>
-          <div class="cliente-tile" aria-hidden="true"><img src="clientes/consorcio-se-liga.jpg" alt=""></div>
-          <div class="cliente-tile" aria-hidden="true"><img src="clientes/compizzo.jpeg" alt=""></div>
-          <div class="cliente-tile" aria-hidden="true"><img src="clientes/engelfer.png" alt=""></div>
-          <div class="cliente-tile" aria-hidden="true"><img src="clientes/vila-rica.jpeg" alt=""></div>
-          <div class="cliente-tile" aria-hidden="true"><img src="clientes/iris.png" alt=""></div>
-          <div class="cliente-tile" aria-hidden="true"><img src="clientes/circle.png" alt=""></div>
-          <div class="cliente-tile" aria-hidden="true"><img src="clientes/sauz.jpeg" alt=""></div>
-          <div class="cliente-tile" aria-hidden="true"><img src="clientes/conab.svg" alt=""></div>
-          <div class="cliente-tile" aria-hidden="true"><img src="clientes/crt.png" alt=""></div>
-          <div class="cliente-tile text-tile" aria-hidden="true"><span>Pissu Produções</span></div>
+          <div class="cliente-logo" aria-hidden="true"><img src="clientes/wcr.png" alt=""></div>
+          <div class="cliente-logo" aria-hidden="true"><img src="clientes/consorcio-se-liga.png" alt=""></div>
+          <div class="cliente-logo" aria-hidden="true"><img src="clientes/compizzo.png" alt=""></div>
+          <div class="cliente-logo" aria-hidden="true"><img src="clientes/engelfer.png" alt="" class="logo-lg"></div>
+          <div class="cliente-logo" aria-hidden="true"><img src="clientes/vila-rica.png" alt=""></div>
+          <div class="cliente-logo" aria-hidden="true"><img src="clientes/iris.png" alt=""></div>
+          <div class="cliente-logo" aria-hidden="true"><img src="clientes/circle.png" alt=""></div>
+          <div class="cliente-logo" aria-hidden="true"><img src="clientes/sauz.png" alt=""></div>
+          <div class="cliente-logo" aria-hidden="true"><img src="clientes/conab.svg" alt=""></div>
+          <div class="cliente-logo" aria-hidden="true"><img src="clientes/crt.png" alt=""></div>
+          <div class="cliente-logo text-logo" aria-hidden="true"><span>Pissu Produções</span></div>
         </div>
       </div>
     </section>
@@ -1095,7 +1138,7 @@
     <!-- Por que a Nery -->
     <section class="section" id="sec-why">
       <div class="container">
-        <p class="section-eyebrow fade-up">Por que a Nery</p>
+        <p class="section-eyebrow fade-up">Por que o Grupo Nery</p>
         <h2 class="section-title fade-up">Outros entregam software.<br>Nós entregamos sistemas que funcionam.</h2>
         <div class="why-content">
           <div class="why-text fade-up delay-1">
@@ -1110,7 +1153,7 @@
           </div>
           <div class="why-quote fade-up delay-2">
             <blockquote>
-              "O sistema da Nery substituiu três planilhas críticas e dois processos manuais. Em 60 dias, nossa equipe tinha visibilidade em tempo real do que levava semanas para consolidar."
+              "O sistema do Grupo Nery substituiu três planilhas críticas e dois processos manuais. Em 60 dias, nossa equipe tinha visibilidade em tempo real do que levava semanas para consolidar."
             </blockquote>
             <cite>— Diretor de Operações, empresa de infraestrutura</cite>
           </div>
@@ -1162,7 +1205,7 @@
         <div class="about-grid">
           <div class="about-text fade-up delay-1">
             <p>
-              A Nery Tecnologia nasceu com uma convicção: o verdadeiro potencial de uma organização está nos seus dados — mas só se realiza quando esses dados se tornam operação. Não somos uma empresa de consultoria que entrega relatórios. Somos engenheiros de software que constroem sistemas que funcionam no mundo real.
+              O Grupo Nery nasceu com uma convicção: o verdadeiro potencial de uma organização está nos seus dados — mas só se realiza quando esses dados se tornam operação. Não somos uma empresa de consultoria que entrega relatórios. Somos engenheiros de software que constroem sistemas que funcionam no mundo real.
             </p>
             <p>
               Atuamos como a camada estrutural entre os dados brutos e as decisões que movem empresas, governos e operações críticas. Nossa tecnologia amplifica a inteligência humana em vez de substituí-la, respeitando a privacidade dos dados dos nossos parceiros com governança intransigente.
@@ -1217,7 +1260,7 @@
           </div>
         </div>
         <div class="footer-bottom">
-          <span>&copy; 2026 Nery Tecnologia. Todos os direitos reservados.</span>
+          <span>&copy; 2026 Grupo Nery. Todos os direitos reservados.</span>
           <span>Desenvolvido no Brasil</span>
         </div>
       </div>
@@ -1346,7 +1389,7 @@
           </div>
         </div>
         <div class="footer-bottom">
-          <span>&copy; 2026 Nery Tecnologia. Todos os direitos reservados.</span>
+          <span>&copy; 2026 Grupo Nery. Todos os direitos reservados.</span>
         </div>
       </div>
     </footer>
@@ -1461,20 +1504,22 @@
 
   <!-- ═══ SCRIPTS ═══════════════════════════════════ -->
   <script>
-    // Hero: esconde o "preto" com a frase assim que o vídeo começa
-    (function () {
-      const loading = document.getElementById('hero-loading');
-      const video = document.getElementById('hero-video');
-      if (!loading) return;
-      const hide = () => loading.classList.add('hidden');
-      if (video) {
-        video.addEventListener('playing', hide);
-        video.addEventListener('canplay', hide);
-        if (video.readyState >= 3) hide();
-      }
-      // Fallback: nunca deixa o preto travado
-      setTimeout(hide, 6000);
-    })();
+    // Menu mobile (hambúrguer)
+    function toggleMobileMenu() {
+      const menu = document.getElementById('mobile-menu');
+      const btn = document.getElementById('mobile-menu-btn');
+      if (!menu) return;
+      const open = menu.classList.toggle('open');
+      if (btn) btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      document.body.style.overflow = open ? 'hidden' : '';
+    }
+    function closeMobileMenu() {
+      const menu = document.getElementById('mobile-menu');
+      const btn = document.getElementById('mobile-menu-btn');
+      if (menu) menu.classList.remove('open');
+      if (btn) btn.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+    }
 
     // Modais das Plataformas
     function openModal(id) {

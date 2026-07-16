@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" width="800" height="520" role="img" aria-label="Agronegócio e Logística">
+  <defs>
+    <linearGradient id="gAgro" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#20291b"/>
+      <stop offset="0.55" stop-color="#151b11"/>
+      <stop offset="1" stop-color="#0a0d08"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="520" fill="url(#gAgro)"/>
+  <g stroke="#ffffff" stroke-opacity="0.06" stroke-width="1">
+    <path d="M0 130 H800 M0 260 H800 M0 390 H800 M160 0 V520 M320 0 V520 M480 0 V520 M640 0 V520"/>
+  </g>
+  <!-- trigo / wheat -->
+  <g fill="none" stroke="#ffffff" stroke-opacity="0.18" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M400 440 V180"/>
+    <g stroke-opacity="0.15">
+      <path d="M400 210 q -40 -18 -58 -58 q 40 6 58 40"/>
+      <path d="M400 210 q 40 -18 58 -58 q -40 6 -58 40"/>
+      <path d="M400 260 q -40 -18 -58 -58 q 40 6 58 40"/>
+      <path d="M400 260 q 40 -18 58 -58 q -40 6 -58 40"/>
+      <path d="M400 310 q -40 -18 -58 -58 q 40 6 58 40"/>
+      <path d="M400 310 q 40 -18 58 -58 q -40 6 -58 40"/>
+    </g>
+    <path d="M400 180 q -22 -30 0 -70 q 22 40 0 70" stroke-opacity="0.16"/>
+  </g>
+  <!-- horizonte / campo -->
+  <path d="M120 440 q 140 -34 280 -34 t 280 34" fill="none" stroke="#ffffff" stroke-opacity="0.12" stroke-width="5" stroke-linecap="round"/>
+</svg>
