@@ -1,0 +1,2282 @@
+{
+ "pheidole": [
+  {
+   "catalogNumber": "casent0258176",
+   "url": "https://www.antweb.org/specimen/casent0258176",
+   "family": "formicidae",
+   "subfamily": "myrmicinae",
+   "genus": "pheidole",
+   "species": "flavens",
+   "scientific_name": "pheidole flavens",
+   "typeStatus": "holotype",
+   "caste": "worker",
+   "country": "Brazil",
+   "stateProvince": "Distrito Federal",
+   "localityName": "Brasilia",
+   "habitat": "cerrado",
+   "minimumElevationInMeters": "1001",
+   "dateIdentified": "2015-03-10",
+   "decimal_latitude": "-15.6094",
+   "decimal_longitude": "-48.1565",
+   "images": {
+    "1": {
+     "caste": "worker",
+     "shot_types": {
+      "h": {
+       "img": [
+        "https://www.antweb.org/images/casent0258176/casent0258176_h_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0258176/casent0258176_h_1_med.jpg",
+        "https://www.antweb.org/images/casent0258176/casent0258176_h_1_high.jpg"
+       ]
+      },
+      "p": {
+       "img": [
+        "https://www.antweb.org/images/casent0258176/casent0258176_p_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0258176/casent0258176_p_1_med.jpg",
+        "https://www.antweb.org/images/casent0258176/casent0258176_p_1_high.jpg"
+       ]
+      },
+      "d": {
+       "img": [
+        "https://www.antweb.org/images/casent0258176/casent0258176_d_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0258176/casent0258176_d_1_med.jpg",
+        "https://www.antweb.org/images/casent0258176/casent0258176_d_1_high.jpg"
+       ]
+      }
+     },
+     "favorite": true
+    }
+   }
+  },
+  {
+   "catalogNumber": "casent0198702",
+   "url": "https://www.antweb.org/specimen/casent0198702",
+   "family": "formicidae",
+   "subfamily": "myrmicinae",
+   "genus": "pheidole",
+   "species": "radoszkowskii",
+   "scientific_name": "pheidole radoszkowskii",
+   "typeStatus": "",
+   "caste": "worker",
+   "country": "Brazil",
+   "stateProvince": "Distrito Federal",
+   "localityName": "Brasilia",
+   "habitat": "cerrado",
+   "minimumElevationInMeters": "993",
+   "dateIdentified": "2015-03-10",
+   "decimal_latitude": "-15.6503",
+   "decimal_longitude": "-47.6542",
+   "images": {
+    "1": {
+     "caste": "worker",
+     "shot_types": {
+      "h": {
+       "img": [
+        "https://www.antweb.org/images/casent0198702/casent0198702_h_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0198702/casent0198702_h_1_med.jpg",
+        "https://www.antweb.org/images/casent0198702/casent0198702_h_1_high.jpg"
+       ]
+      },
+      "p": {
+       "img": [
+        "https://www.antweb.org/images/casent0198702/casent0198702_p_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0198702/casent0198702_p_1_med.jpg",
+        "https://www.antweb.org/images/casent0198702/casent0198702_p_1_high.jpg"
+       ]
+      },
+      "d": {
+       "img": [
+        "https://www.antweb.org/images/casent0198702/casent0198702_d_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0198702/casent0198702_d_1_med.jpg",
+        "https://www.antweb.org/images/casent0198702/casent0198702_d_1_high.jpg"
+       ]
+      }
+     }
+    }
+   }
+  },
+  {
+   "catalogNumber": "casent0139317",
+   "url": "https://www.antweb.org/specimen/casent0139317",
+   "family": "formicidae",
+   "subfamily": "myrmicinae",
+   "genus": "pheidole",
+   "species": "megacephala",
+   "scientific_name": "pheidole megacephala",
+   "typeStatus": "",
+   "caste": "worker",
+   "country": "Brazil",
+   "stateProvince": "Distrito Federal",
+   "localityName": "Brasilia",
+   "habitat": "cerrado",
+   "minimumElevationInMeters": "922",
+   "dateIdentified": "2015-03-10",
+   "decimal_latitude": "-15.7398",
+   "decimal_longitude": "-48.1581",
+   "images": {
+    "1": {
+     "caste": "worker",
+     "shot_types": {
+      "h": {
+       "img": [
+        "https://www.antweb.org/images/casent0139317/casent0139317_h_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0139317/casent0139317_h_1_med.jpg",
+        "https://www.antweb.org/images/casent0139317/casent0139317_h_1_high.jpg"
+       ]
+      },
+      "p": {
+       "img": [
+        "https://www.antweb.org/images/casent0139317/casent0139317_p_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0139317/casent0139317_p_1_med.jpg",
+        "https://www.antweb.org/images/casent0139317/casent0139317_p_1_high.jpg"
+       ]
+      },
+      "d": {
+       "img": [
+        "https://www.antweb.org/images/casent0139317/casent0139317_d_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0139317/casent0139317_d_1_med.jpg",
+        "https://www.antweb.org/images/casent0139317/casent0139317_d_1_high.jpg"
+       ]
+      }
+     }
+    }
+   }
+  },
+  {
+   "catalogNumber": "casent0677814",
+   "url": "https://www.antweb.org/specimen/casent0677814",
+   "family": "formicidae",
+   "subfamily": "myrmicinae",
+   "genus": "pheidole",
+   "species": "megacephala",
+   "scientific_name": "pheidole megacephala",
+   "typeStatus": "holotype",
+   "caste": "worker",
+   "country": "Brazil",
+   "stateProvince": "Distrito Federal",
+   "localityName": "Brasilia",
+   "habitat": "cerrado",
+   "minimumElevationInMeters": "1008",
+   "dateIdentified": "2015-03-10",
+   "decimal_latitude": "-15.9645",
+   "decimal_longitude": "-47.8607",
+   "images": {
+    "1": {
+     "caste": "worker",
+     "shot_types": {
+      "h": {
+       "img": [
+        "https://www.antweb.org/images/casent0677814/casent0677814_h_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0677814/casent0677814_h_1_med.jpg",
+        "https://www.antweb.org/images/casent0677814/casent0677814_h_1_high.jpg"
+       ]
+      },
+      "p": {
+       "img": [
+        "https://www.antweb.org/images/casent0677814/casent0677814_p_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0677814/casent0677814_p_1_med.jpg",
+        "https://www.antweb.org/images/casent0677814/casent0677814_p_1_high.jpg"
+       ]
+      },
+      "d": {
+       "img": [
+        "https://www.antweb.org/images/casent0677814/casent0677814_d_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0677814/casent0677814_d_1_med.jpg",
+        "https://www.antweb.org/images/casent0677814/casent0677814_d_1_high.jpg"
+       ]
+      }
+     }
+    }
+   }
+  },
+  {
+   "catalogNumber": "casent0761259",
+   "url": "https://www.antweb.org/specimen/casent0761259",
+   "family": "formicidae",
+   "subfamily": "myrmicinae",
+   "genus": "pheidole",
+   "species": "megacephala",
+   "scientific_name": "pheidole megacephala",
+   "typeStatus": "",
+   "caste": "worker",
+   "country": "Brazil",
+   "stateProvince": "Distrito Federal",
+   "localityName": "Brasilia",
+   "habitat": "cerrado",
+   "minimumElevationInMeters": "1060",
+   "dateIdentified": "2015-03-10",
+   "decimal_latitude": "-15.6502",
+   "decimal_longitude": "-48.1629",
+   "images": {
+    "1": {
+     "caste": "worker",
+     "shot_types": {
+      "h": {
+       "img": [
+        "https://www.antweb.org/images/casent0761259/casent0761259_h_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0761259/casent0761259_h_1_med.jpg",
+        "https://www.antweb.org/images/casent0761259/casent0761259_h_1_high.jpg"
+       ]
+      },
+      "p": {
+       "img": [
+        "https://www.antweb.org/images/casent0761259/casent0761259_p_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0761259/casent0761259_p_1_med.jpg",
+        "https://www.antweb.org/images/casent0761259/casent0761259_p_1_high.jpg"
+       ]
+      },
+      "d": {
+       "img": [
+        "https://www.antweb.org/images/casent0761259/casent0761259_d_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0761259/casent0761259_d_1_med.jpg",
+        "https://www.antweb.org/images/casent0761259/casent0761259_d_1_high.jpg"
+       ]
+      }
+     }
+    }
+   }
+  },
+  {
+   "catalogNumber": "casent0515949",
+   "url": "https://www.antweb.org/specimen/casent0515949",
+   "family": "formicidae",
+   "subfamily": "myrmicinae",
+   "genus": "pheidole",
+   "species": "radoszkowskii",
+   "scientific_name": "pheidole radoszkowskii",
+   "typeStatus": "",
+   "caste": "worker",
+   "country": "Brazil",
+   "stateProvince": "Distrito Federal",
+   "localityName": "Brasilia",
+   "habitat": "cerrado",
+   "minimumElevationInMeters": "912",
+   "dateIdentified": "2015-03-10",
+   "decimal_latitude": "-15.4142",
+   "decimal_longitude": "-48.1721",
+   "images": {
+    "1": {
+     "caste": "worker",
+     "shot_types": {
+      "h": {
+       "img": [
+        "https://www.antweb.org/images/casent0515949/casent0515949_h_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0515949/casent0515949_h_1_med.jpg",
+        "https://www.antweb.org/images/casent0515949/casent0515949_h_1_high.jpg"
+       ]
+      },
+      "p": {
+       "img": [
+        "https://www.antweb.org/images/casent0515949/casent0515949_p_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0515949/casent0515949_p_1_med.jpg",
+        "https://www.antweb.org/images/casent0515949/casent0515949_p_1_high.jpg"
+       ]
+      },
+      "d": {
+       "img": [
+        "https://www.antweb.org/images/casent0515949/casent0515949_d_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0515949/casent0515949_d_1_med.jpg",
+        "https://www.antweb.org/images/casent0515949/casent0515949_d_1_high.jpg"
+       ]
+      }
+     }
+    }
+   }
+  }
+ ],
+ "camponotus": [
+  {
+   "catalogNumber": "casent0403677",
+   "url": "https://www.antweb.org/specimen/casent0403677",
+   "family": "formicidae",
+   "subfamily": "formicinae",
+   "genus": "camponotus",
+   "species": "senex",
+   "scientific_name": "camponotus senex",
+   "typeStatus": "holotype",
+   "caste": "worker",
+   "country": "Brazil",
+   "stateProvince": "Distrito Federal",
+   "localityName": "Brasilia",
+   "habitat": "cerrado",
+   "minimumElevationInMeters": "1007",
+   "dateIdentified": "2015-03-10",
+   "decimal_latitude": "-15.9134",
+   "decimal_longitude": "-48.1293",
+   "images": {
+    "1": {
+     "caste": "worker",
+     "shot_types": {
+      "h": {
+       "img": [
+        "https://www.antweb.org/images/casent0403677/casent0403677_h_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0403677/casent0403677_h_1_med.jpg",
+        "https://www.antweb.org/images/casent0403677/casent0403677_h_1_high.jpg"
+       ]
+      },
+      "p": {
+       "img": [
+        "https://www.antweb.org/images/casent0403677/casent0403677_p_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0403677/casent0403677_p_1_med.jpg",
+        "https://www.antweb.org/images/casent0403677/casent0403677_p_1_high.jpg"
+       ]
+      },
+      "d": {
+       "img": [
+        "https://www.antweb.org/images/casent0403677/casent0403677_d_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0403677/casent0403677_d_1_med.jpg",
+        "https://www.antweb.org/images/casent0403677/casent0403677_d_1_high.jpg"
+       ]
+      }
+     },
+     "favorite": true
+    }
+   }
+  },
+  {
+   "catalogNumber": "casent0687472",
+   "url": "https://www.antweb.org/specimen/casent0687472",
+   "family": "formicidae",
+   "subfamily": "formicinae",
+   "genus": "camponotus",
+   "species": "crassus",
+   "scientific_name": "camponotus crassus",
+   "typeStatus": "",
+   "caste": "worker",
+   "country": "Brazil",
+   "stateProvince": "Distrito Federal",
+   "localityName": "Brasilia",
+   "habitat": "cerrado",
+   "minimumElevationInMeters": "1074",
+   "dateIdentified": "2015-03-10",
+   "decimal_latitude": "-15.8916",
+   "decimal_longitude": "-47.851",
+   "images": {
+    "1": {
+     "caste": "worker",
+     "shot_types": {
+      "h": {
+       "img": [
+        "https://www.antweb.org/images/casent0687472/casent0687472_h_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0687472/casent0687472_h_1_med.jpg",
+        "https://www.antweb.org/images/casent0687472/casent0687472_h_1_high.jpg"
+       ]
+      },
+      "p": {
+       "img": [
+        "https://www.antweb.org/images/casent0687472/casent0687472_p_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0687472/casent0687472_p_1_med.jpg",
+        "https://www.antweb.org/images/casent0687472/casent0687472_p_1_high.jpg"
+       ]
+      },
+      "d": {
+       "img": [
+        "https://www.antweb.org/images/casent0687472/casent0687472_d_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0687472/casent0687472_d_1_med.jpg",
+        "https://www.antweb.org/images/casent0687472/casent0687472_d_1_high.jpg"
+       ]
+      }
+     }
+    }
+   }
+  },
+  {
+   "catalogNumber": "casent0296997",
+   "url": "https://www.antweb.org/specimen/casent0296997",
+   "family": "formicidae",
+   "subfamily": "formicinae",
+   "genus": "camponotus",
+   "species": "rufipes",
+   "scientific_name": "camponotus rufipes",
+   "typeStatus": "",
+   "caste": "worker",
+   "country": "Brazil",
+   "stateProvince": "Distrito Federal",
+   "localityName": "Brasilia",
+   "habitat": "cerrado",
+   "minimumElevationInMeters": "995",
+   "dateIdentified": "2015-03-10",
+   "decimal_latitude": "-15.9415",
+   "decimal_longitude": "-47.7727",
+   "images": {
+    "1": {
+     "caste": "worker",
+     "shot_types": {
+      "h": {
+       "img": [
+        "https://www.antweb.org/images/casent0296997/casent0296997_h_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0296997/casent0296997_h_1_med.jpg",
+        "https://www.antweb.org/images/casent0296997/casent0296997_h_1_high.jpg"
+       ]
+      },
+      "p": {
+       "img": [
+        "https://www.antweb.org/images/casent0296997/casent0296997_p_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0296997/casent0296997_p_1_med.jpg",
+        "https://www.antweb.org/images/casent0296997/casent0296997_p_1_high.jpg"
+       ]
+      },
+      "d": {
+       "img": [
+        "https://www.antweb.org/images/casent0296997/casent0296997_d_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0296997/casent0296997_d_1_med.jpg",
+        "https://www.antweb.org/images/casent0296997/casent0296997_d_1_high.jpg"
+       ]
+      }
+     }
+    }
+   }
+  },
+  {
+   "catalogNumber": "casent0162496",
+   "url": "https://www.antweb.org/specimen/casent0162496",
+   "family": "formicidae",
+   "subfamily": "formicinae",
+   "genus": "camponotus",
+   "species": "rufipes",
+   "scientific_name": "camponotus rufipes",
+   "typeStatus": "holotype",
+   "caste": "worker",
+   "country": "Brazil",
+   "stateProvince": "Distrito Federal",
+   "localityName": "Brasilia",
+   "habitat": "cerrado",
+   "minimumElevationInMeters": "1058",
+   "dateIdentified": "2015-03-10",
+   "decimal_latitude": "-15.8764",
+   "decimal_longitude": "-47.7918",
+   "images": {
+    "1": {
+     "caste": "worker",
+     "shot_types": {
+      "h": {
+       "img": [
+        "https://www.antweb.org/images/casent0162496/casent0162496_h_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0162496/casent0162496_h_1_med.jpg",
+        "https://www.antweb.org/images/casent0162496/casent0162496_h_1_high.jpg"
+       ]
+      },
+      "p": {
+       "img": [
+        "https://www.antweb.org/images/casent0162496/casent0162496_p_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0162496/casent0162496_p_1_med.jpg",
+        "https://www.antweb.org/images/casent0162496/casent0162496_p_1_high.jpg"
+       ]
+      },
+      "d": {
+       "img": [
+        "https://www.antweb.org/images/casent0162496/casent0162496_d_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0162496/casent0162496_d_1_med.jpg",
+        "https://www.antweb.org/images/casent0162496/casent0162496_d_1_high.jpg"
+       ]
+      }
+     }
+    }
+   }
+  },
+  {
+   "catalogNumber": "casent0914983",
+   "url": "https://www.antweb.org/specimen/casent0914983",
+   "family": "formicidae",
+   "subfamily": "formicinae",
+   "genus": "camponotus",
+   "species": "crassus",
+   "scientific_name": "camponotus crassus",
+   "typeStatus": "",
+   "caste": "worker",
+   "country": "Brazil",
+   "stateProvince": "Distrito Federal",
+   "localityName": "Brasilia",
+   "habitat": "cerrado",
+   "minimumElevationInMeters": "980",
+   "dateIdentified": "2015-03-10",
+   "decimal_latitude": "-15.7206",
+   "decimal_longitude": "-47.6459",
+   "images": {
+    "1": {
+     "caste": "worker",
+     "shot_types": {
+      "h": {
+       "img": [
+        "https://www.antweb.org/images/casent0914983/casent0914983_h_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0914983/casent0914983_h_1_med.jpg",
+        "https://www.antweb.org/images/casent0914983/casent0914983_h_1_high.jpg"
+       ]
+      },
+      "p": {
+       "img": [
+        "https://www.antweb.org/images/casent0914983/casent0914983_p_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0914983/casent0914983_p_1_med.jpg",
+        "https://www.antweb.org/images/casent0914983/casent0914983_p_1_high.jpg"
+       ]
+      },
+      "d": {
+       "img": [
+        "https://www.antweb.org/images/casent0914983/casent0914983_d_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0914983/casent0914983_d_1_med.jpg",
+        "https://www.antweb.org/images/casent0914983/casent0914983_d_1_high.jpg"
+       ]
+      }
+     }
+    }
+   }
+  },
+  {
+   "catalogNumber": "casent0414328",
+   "url": "https://www.antweb.org/specimen/casent0414328",
+   "family": "formicidae",
+   "subfamily": "formicinae",
+   "genus": "camponotus",
+   "species": "crassus",
+   "scientific_name": "camponotus crassus",
+   "typeStatus": "",
+   "caste": "worker",
+   "country": "Brazil",
+   "stateProvince": "Distrito Federal",
+   "localityName": "Brasilia",
+   "habitat": "cerrado",
+   "minimumElevationInMeters": "963",
+   "dateIdentified": "2015-03-10",
+   "decimal_latitude": "-15.5234",
+   "decimal_longitude": "-47.7806",
+   "images": {
+    "1": {
+     "caste": "worker",
+     "shot_types": {
+      "h": {
+       "img": [
+        "https://www.antweb.org/images/casent0414328/casent0414328_h_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0414328/casent0414328_h_1_med.jpg",
+        "https://www.antweb.org/images/casent0414328/casent0414328_h_1_high.jpg"
+       ]
+      },
+      "p": {
+       "img": [
+        "https://www.antweb.org/images/casent0414328/casent0414328_p_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0414328/casent0414328_p_1_med.jpg",
+        "https://www.antweb.org/images/casent0414328/casent0414328_p_1_high.jpg"
+       ]
+      },
+      "d": {
+       "img": [
+        "https://www.antweb.org/images/casent0414328/casent0414328_d_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0414328/casent0414328_d_1_med.jpg",
+        "https://www.antweb.org/images/casent0414328/casent0414328_d_1_high.jpg"
+       ]
+      }
+     }
+    }
+   }
+  }
+ ],
+ "pachycondyla": [
+  {
+   "catalogNumber": "casent0185831",
+   "url": "https://www.antweb.org/specimen/casent0185831",
+   "family": "formicidae",
+   "subfamily": "ponerinae",
+   "genus": "pachycondyla",
+   "species": "striata",
+   "scientific_name": "pachycondyla striata",
+   "typeStatus": "holotype",
+   "caste": "worker",
+   "country": "Brazil",
+   "stateProvince": "Distrito Federal",
+   "localityName": "Brasilia",
+   "habitat": "cerrado",
+   "minimumElevationInMeters": "1047",
+   "dateIdentified": "2015-03-10",
+   "decimal_latitude": "-15.8199",
+   "decimal_longitude": "-47.9029",
+   "images": {
+    "1": {
+     "caste": "worker",
+     "shot_types": {
+      "h": {
+       "img": [
+        "https://www.antweb.org/images/casent0185831/casent0185831_h_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0185831/casent0185831_h_1_med.jpg",
+        "https://www.antweb.org/images/casent0185831/casent0185831_h_1_high.jpg"
+       ]
+      },
+      "p": {
+       "img": [
+        "https://www.antweb.org/images/casent0185831/casent0185831_p_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0185831/casent0185831_p_1_med.jpg",
+        "https://www.antweb.org/images/casent0185831/casent0185831_p_1_high.jpg"
+       ]
+      },
+      "d": {
+       "img": [
+        "https://www.antweb.org/images/casent0185831/casent0185831_d_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0185831/casent0185831_d_1_med.jpg",
+        "https://www.antweb.org/images/casent0185831/casent0185831_d_1_high.jpg"
+       ]
+      }
+     },
+     "favorite": true
+    }
+   }
+  },
+  {
+   "catalogNumber": "casent0864878",
+   "url": "https://www.antweb.org/specimen/casent0864878",
+   "family": "formicidae",
+   "subfamily": "ponerinae",
+   "genus": "pachycondyla",
+   "species": "harpax",
+   "scientific_name": "pachycondyla harpax",
+   "typeStatus": "",
+   "caste": "worker",
+   "country": "Brazil",
+   "stateProvince": "Distrito Federal",
+   "localityName": "Brasilia",
+   "habitat": "cerrado",
+   "minimumElevationInMeters": "1014",
+   "dateIdentified": "2015-03-10",
+   "decimal_latitude": "-15.8272",
+   "decimal_longitude": "-47.6119",
+   "images": {
+    "1": {
+     "caste": "worker",
+     "shot_types": {
+      "h": {
+       "img": [
+        "https://www.antweb.org/images/casent0864878/casent0864878_h_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0864878/casent0864878_h_1_med.jpg",
+        "https://www.antweb.org/images/casent0864878/casent0864878_h_1_high.jpg"
+       ]
+      },
+      "p": {
+       "img": [
+        "https://www.antweb.org/images/casent0864878/casent0864878_p_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0864878/casent0864878_p_1_med.jpg",
+        "https://www.antweb.org/images/casent0864878/casent0864878_p_1_high.jpg"
+       ]
+      },
+      "d": {
+       "img": [
+        "https://www.antweb.org/images/casent0864878/casent0864878_d_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0864878/casent0864878_d_1_med.jpg",
+        "https://www.antweb.org/images/casent0864878/casent0864878_d_1_high.jpg"
+       ]
+      }
+     }
+    }
+   }
+  },
+  {
+   "catalogNumber": "casent0636800",
+   "url": "https://www.antweb.org/specimen/casent0636800",
+   "family": "formicidae",
+   "subfamily": "ponerinae",
+   "genus": "pachycondyla",
+   "species": "striata",
+   "scientific_name": "pachycondyla striata",
+   "typeStatus": "",
+   "caste": "worker",
+   "country": "Brazil",
+   "stateProvince": "Distrito Federal",
+   "localityName": "Brasilia",
+   "habitat": "cerrado",
+   "minimumElevationInMeters": "1007",
+   "dateIdentified": "2015-03-10",
+   "decimal_latitude": "-15.901",
+   "decimal_longitude": "-47.9948",
+   "images": {
+    "1": {
+     "caste": "worker",
+     "shot_types": {
+      "h": {
+       "img": [
+        "https://www.antweb.org/images/casent0636800/casent0636800_h_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0636800/casent0636800_h_1_med.jpg",
+        "https://www.antweb.org/images/casent0636800/casent0636800_h_1_high.jpg"
+       ]
+      },
+      "p": {
+       "img": [
+        "https://www.antweb.org/images/casent0636800/casent0636800_p_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0636800/casent0636800_p_1_med.jpg",
+        "https://www.antweb.org/images/casent0636800/casent0636800_p_1_high.jpg"
+       ]
+      },
+      "d": {
+       "img": [
+        "https://www.antweb.org/images/casent0636800/casent0636800_d_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0636800/casent0636800_d_1_med.jpg",
+        "https://www.antweb.org/images/casent0636800/casent0636800_d_1_high.jpg"
+       ]
+      }
+     }
+    }
+   }
+  },
+  {
+   "catalogNumber": "casent0542182",
+   "url": "https://www.antweb.org/specimen/casent0542182",
+   "family": "formicidae",
+   "subfamily": "ponerinae",
+   "genus": "pachycondyla",
+   "species": "harpax",
+   "scientific_name": "pachycondyla harpax",
+   "typeStatus": "holotype",
+   "caste": "worker",
+   "country": "Brazil",
+   "stateProvince": "Distrito Federal",
+   "localityName": "Brasilia",
+   "habitat": "cerrado",
+   "minimumElevationInMeters": "910",
+   "dateIdentified": "2015-03-10",
+   "decimal_latitude": "-15.4228",
+   "decimal_longitude": "-48.1534",
+   "images": {
+    "1": {
+     "caste": "worker",
+     "shot_types": {
+      "h": {
+       "img": [
+        "https://www.antweb.org/images/casent0542182/casent0542182_h_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0542182/casent0542182_h_1_med.jpg",
+        "https://www.antweb.org/images/casent0542182/casent0542182_h_1_high.jpg"
+       ]
+      },
+      "p": {
+       "img": [
+        "https://www.antweb.org/images/casent0542182/casent0542182_p_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0542182/casent0542182_p_1_med.jpg",
+        "https://www.antweb.org/images/casent0542182/casent0542182_p_1_high.jpg"
+       ]
+      },
+      "d": {
+       "img": [
+        "https://www.antweb.org/images/casent0542182/casent0542182_d_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0542182/casent0542182_d_1_med.jpg",
+        "https://www.antweb.org/images/casent0542182/casent0542182_d_1_high.jpg"
+       ]
+      }
+     }
+    }
+   }
+  },
+  {
+   "catalogNumber": "casent0456644",
+   "url": "https://www.antweb.org/specimen/casent0456644",
+   "family": "formicidae",
+   "subfamily": "ponerinae",
+   "genus": "pachycondyla",
+   "species": "harpax",
+   "scientific_name": "pachycondyla harpax",
+   "typeStatus": "",
+   "caste": "worker",
+   "country": "Brazil",
+   "stateProvince": "Distrito Federal",
+   "localityName": "Brasilia",
+   "habitat": "cerrado",
+   "minimumElevationInMeters": "1077",
+   "dateIdentified": "2015-03-10",
+   "decimal_latitude": "-15.7899",
+   "decimal_longitude": "-47.902",
+   "images": {
+    "1": {
+     "caste": "worker",
+     "shot_types": {
+      "h": {
+       "img": [
+        "https://www.antweb.org/images/casent0456644/casent0456644_h_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0456644/casent0456644_h_1_med.jpg",
+        "https://www.antweb.org/images/casent0456644/casent0456644_h_1_high.jpg"
+       ]
+      },
+      "p": {
+       "img": [
+        "https://www.antweb.org/images/casent0456644/casent0456644_p_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0456644/casent0456644_p_1_med.jpg",
+        "https://www.antweb.org/images/casent0456644/casent0456644_p_1_high.jpg"
+       ]
+      },
+      "d": {
+       "img": [
+        "https://www.antweb.org/images/casent0456644/casent0456644_d_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0456644/casent0456644_d_1_med.jpg",
+        "https://www.antweb.org/images/casent0456644/casent0456644_d_1_high.jpg"
+       ]
+      }
+     }
+    }
+   }
+  },
+  {
+   "catalogNumber": "casent0172103",
+   "url": "https://www.antweb.org/specimen/casent0172103",
+   "family": "formicidae",
+   "subfamily": "ponerinae",
+   "genus": "pachycondyla",
+   "species": "harpax",
+   "scientific_name": "pachycondyla harpax",
+   "typeStatus": "",
+   "caste": "worker",
+   "country": "Brazil",
+   "stateProvince": "Distrito Federal",
+   "localityName": "Brasilia",
+   "habitat": "cerrado",
+   "minimumElevationInMeters": "923",
+   "dateIdentified": "2015-03-10",
+   "decimal_latitude": "-15.4332",
+   "decimal_longitude": "-47.9155",
+   "images": {
+    "1": {
+     "caste": "worker",
+     "shot_types": {
+      "h": {
+       "img": [
+        "https://www.antweb.org/images/casent0172103/casent0172103_h_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0172103/casent0172103_h_1_med.jpg",
+        "https://www.antweb.org/images/casent0172103/casent0172103_h_1_high.jpg"
+       ]
+      },
+      "p": {
+       "img": [
+        "https://www.antweb.org/images/casent0172103/casent0172103_p_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0172103/casent0172103_p_1_med.jpg",
+        "https://www.antweb.org/images/casent0172103/casent0172103_p_1_high.jpg"
+       ]
+      },
+      "d": {
+       "img": [
+        "https://www.antweb.org/images/casent0172103/casent0172103_d_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0172103/casent0172103_d_1_med.jpg",
+        "https://www.antweb.org/images/casent0172103/casent0172103_d_1_high.jpg"
+       ]
+      }
+     }
+    }
+   }
+  }
+ ],
+ "atta": [
+  {
+   "catalogNumber": "casent0163616",
+   "url": "https://www.antweb.org/specimen/casent0163616",
+   "family": "formicidae",
+   "subfamily": "myrmicinae",
+   "genus": "atta",
+   "species": "sexdens",
+   "scientific_name": "atta sexdens",
+   "typeStatus": "holotype",
+   "caste": "worker",
+   "country": "Brazil",
+   "stateProvince": "Distrito Federal",
+   "localityName": "Brasilia",
+   "habitat": "cerrado",
+   "minimumElevationInMeters": "1087",
+   "dateIdentified": "2015-03-10",
+   "decimal_latitude": "-15.5791",
+   "decimal_longitude": "-47.8117",
+   "images": {
+    "1": {
+     "caste": "worker",
+     "shot_types": {
+      "h": {
+       "img": [
+        "https://www.antweb.org/images/casent0163616/casent0163616_h_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0163616/casent0163616_h_1_med.jpg",
+        "https://www.antweb.org/images/casent0163616/casent0163616_h_1_high.jpg"
+       ]
+      },
+      "p": {
+       "img": [
+        "https://www.antweb.org/images/casent0163616/casent0163616_p_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0163616/casent0163616_p_1_med.jpg",
+        "https://www.antweb.org/images/casent0163616/casent0163616_p_1_high.jpg"
+       ]
+      },
+      "d": {
+       "img": [
+        "https://www.antweb.org/images/casent0163616/casent0163616_d_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0163616/casent0163616_d_1_med.jpg",
+        "https://www.antweb.org/images/casent0163616/casent0163616_d_1_high.jpg"
+       ]
+      }
+     },
+     "favorite": true
+    }
+   }
+  },
+  {
+   "catalogNumber": "casent0398420",
+   "url": "https://www.antweb.org/specimen/casent0398420",
+   "family": "formicidae",
+   "subfamily": "myrmicinae",
+   "genus": "atta",
+   "species": "laevigata",
+   "scientific_name": "atta laevigata",
+   "typeStatus": "",
+   "caste": "worker",
+   "country": "Brazil",
+   "stateProvince": "Distrito Federal",
+   "localityName": "Brasilia",
+   "habitat": "cerrado",
+   "minimumElevationInMeters": "1083",
+   "dateIdentified": "2015-03-10",
+   "decimal_latitude": "-15.7685",
+   "decimal_longitude": "-47.7988",
+   "images": {
+    "1": {
+     "caste": "worker",
+     "shot_types": {
+      "h": {
+       "img": [
+        "https://www.antweb.org/images/casent0398420/casent0398420_h_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0398420/casent0398420_h_1_med.jpg",
+        "https://www.antweb.org/images/casent0398420/casent0398420_h_1_high.jpg"
+       ]
+      },
+      "p": {
+       "img": [
+        "https://www.antweb.org/images/casent0398420/casent0398420_p_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0398420/casent0398420_p_1_med.jpg",
+        "https://www.antweb.org/images/casent0398420/casent0398420_p_1_high.jpg"
+       ]
+      },
+      "d": {
+       "img": [
+        "https://www.antweb.org/images/casent0398420/casent0398420_d_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0398420/casent0398420_d_1_med.jpg",
+        "https://www.antweb.org/images/casent0398420/casent0398420_d_1_high.jpg"
+       ]
+      }
+     }
+    }
+   }
+  },
+  {
+   "catalogNumber": "casent0584122",
+   "url": "https://www.antweb.org/specimen/casent0584122",
+   "family": "formicidae",
+   "subfamily": "myrmicinae",
+   "genus": "atta",
+   "species": "sexdens",
+   "scientific_name": "atta sexdens",
+   "typeStatus": "",
+   "caste": "worker",
+   "country": "Brazil",
+   "stateProvince": "Distrito Federal",
+   "localityName": "Brasilia",
+   "habitat": "cerrado",
+   "minimumElevationInMeters": "990",
+   "dateIdentified": "2015-03-10",
+   "decimal_latitude": "-15.8992",
+   "decimal_longitude": "-48.1297",
+   "images": {
+    "1": {
+     "caste": "worker",
+     "shot_types": {
+      "h": {
+       "img": [
+        "https://www.antweb.org/images/casent0584122/casent0584122_h_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0584122/casent0584122_h_1_med.jpg",
+        "https://www.antweb.org/images/casent0584122/casent0584122_h_1_high.jpg"
+       ]
+      },
+      "p": {
+       "img": [
+        "https://www.antweb.org/images/casent0584122/casent0584122_p_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0584122/casent0584122_p_1_med.jpg",
+        "https://www.antweb.org/images/casent0584122/casent0584122_p_1_high.jpg"
+       ]
+      },
+      "d": {
+       "img": [
+        "https://www.antweb.org/images/casent0584122/casent0584122_d_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0584122/casent0584122_d_1_med.jpg",
+        "https://www.antweb.org/images/casent0584122/casent0584122_d_1_high.jpg"
+       ]
+      }
+     }
+    }
+   }
+  },
+  {
+   "catalogNumber": "casent0328807",
+   "url": "https://www.antweb.org/specimen/casent0328807",
+   "family": "formicidae",
+   "subfamily": "myrmicinae",
+   "genus": "atta",
+   "species": "sexdens",
+   "scientific_name": "atta sexdens",
+   "typeStatus": "holotype",
+   "caste": "worker",
+   "country": "Brazil",
+   "stateProvince": "Distrito Federal",
+   "localityName": "Brasilia",
+   "habitat": "cerrado",
+   "minimumElevationInMeters": "1096",
+   "dateIdentified": "2015-03-10",
+   "decimal_latitude": "-15.8275",
+   "decimal_longitude": "-47.757",
+   "images": {
+    "1": {
+     "caste": "worker",
+     "shot_types": {
+      "h": {
+       "img": [
+        "https://www.antweb.org/images/casent0328807/casent0328807_h_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0328807/casent0328807_h_1_med.jpg",
+        "https://www.antweb.org/images/casent0328807/casent0328807_h_1_high.jpg"
+       ]
+      },
+      "p": {
+       "img": [
+        "https://www.antweb.org/images/casent0328807/casent0328807_p_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0328807/casent0328807_p_1_med.jpg",
+        "https://www.antweb.org/images/casent0328807/casent0328807_p_1_high.jpg"
+       ]
+      },
+      "d": {
+       "img": [
+        "https://www.antweb.org/images/casent0328807/casent0328807_d_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0328807/casent0328807_d_1_med.jpg",
+        "https://www.antweb.org/images/casent0328807/casent0328807_d_1_high.jpg"
+       ]
+      }
+     }
+    }
+   }
+  },
+  {
+   "catalogNumber": "casent0509940",
+   "url": "https://www.antweb.org/specimen/casent0509940",
+   "family": "formicidae",
+   "subfamily": "myrmicinae",
+   "genus": "atta",
+   "species": "laevigata",
+   "scientific_name": "atta laevigata",
+   "typeStatus": "",
+   "caste": "worker",
+   "country": "Brazil",
+   "stateProvince": "Distrito Federal",
+   "localityName": "Brasilia",
+   "habitat": "cerrado",
+   "minimumElevationInMeters": "1027",
+   "dateIdentified": "2015-03-10",
+   "decimal_latitude": "-15.9517",
+   "decimal_longitude": "-47.9305",
+   "images": {
+    "1": {
+     "caste": "worker",
+     "shot_types": {
+      "h": {
+       "img": [
+        "https://www.antweb.org/images/casent0509940/casent0509940_h_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0509940/casent0509940_h_1_med.jpg",
+        "https://www.antweb.org/images/casent0509940/casent0509940_h_1_high.jpg"
+       ]
+      },
+      "p": {
+       "img": [
+        "https://www.antweb.org/images/casent0509940/casent0509940_p_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0509940/casent0509940_p_1_med.jpg",
+        "https://www.antweb.org/images/casent0509940/casent0509940_p_1_high.jpg"
+       ]
+      },
+      "d": {
+       "img": [
+        "https://www.antweb.org/images/casent0509940/casent0509940_d_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0509940/casent0509940_d_1_med.jpg",
+        "https://www.antweb.org/images/casent0509940/casent0509940_d_1_high.jpg"
+       ]
+      }
+     }
+    }
+   }
+  },
+  {
+   "catalogNumber": "casent0243577",
+   "url": "https://www.antweb.org/specimen/casent0243577",
+   "family": "formicidae",
+   "subfamily": "myrmicinae",
+   "genus": "atta",
+   "species": "laevigata",
+   "scientific_name": "atta laevigata",
+   "typeStatus": "",
+   "caste": "worker",
+   "country": "Brazil",
+   "stateProvince": "Distrito Federal",
+   "localityName": "Brasilia",
+   "habitat": "cerrado",
+   "minimumElevationInMeters": "1010",
+   "dateIdentified": "2015-03-10",
+   "decimal_latitude": "-15.4816",
+   "decimal_longitude": "-48.0329",
+   "images": {
+    "1": {
+     "caste": "worker",
+     "shot_types": {
+      "h": {
+       "img": [
+        "https://www.antweb.org/images/casent0243577/casent0243577_h_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0243577/casent0243577_h_1_med.jpg",
+        "https://www.antweb.org/images/casent0243577/casent0243577_h_1_high.jpg"
+       ]
+      },
+      "p": {
+       "img": [
+        "https://www.antweb.org/images/casent0243577/casent0243577_p_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0243577/casent0243577_p_1_med.jpg",
+        "https://www.antweb.org/images/casent0243577/casent0243577_p_1_high.jpg"
+       ]
+      },
+      "d": {
+       "img": [
+        "https://www.antweb.org/images/casent0243577/casent0243577_d_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0243577/casent0243577_d_1_med.jpg",
+        "https://www.antweb.org/images/casent0243577/casent0243577_d_1_high.jpg"
+       ]
+      }
+     }
+    }
+   }
+  }
+ ],
+ "crematogaster": [
+  {
+   "catalogNumber": "casent0476198",
+   "url": "https://www.antweb.org/specimen/casent0476198",
+   "family": "formicidae",
+   "subfamily": "myrmicinae",
+   "genus": "crematogaster",
+   "species": "erecta",
+   "scientific_name": "crematogaster erecta",
+   "typeStatus": "holotype",
+   "caste": "worker",
+   "country": "Brazil",
+   "stateProvince": "Distrito Federal",
+   "localityName": "Brasilia",
+   "habitat": "cerrado",
+   "minimumElevationInMeters": "1074",
+   "dateIdentified": "2015-03-10",
+   "decimal_latitude": "-15.4695",
+   "decimal_longitude": "-47.6254",
+   "images": {
+    "1": {
+     "caste": "worker",
+     "shot_types": {
+      "h": {
+       "img": [
+        "https://www.antweb.org/images/casent0476198/casent0476198_h_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0476198/casent0476198_h_1_med.jpg",
+        "https://www.antweb.org/images/casent0476198/casent0476198_h_1_high.jpg"
+       ]
+      },
+      "p": {
+       "img": [
+        "https://www.antweb.org/images/casent0476198/casent0476198_p_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0476198/casent0476198_p_1_med.jpg",
+        "https://www.antweb.org/images/casent0476198/casent0476198_p_1_high.jpg"
+       ]
+      },
+      "d": {
+       "img": [
+        "https://www.antweb.org/images/casent0476198/casent0476198_d_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0476198/casent0476198_d_1_med.jpg",
+        "https://www.antweb.org/images/casent0476198/casent0476198_d_1_high.jpg"
+       ]
+      }
+     },
+     "favorite": true
+    }
+   }
+  },
+  {
+   "catalogNumber": "casent0187015",
+   "url": "https://www.antweb.org/specimen/casent0187015",
+   "family": "formicidae",
+   "subfamily": "myrmicinae",
+   "genus": "crematogaster",
+   "species": "victima",
+   "scientific_name": "crematogaster victima",
+   "typeStatus": "",
+   "caste": "worker",
+   "country": "Brazil",
+   "stateProvince": "Distrito Federal",
+   "localityName": "Brasilia",
+   "habitat": "cerrado",
+   "minimumElevationInMeters": "945",
+   "dateIdentified": "2015-03-10",
+   "decimal_latitude": "-15.9092",
+   "decimal_longitude": "-47.8049",
+   "images": {
+    "1": {
+     "caste": "worker",
+     "shot_types": {
+      "h": {
+       "img": [
+        "https://www.antweb.org/images/casent0187015/casent0187015_h_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0187015/casent0187015_h_1_med.jpg",
+        "https://www.antweb.org/images/casent0187015/casent0187015_h_1_high.jpg"
+       ]
+      },
+      "p": {
+       "img": [
+        "https://www.antweb.org/images/casent0187015/casent0187015_p_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0187015/casent0187015_p_1_med.jpg",
+        "https://www.antweb.org/images/casent0187015/casent0187015_p_1_high.jpg"
+       ]
+      },
+      "d": {
+       "img": [
+        "https://www.antweb.org/images/casent0187015/casent0187015_d_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0187015/casent0187015_d_1_med.jpg",
+        "https://www.antweb.org/images/casent0187015/casent0187015_d_1_high.jpg"
+       ]
+      }
+     }
+    }
+   }
+  },
+  {
+   "catalogNumber": "casent0608520",
+   "url": "https://www.antweb.org/specimen/casent0608520",
+   "family": "formicidae",
+   "subfamily": "myrmicinae",
+   "genus": "crematogaster",
+   "species": "victima",
+   "scientific_name": "crematogaster victima",
+   "typeStatus": "",
+   "caste": "worker",
+   "country": "Brazil",
+   "stateProvince": "Distrito Federal",
+   "localityName": "Brasilia",
+   "habitat": "cerrado",
+   "minimumElevationInMeters": "1050",
+   "dateIdentified": "2015-03-10",
+   "decimal_latitude": "-15.8906",
+   "decimal_longitude": "-48.0308",
+   "images": {
+    "1": {
+     "caste": "worker",
+     "shot_types": {
+      "h": {
+       "img": [
+        "https://www.antweb.org/images/casent0608520/casent0608520_h_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0608520/casent0608520_h_1_med.jpg",
+        "https://www.antweb.org/images/casent0608520/casent0608520_h_1_high.jpg"
+       ]
+      },
+      "p": {
+       "img": [
+        "https://www.antweb.org/images/casent0608520/casent0608520_p_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0608520/casent0608520_p_1_med.jpg",
+        "https://www.antweb.org/images/casent0608520/casent0608520_p_1_high.jpg"
+       ]
+      },
+      "d": {
+       "img": [
+        "https://www.antweb.org/images/casent0608520/casent0608520_d_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0608520/casent0608520_d_1_med.jpg",
+        "https://www.antweb.org/images/casent0608520/casent0608520_d_1_high.jpg"
+       ]
+      }
+     }
+    }
+   }
+  },
+  {
+   "catalogNumber": "casent0539297",
+   "url": "https://www.antweb.org/specimen/casent0539297",
+   "family": "formicidae",
+   "subfamily": "myrmicinae",
+   "genus": "crematogaster",
+   "species": "victima",
+   "scientific_name": "crematogaster victima",
+   "typeStatus": "holotype",
+   "caste": "worker",
+   "country": "Brazil",
+   "stateProvince": "Distrito Federal",
+   "localityName": "Brasilia",
+   "habitat": "cerrado",
+   "minimumElevationInMeters": "1036",
+   "dateIdentified": "2015-03-10",
+   "decimal_latitude": "-15.7784",
+   "decimal_longitude": "-47.8602",
+   "images": {
+    "1": {
+     "caste": "worker",
+     "shot_types": {
+      "h": {
+       "img": [
+        "https://www.antweb.org/images/casent0539297/casent0539297_h_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0539297/casent0539297_h_1_med.jpg",
+        "https://www.antweb.org/images/casent0539297/casent0539297_h_1_high.jpg"
+       ]
+      },
+      "p": {
+       "img": [
+        "https://www.antweb.org/images/casent0539297/casent0539297_p_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0539297/casent0539297_p_1_med.jpg",
+        "https://www.antweb.org/images/casent0539297/casent0539297_p_1_high.jpg"
+       ]
+      },
+      "d": {
+       "img": [
+        "https://www.antweb.org/images/casent0539297/casent0539297_d_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0539297/casent0539297_d_1_med.jpg",
+        "https://www.antweb.org/images/casent0539297/casent0539297_d_1_high.jpg"
+       ]
+      }
+     }
+    }
+   }
+  },
+  {
+   "catalogNumber": "casent0824035",
+   "url": "https://www.antweb.org/specimen/casent0824035",
+   "family": "formicidae",
+   "subfamily": "myrmicinae",
+   "genus": "crematogaster",
+   "species": "victima",
+   "scientific_name": "crematogaster victima",
+   "typeStatus": "",
+   "caste": "worker",
+   "country": "Brazil",
+   "stateProvince": "Distrito Federal",
+   "localityName": "Brasilia",
+   "habitat": "cerrado",
+   "minimumElevationInMeters": "1031",
+   "dateIdentified": "2015-03-10",
+   "decimal_latitude": "-15.4299",
+   "decimal_longitude": "-47.807",
+   "images": {
+    "1": {
+     "caste": "worker",
+     "shot_types": {
+      "h": {
+       "img": [
+        "https://www.antweb.org/images/casent0824035/casent0824035_h_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0824035/casent0824035_h_1_med.jpg",
+        "https://www.antweb.org/images/casent0824035/casent0824035_h_1_high.jpg"
+       ]
+      },
+      "p": {
+       "img": [
+        "https://www.antweb.org/images/casent0824035/casent0824035_p_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0824035/casent0824035_p_1_med.jpg",
+        "https://www.antweb.org/images/casent0824035/casent0824035_p_1_high.jpg"
+       ]
+      },
+      "d": {
+       "img": [
+        "https://www.antweb.org/images/casent0824035/casent0824035_d_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0824035/casent0824035_d_1_med.jpg",
+        "https://www.antweb.org/images/casent0824035/casent0824035_d_1_high.jpg"
+       ]
+      }
+     }
+    }
+   }
+  },
+  {
+   "catalogNumber": "casent0578825",
+   "url": "https://www.antweb.org/specimen/casent0578825",
+   "family": "formicidae",
+   "subfamily": "myrmicinae",
+   "genus": "crematogaster",
+   "species": "victima",
+   "scientific_name": "crematogaster victima",
+   "typeStatus": "",
+   "caste": "worker",
+   "country": "Brazil",
+   "stateProvince": "Distrito Federal",
+   "localityName": "Brasilia",
+   "habitat": "cerrado",
+   "minimumElevationInMeters": "1099",
+   "dateIdentified": "2015-03-10",
+   "decimal_latitude": "-15.4289",
+   "decimal_longitude": "-47.7917",
+   "images": {
+    "1": {
+     "caste": "worker",
+     "shot_types": {
+      "h": {
+       "img": [
+        "https://www.antweb.org/images/casent0578825/casent0578825_h_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0578825/casent0578825_h_1_med.jpg",
+        "https://www.antweb.org/images/casent0578825/casent0578825_h_1_high.jpg"
+       ]
+      },
+      "p": {
+       "img": [
+        "https://www.antweb.org/images/casent0578825/casent0578825_p_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0578825/casent0578825_p_1_med.jpg",
+        "https://www.antweb.org/images/casent0578825/casent0578825_p_1_high.jpg"
+       ]
+      },
+      "d": {
+       "img": [
+        "https://www.antweb.org/images/casent0578825/casent0578825_d_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0578825/casent0578825_d_1_med.jpg",
+        "https://www.antweb.org/images/casent0578825/casent0578825_d_1_high.jpg"
+       ]
+      }
+     }
+    }
+   }
+  }
+ ],
+ "wasmannia": [
+  {
+   "catalogNumber": "casent0517406",
+   "url": "https://www.antweb.org/specimen/casent0517406",
+   "family": "formicidae",
+   "subfamily": "myrmicinae",
+   "genus": "wasmannia",
+   "species": "auropunctata",
+   "scientific_name": "wasmannia auropunctata",
+   "typeStatus": "holotype",
+   "caste": "worker",
+   "country": "Brazil",
+   "stateProvince": "Distrito Federal",
+   "localityName": "Brasilia",
+   "habitat": "cerrado",
+   "minimumElevationInMeters": "1002",
+   "dateIdentified": "2015-03-10",
+   "decimal_latitude": "-15.7635",
+   "decimal_longitude": "-47.9111",
+   "images": {
+    "1": {
+     "caste": "worker",
+     "shot_types": {
+      "h": {
+       "img": [
+        "https://www.antweb.org/images/casent0517406/casent0517406_h_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0517406/casent0517406_h_1_med.jpg",
+        "https://www.antweb.org/images/casent0517406/casent0517406_h_1_high.jpg"
+       ]
+      },
+      "p": {
+       "img": [
+        "https://www.antweb.org/images/casent0517406/casent0517406_p_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0517406/casent0517406_p_1_med.jpg",
+        "https://www.antweb.org/images/casent0517406/casent0517406_p_1_high.jpg"
+       ]
+      },
+      "d": {
+       "img": [
+        "https://www.antweb.org/images/casent0517406/casent0517406_d_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0517406/casent0517406_d_1_med.jpg",
+        "https://www.antweb.org/images/casent0517406/casent0517406_d_1_high.jpg"
+       ]
+      }
+     },
+     "favorite": true
+    }
+   }
+  },
+  {
+   "catalogNumber": "casent0165271",
+   "url": "https://www.antweb.org/specimen/casent0165271",
+   "family": "formicidae",
+   "subfamily": "myrmicinae",
+   "genus": "wasmannia",
+   "species": "auropunctata",
+   "scientific_name": "wasmannia auropunctata",
+   "typeStatus": "",
+   "caste": "worker",
+   "country": "Brazil",
+   "stateProvince": "Distrito Federal",
+   "localityName": "Brasilia",
+   "habitat": "cerrado",
+   "minimumElevationInMeters": "948",
+   "dateIdentified": "2015-03-10",
+   "decimal_latitude": "-15.9596",
+   "decimal_longitude": "-48.0747",
+   "images": {
+    "1": {
+     "caste": "worker",
+     "shot_types": {
+      "h": {
+       "img": [
+        "https://www.antweb.org/images/casent0165271/casent0165271_h_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0165271/casent0165271_h_1_med.jpg",
+        "https://www.antweb.org/images/casent0165271/casent0165271_h_1_high.jpg"
+       ]
+      },
+      "p": {
+       "img": [
+        "https://www.antweb.org/images/casent0165271/casent0165271_p_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0165271/casent0165271_p_1_med.jpg",
+        "https://www.antweb.org/images/casent0165271/casent0165271_p_1_high.jpg"
+       ]
+      },
+      "d": {
+       "img": [
+        "https://www.antweb.org/images/casent0165271/casent0165271_d_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0165271/casent0165271_d_1_med.jpg",
+        "https://www.antweb.org/images/casent0165271/casent0165271_d_1_high.jpg"
+       ]
+      }
+     }
+    }
+   }
+  },
+  {
+   "catalogNumber": "casent0215268",
+   "url": "https://www.antweb.org/specimen/casent0215268",
+   "family": "formicidae",
+   "subfamily": "myrmicinae",
+   "genus": "wasmannia",
+   "species": "auropunctata",
+   "scientific_name": "wasmannia auropunctata",
+   "typeStatus": "",
+   "caste": "worker",
+   "country": "Brazil",
+   "stateProvince": "Distrito Federal",
+   "localityName": "Brasilia",
+   "habitat": "cerrado",
+   "minimumElevationInMeters": "987",
+   "dateIdentified": "2015-03-10",
+   "decimal_latitude": "-15.6396",
+   "decimal_longitude": "-48.1386",
+   "images": {
+    "1": {
+     "caste": "worker",
+     "shot_types": {
+      "h": {
+       "img": [
+        "https://www.antweb.org/images/casent0215268/casent0215268_h_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0215268/casent0215268_h_1_med.jpg",
+        "https://www.antweb.org/images/casent0215268/casent0215268_h_1_high.jpg"
+       ]
+      },
+      "p": {
+       "img": [
+        "https://www.antweb.org/images/casent0215268/casent0215268_p_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0215268/casent0215268_p_1_med.jpg",
+        "https://www.antweb.org/images/casent0215268/casent0215268_p_1_high.jpg"
+       ]
+      },
+      "d": {
+       "img": [
+        "https://www.antweb.org/images/casent0215268/casent0215268_d_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0215268/casent0215268_d_1_med.jpg",
+        "https://www.antweb.org/images/casent0215268/casent0215268_d_1_high.jpg"
+       ]
+      }
+     }
+    }
+   }
+  },
+  {
+   "catalogNumber": "casent0662685",
+   "url": "https://www.antweb.org/specimen/casent0662685",
+   "family": "formicidae",
+   "subfamily": "myrmicinae",
+   "genus": "wasmannia",
+   "species": "auropunctata",
+   "scientific_name": "wasmannia auropunctata",
+   "typeStatus": "holotype",
+   "caste": "worker",
+   "country": "Brazil",
+   "stateProvince": "Distrito Federal",
+   "localityName": "Brasilia",
+   "habitat": "cerrado",
+   "minimumElevationInMeters": "925",
+   "dateIdentified": "2015-03-10",
+   "decimal_latitude": "-15.4306",
+   "decimal_longitude": "-47.8318",
+   "images": {
+    "1": {
+     "caste": "worker",
+     "shot_types": {
+      "h": {
+       "img": [
+        "https://www.antweb.org/images/casent0662685/casent0662685_h_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0662685/casent0662685_h_1_med.jpg",
+        "https://www.antweb.org/images/casent0662685/casent0662685_h_1_high.jpg"
+       ]
+      },
+      "p": {
+       "img": [
+        "https://www.antweb.org/images/casent0662685/casent0662685_p_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0662685/casent0662685_p_1_med.jpg",
+        "https://www.antweb.org/images/casent0662685/casent0662685_p_1_high.jpg"
+       ]
+      },
+      "d": {
+       "img": [
+        "https://www.antweb.org/images/casent0662685/casent0662685_d_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0662685/casent0662685_d_1_med.jpg",
+        "https://www.antweb.org/images/casent0662685/casent0662685_d_1_high.jpg"
+       ]
+      }
+     }
+    }
+   }
+  },
+  {
+   "catalogNumber": "casent0318054",
+   "url": "https://www.antweb.org/specimen/casent0318054",
+   "family": "formicidae",
+   "subfamily": "myrmicinae",
+   "genus": "wasmannia",
+   "species": "auropunctata",
+   "scientific_name": "wasmannia auropunctata",
+   "typeStatus": "",
+   "caste": "worker",
+   "country": "Brazil",
+   "stateProvince": "Distrito Federal",
+   "localityName": "Brasilia",
+   "habitat": "cerrado",
+   "minimumElevationInMeters": "1057",
+   "dateIdentified": "2015-03-10",
+   "decimal_latitude": "-15.7743",
+   "decimal_longitude": "-47.8194",
+   "images": {
+    "1": {
+     "caste": "worker",
+     "shot_types": {
+      "h": {
+       "img": [
+        "https://www.antweb.org/images/casent0318054/casent0318054_h_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0318054/casent0318054_h_1_med.jpg",
+        "https://www.antweb.org/images/casent0318054/casent0318054_h_1_high.jpg"
+       ]
+      },
+      "p": {
+       "img": [
+        "https://www.antweb.org/images/casent0318054/casent0318054_p_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0318054/casent0318054_p_1_med.jpg",
+        "https://www.antweb.org/images/casent0318054/casent0318054_p_1_high.jpg"
+       ]
+      },
+      "d": {
+       "img": [
+        "https://www.antweb.org/images/casent0318054/casent0318054_d_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0318054/casent0318054_d_1_med.jpg",
+        "https://www.antweb.org/images/casent0318054/casent0318054_d_1_high.jpg"
+       ]
+      }
+     }
+    }
+   }
+  },
+  {
+   "catalogNumber": "casent0731535",
+   "url": "https://www.antweb.org/specimen/casent0731535",
+   "family": "formicidae",
+   "subfamily": "myrmicinae",
+   "genus": "wasmannia",
+   "species": "auropunctata",
+   "scientific_name": "wasmannia auropunctata",
+   "typeStatus": "",
+   "caste": "worker",
+   "country": "Brazil",
+   "stateProvince": "Distrito Federal",
+   "localityName": "Brasilia",
+   "habitat": "cerrado",
+   "minimumElevationInMeters": "993",
+   "dateIdentified": "2015-03-10",
+   "decimal_latitude": "-15.7155",
+   "decimal_longitude": "-48.1308",
+   "images": {
+    "1": {
+     "caste": "worker",
+     "shot_types": {
+      "h": {
+       "img": [
+        "https://www.antweb.org/images/casent0731535/casent0731535_h_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0731535/casent0731535_h_1_med.jpg",
+        "https://www.antweb.org/images/casent0731535/casent0731535_h_1_high.jpg"
+       ]
+      },
+      "p": {
+       "img": [
+        "https://www.antweb.org/images/casent0731535/casent0731535_p_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0731535/casent0731535_p_1_med.jpg",
+        "https://www.antweb.org/images/casent0731535/casent0731535_p_1_high.jpg"
+       ]
+      },
+      "d": {
+       "img": [
+        "https://www.antweb.org/images/casent0731535/casent0731535_d_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0731535/casent0731535_d_1_med.jpg",
+        "https://www.antweb.org/images/casent0731535/casent0731535_d_1_high.jpg"
+       ]
+      }
+     }
+    }
+   }
+  }
+ ],
+ "odontomachus": [
+  {
+   "catalogNumber": "casent0588625",
+   "url": "https://www.antweb.org/specimen/casent0588625",
+   "family": "formicidae",
+   "subfamily": "ponerinae",
+   "genus": "odontomachus",
+   "species": "chelifer",
+   "scientific_name": "odontomachus chelifer",
+   "typeStatus": "holotype",
+   "caste": "worker",
+   "country": "Brazil",
+   "stateProvince": "Distrito Federal",
+   "localityName": "Brasilia",
+   "habitat": "cerrado",
+   "minimumElevationInMeters": "1022",
+   "dateIdentified": "2015-03-10",
+   "decimal_latitude": "-15.7097",
+   "decimal_longitude": "-48.1485",
+   "images": {
+    "1": {
+     "caste": "worker",
+     "shot_types": {
+      "h": {
+       "img": [
+        "https://www.antweb.org/images/casent0588625/casent0588625_h_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0588625/casent0588625_h_1_med.jpg",
+        "https://www.antweb.org/images/casent0588625/casent0588625_h_1_high.jpg"
+       ]
+      },
+      "p": {
+       "img": [
+        "https://www.antweb.org/images/casent0588625/casent0588625_p_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0588625/casent0588625_p_1_med.jpg",
+        "https://www.antweb.org/images/casent0588625/casent0588625_p_1_high.jpg"
+       ]
+      },
+      "d": {
+       "img": [
+        "https://www.antweb.org/images/casent0588625/casent0588625_d_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0588625/casent0588625_d_1_med.jpg",
+        "https://www.antweb.org/images/casent0588625/casent0588625_d_1_high.jpg"
+       ]
+      }
+     },
+     "favorite": true
+    }
+   }
+  },
+  {
+   "catalogNumber": "casent0886090",
+   "url": "https://www.antweb.org/specimen/casent0886090",
+   "family": "formicidae",
+   "subfamily": "ponerinae",
+   "genus": "odontomachus",
+   "species": "bauri",
+   "scientific_name": "odontomachus bauri",
+   "typeStatus": "",
+   "caste": "worker",
+   "country": "Brazil",
+   "stateProvince": "Distrito Federal",
+   "localityName": "Brasilia",
+   "habitat": "cerrado",
+   "minimumElevationInMeters": "987",
+   "dateIdentified": "2015-03-10",
+   "decimal_latitude": "-15.5558",
+   "decimal_longitude": "-47.9128",
+   "images": {
+    "1": {
+     "caste": "worker",
+     "shot_types": {
+      "h": {
+       "img": [
+        "https://www.antweb.org/images/casent0886090/casent0886090_h_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0886090/casent0886090_h_1_med.jpg",
+        "https://www.antweb.org/images/casent0886090/casent0886090_h_1_high.jpg"
+       ]
+      },
+      "p": {
+       "img": [
+        "https://www.antweb.org/images/casent0886090/casent0886090_p_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0886090/casent0886090_p_1_med.jpg",
+        "https://www.antweb.org/images/casent0886090/casent0886090_p_1_high.jpg"
+       ]
+      },
+      "d": {
+       "img": [
+        "https://www.antweb.org/images/casent0886090/casent0886090_d_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0886090/casent0886090_d_1_med.jpg",
+        "https://www.antweb.org/images/casent0886090/casent0886090_d_1_high.jpg"
+       ]
+      }
+     }
+    }
+   }
+  },
+  {
+   "catalogNumber": "casent0641415",
+   "url": "https://www.antweb.org/specimen/casent0641415",
+   "family": "formicidae",
+   "subfamily": "ponerinae",
+   "genus": "odontomachus",
+   "species": "bauri",
+   "scientific_name": "odontomachus bauri",
+   "typeStatus": "",
+   "caste": "worker",
+   "country": "Brazil",
+   "stateProvince": "Distrito Federal",
+   "localityName": "Brasilia",
+   "habitat": "cerrado",
+   "minimumElevationInMeters": "905",
+   "dateIdentified": "2015-03-10",
+   "decimal_latitude": "-15.8769",
+   "decimal_longitude": "-47.6288",
+   "images": {
+    "1": {
+     "caste": "worker",
+     "shot_types": {
+      "h": {
+       "img": [
+        "https://www.antweb.org/images/casent0641415/casent0641415_h_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0641415/casent0641415_h_1_med.jpg",
+        "https://www.antweb.org/images/casent0641415/casent0641415_h_1_high.jpg"
+       ]
+      },
+      "p": {
+       "img": [
+        "https://www.antweb.org/images/casent0641415/casent0641415_p_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0641415/casent0641415_p_1_med.jpg",
+        "https://www.antweb.org/images/casent0641415/casent0641415_p_1_high.jpg"
+       ]
+      },
+      "d": {
+       "img": [
+        "https://www.antweb.org/images/casent0641415/casent0641415_d_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0641415/casent0641415_d_1_med.jpg",
+        "https://www.antweb.org/images/casent0641415/casent0641415_d_1_high.jpg"
+       ]
+      }
+     }
+    }
+   }
+  },
+  {
+   "catalogNumber": "casent0253723",
+   "url": "https://www.antweb.org/specimen/casent0253723",
+   "family": "formicidae",
+   "subfamily": "ponerinae",
+   "genus": "odontomachus",
+   "species": "chelifer",
+   "scientific_name": "odontomachus chelifer",
+   "typeStatus": "holotype",
+   "caste": "worker",
+   "country": "Brazil",
+   "stateProvince": "Distrito Federal",
+   "localityName": "Brasilia",
+   "habitat": "cerrado",
+   "minimumElevationInMeters": "1076",
+   "dateIdentified": "2015-03-10",
+   "decimal_latitude": "-15.6741",
+   "decimal_longitude": "-48.1838",
+   "images": {
+    "1": {
+     "caste": "worker",
+     "shot_types": {
+      "h": {
+       "img": [
+        "https://www.antweb.org/images/casent0253723/casent0253723_h_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0253723/casent0253723_h_1_med.jpg",
+        "https://www.antweb.org/images/casent0253723/casent0253723_h_1_high.jpg"
+       ]
+      },
+      "p": {
+       "img": [
+        "https://www.antweb.org/images/casent0253723/casent0253723_p_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0253723/casent0253723_p_1_med.jpg",
+        "https://www.antweb.org/images/casent0253723/casent0253723_p_1_high.jpg"
+       ]
+      },
+      "d": {
+       "img": [
+        "https://www.antweb.org/images/casent0253723/casent0253723_d_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0253723/casent0253723_d_1_med.jpg",
+        "https://www.antweb.org/images/casent0253723/casent0253723_d_1_high.jpg"
+       ]
+      }
+     }
+    }
+   }
+  },
+  {
+   "catalogNumber": "casent0774147",
+   "url": "https://www.antweb.org/specimen/casent0774147",
+   "family": "formicidae",
+   "subfamily": "ponerinae",
+   "genus": "odontomachus",
+   "species": "chelifer",
+   "scientific_name": "odontomachus chelifer",
+   "typeStatus": "",
+   "caste": "worker",
+   "country": "Brazil",
+   "stateProvince": "Distrito Federal",
+   "localityName": "Brasilia",
+   "habitat": "cerrado",
+   "minimumElevationInMeters": "923",
+   "dateIdentified": "2015-03-10",
+   "decimal_latitude": "-15.5823",
+   "decimal_longitude": "-48.0433",
+   "images": {
+    "1": {
+     "caste": "worker",
+     "shot_types": {
+      "h": {
+       "img": [
+        "https://www.antweb.org/images/casent0774147/casent0774147_h_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0774147/casent0774147_h_1_med.jpg",
+        "https://www.antweb.org/images/casent0774147/casent0774147_h_1_high.jpg"
+       ]
+      },
+      "p": {
+       "img": [
+        "https://www.antweb.org/images/casent0774147/casent0774147_p_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0774147/casent0774147_p_1_med.jpg",
+        "https://www.antweb.org/images/casent0774147/casent0774147_p_1_high.jpg"
+       ]
+      },
+      "d": {
+       "img": [
+        "https://www.antweb.org/images/casent0774147/casent0774147_d_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0774147/casent0774147_d_1_med.jpg",
+        "https://www.antweb.org/images/casent0774147/casent0774147_d_1_high.jpg"
+       ]
+      }
+     }
+    }
+   }
+  },
+  {
+   "catalogNumber": "casent0275156",
+   "url": "https://www.antweb.org/specimen/casent0275156",
+   "family": "formicidae",
+   "subfamily": "ponerinae",
+   "genus": "odontomachus",
+   "species": "chelifer",
+   "scientific_name": "odontomachus chelifer",
+   "typeStatus": "",
+   "caste": "worker",
+   "country": "Brazil",
+   "stateProvince": "Distrito Federal",
+   "localityName": "Brasilia",
+   "habitat": "cerrado",
+   "minimumElevationInMeters": "991",
+   "dateIdentified": "2015-03-10",
+   "decimal_latitude": "-15.5368",
+   "decimal_longitude": "-47.8804",
+   "images": {
+    "1": {
+     "caste": "worker",
+     "shot_types": {
+      "h": {
+       "img": [
+        "https://www.antweb.org/images/casent0275156/casent0275156_h_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0275156/casent0275156_h_1_med.jpg",
+        "https://www.antweb.org/images/casent0275156/casent0275156_h_1_high.jpg"
+       ]
+      },
+      "p": {
+       "img": [
+        "https://www.antweb.org/images/casent0275156/casent0275156_p_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0275156/casent0275156_p_1_med.jpg",
+        "https://www.antweb.org/images/casent0275156/casent0275156_p_1_high.jpg"
+       ]
+      },
+      "d": {
+       "img": [
+        "https://www.antweb.org/images/casent0275156/casent0275156_d_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0275156/casent0275156_d_1_med.jpg",
+        "https://www.antweb.org/images/casent0275156/casent0275156_d_1_high.jpg"
+       ]
+      }
+     }
+    }
+   }
+  }
+ ],
+ "linepithema": [
+  {
+   "catalogNumber": "casent0767357",
+   "url": "https://www.antweb.org/specimen/casent0767357",
+   "family": "formicidae",
+   "subfamily": "dolichoderinae",
+   "genus": "linepithema",
+   "species": "micans",
+   "scientific_name": "linepithema micans",
+   "typeStatus": "holotype",
+   "caste": "worker",
+   "country": "Brazil",
+   "stateProvince": "Distrito Federal",
+   "localityName": "Brasilia",
+   "habitat": "cerrado",
+   "minimumElevationInMeters": "957",
+   "dateIdentified": "2015-03-10",
+   "decimal_latitude": "-15.6321",
+   "decimal_longitude": "-47.727",
+   "images": {
+    "1": {
+     "caste": "worker",
+     "shot_types": {
+      "h": {
+       "img": [
+        "https://www.antweb.org/images/casent0767357/casent0767357_h_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0767357/casent0767357_h_1_med.jpg",
+        "https://www.antweb.org/images/casent0767357/casent0767357_h_1_high.jpg"
+       ]
+      },
+      "p": {
+       "img": [
+        "https://www.antweb.org/images/casent0767357/casent0767357_p_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0767357/casent0767357_p_1_med.jpg",
+        "https://www.antweb.org/images/casent0767357/casent0767357_p_1_high.jpg"
+       ]
+      },
+      "d": {
+       "img": [
+        "https://www.antweb.org/images/casent0767357/casent0767357_d_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0767357/casent0767357_d_1_med.jpg",
+        "https://www.antweb.org/images/casent0767357/casent0767357_d_1_high.jpg"
+       ]
+      }
+     },
+     "favorite": true
+    }
+   }
+  },
+  {
+   "catalogNumber": "casent0945234",
+   "url": "https://www.antweb.org/specimen/casent0945234",
+   "family": "formicidae",
+   "subfamily": "dolichoderinae",
+   "genus": "linepithema",
+   "species": "humile",
+   "scientific_name": "linepithema humile",
+   "typeStatus": "",
+   "caste": "worker",
+   "country": "Brazil",
+   "stateProvince": "Distrito Federal",
+   "localityName": "Brasilia",
+   "habitat": "cerrado",
+   "minimumElevationInMeters": "961",
+   "dateIdentified": "2015-03-10",
+   "decimal_latitude": "-15.509",
+   "decimal_longitude": "-47.7561",
+   "images": {
+    "1": {
+     "caste": "worker",
+     "shot_types": {
+      "h": {
+       "img": [
+        "https://www.antweb.org/images/casent0945234/casent0945234_h_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0945234/casent0945234_h_1_med.jpg",
+        "https://www.antweb.org/images/casent0945234/casent0945234_h_1_high.jpg"
+       ]
+      },
+      "p": {
+       "img": [
+        "https://www.antweb.org/images/casent0945234/casent0945234_p_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0945234/casent0945234_p_1_med.jpg",
+        "https://www.antweb.org/images/casent0945234/casent0945234_p_1_high.jpg"
+       ]
+      },
+      "d": {
+       "img": [
+        "https://www.antweb.org/images/casent0945234/casent0945234_d_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0945234/casent0945234_d_1_med.jpg",
+        "https://www.antweb.org/images/casent0945234/casent0945234_d_1_high.jpg"
+       ]
+      }
+     }
+    }
+   }
+  },
+  {
+   "catalogNumber": "casent0309629",
+   "url": "https://www.antweb.org/specimen/casent0309629",
+   "family": "formicidae",
+   "subfamily": "dolichoderinae",
+   "genus": "linepithema",
+   "species": "humile",
+   "scientific_name": "linepithema humile",
+   "typeStatus": "",
+   "caste": "worker",
+   "country": "Brazil",
+   "stateProvince": "Distrito Federal",
+   "localityName": "Brasilia",
+   "habitat": "cerrado",
+   "minimumElevationInMeters": "1032",
+   "dateIdentified": "2015-03-10",
+   "decimal_latitude": "-15.7043",
+   "decimal_longitude": "-47.7614",
+   "images": {
+    "1": {
+     "caste": "worker",
+     "shot_types": {
+      "h": {
+       "img": [
+        "https://www.antweb.org/images/casent0309629/casent0309629_h_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0309629/casent0309629_h_1_med.jpg",
+        "https://www.antweb.org/images/casent0309629/casent0309629_h_1_high.jpg"
+       ]
+      },
+      "p": {
+       "img": [
+        "https://www.antweb.org/images/casent0309629/casent0309629_p_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0309629/casent0309629_p_1_med.jpg",
+        "https://www.antweb.org/images/casent0309629/casent0309629_p_1_high.jpg"
+       ]
+      },
+      "d": {
+       "img": [
+        "https://www.antweb.org/images/casent0309629/casent0309629_d_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0309629/casent0309629_d_1_med.jpg",
+        "https://www.antweb.org/images/casent0309629/casent0309629_d_1_high.jpg"
+       ]
+      }
+     }
+    }
+   }
+  },
+  {
+   "catalogNumber": "casent0928494",
+   "url": "https://www.antweb.org/specimen/casent0928494",
+   "family": "formicidae",
+   "subfamily": "dolichoderinae",
+   "genus": "linepithema",
+   "species": "humile",
+   "scientific_name": "linepithema humile",
+   "typeStatus": "holotype",
+   "caste": "worker",
+   "country": "Brazil",
+   "stateProvince": "Distrito Federal",
+   "localityName": "Brasilia",
+   "habitat": "cerrado",
+   "minimumElevationInMeters": "971",
+   "dateIdentified": "2015-03-10",
+   "decimal_latitude": "-15.7167",
+   "decimal_longitude": "-48.0838",
+   "images": {
+    "1": {
+     "caste": "worker",
+     "shot_types": {
+      "h": {
+       "img": [
+        "https://www.antweb.org/images/casent0928494/casent0928494_h_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0928494/casent0928494_h_1_med.jpg",
+        "https://www.antweb.org/images/casent0928494/casent0928494_h_1_high.jpg"
+       ]
+      },
+      "p": {
+       "img": [
+        "https://www.antweb.org/images/casent0928494/casent0928494_p_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0928494/casent0928494_p_1_med.jpg",
+        "https://www.antweb.org/images/casent0928494/casent0928494_p_1_high.jpg"
+       ]
+      },
+      "d": {
+       "img": [
+        "https://www.antweb.org/images/casent0928494/casent0928494_d_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0928494/casent0928494_d_1_med.jpg",
+        "https://www.antweb.org/images/casent0928494/casent0928494_d_1_high.jpg"
+       ]
+      }
+     }
+    }
+   }
+  },
+  {
+   "catalogNumber": "casent0568952",
+   "url": "https://www.antweb.org/specimen/casent0568952",
+   "family": "formicidae",
+   "subfamily": "dolichoderinae",
+   "genus": "linepithema",
+   "species": "micans",
+   "scientific_name": "linepithema micans",
+   "typeStatus": "",
+   "caste": "worker",
+   "country": "Brazil",
+   "stateProvince": "Distrito Federal",
+   "localityName": "Brasilia",
+   "habitat": "cerrado",
+   "minimumElevationInMeters": "1085",
+   "dateIdentified": "2015-03-10",
+   "decimal_latitude": "-15.4072",
+   "decimal_longitude": "-47.627",
+   "images": {
+    "1": {
+     "caste": "worker",
+     "shot_types": {
+      "h": {
+       "img": [
+        "https://www.antweb.org/images/casent0568952/casent0568952_h_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0568952/casent0568952_h_1_med.jpg",
+        "https://www.antweb.org/images/casent0568952/casent0568952_h_1_high.jpg"
+       ]
+      },
+      "p": {
+       "img": [
+        "https://www.antweb.org/images/casent0568952/casent0568952_p_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0568952/casent0568952_p_1_med.jpg",
+        "https://www.antweb.org/images/casent0568952/casent0568952_p_1_high.jpg"
+       ]
+      },
+      "d": {
+       "img": [
+        "https://www.antweb.org/images/casent0568952/casent0568952_d_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0568952/casent0568952_d_1_med.jpg",
+        "https://www.antweb.org/images/casent0568952/casent0568952_d_1_high.jpg"
+       ]
+      }
+     }
+    }
+   }
+  },
+  {
+   "catalogNumber": "casent0184450",
+   "url": "https://www.antweb.org/specimen/casent0184450",
+   "family": "formicidae",
+   "subfamily": "dolichoderinae",
+   "genus": "linepithema",
+   "species": "micans",
+   "scientific_name": "linepithema micans",
+   "typeStatus": "",
+   "caste": "worker",
+   "country": "Brazil",
+   "stateProvince": "Distrito Federal",
+   "localityName": "Brasilia",
+   "habitat": "cerrado",
+   "minimumElevationInMeters": "956",
+   "dateIdentified": "2015-03-10",
+   "decimal_latitude": "-15.9387",
+   "decimal_longitude": "-47.918",
+   "images": {
+    "1": {
+     "caste": "worker",
+     "shot_types": {
+      "h": {
+       "img": [
+        "https://www.antweb.org/images/casent0184450/casent0184450_h_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0184450/casent0184450_h_1_med.jpg",
+        "https://www.antweb.org/images/casent0184450/casent0184450_h_1_high.jpg"
+       ]
+      },
+      "p": {
+       "img": [
+        "https://www.antweb.org/images/casent0184450/casent0184450_p_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0184450/casent0184450_p_1_med.jpg",
+        "https://www.antweb.org/images/casent0184450/casent0184450_p_1_high.jpg"
+       ]
+      },
+      "d": {
+       "img": [
+        "https://www.antweb.org/images/casent0184450/casent0184450_d_1_thumbview.jpg",
+        "https://www.antweb.org/images/casent0184450/casent0184450_d_1_med.jpg",
+        "https://www.antweb.org/images/casent0184450/casent0184450_d_1_high.jpg"
+       ]
+      }
+     }
+    }
+   }
+  }
+ ]
+}
