@@ -35,7 +35,15 @@ provou funcionar.
 - CTR ≥ 4–6% | Retenção 30s ≥ 70% | % assistido ≥ 40% | Inscritos/1.000 views ≥ 3–5
 - Formato validado = 1 vídeo com CTR ≥5% + retenção ≥70%. Aí faça 3 variações dele.
 
+## Skills e agente (ficam em YOUTUBE/, com symlink em .claude/ pra funcionar)
+- `/roteiro-obra <tema>` → gera roteiro JSON (skills/roteiro-obra/)
+- `/temas-obra` → 10 temas rankeados (skills/temas-obra/)
+- `/analise-semana <csv>` → relatório de otimização (skills/analise-semana/)
+- agente `analista-youtube` → análise de métricas (agents/)
+Se os symlinks sumirem (novo clone), recrie: `ln -sfn ../../YOUTUBE/skills/<nome> .claude/skills/<nome>`
+
 ## Mapa dos arquivos desta pasta
+- `ROTINAS.md` — passo a passo enxuto (COMECE POR AQUI).
 - `analise-automacao-youtube.md` — análise crítica das ideias/ferramentas/hype.
 - `meta-5000-reais-por-mes.md` — a conta de views e viabilidade.
 - `playbook-operacional-canais.md` — visão geral do pipeline e automação.
