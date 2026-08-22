@@ -1,0 +1,20 @@
+{
+  "titulo_sugerido": "O Que Cada Rachadura na Parede REALMENTE Significa (não ignore a nº 3)",
+  "gancho_30s": "Nem toda rachadura é igual. Algumas são inofensivas e você pode ignorar. Outras são o primeiro aviso de que a estrutura da sua casa está em risco — e a maioria das pessoas descobre tarde demais.",
+  "cenas": {
+    "1": {"narracao": "Toda casa trabalha. O terreno se acomoda, a temperatura dilata e contrai os materiais, e é normal aparecerem marcas nas paredes com o tempo. O problema é que existem quatro tipos principais de rachadura, e cada um conta uma história diferente sobre o que está acontecendo por trás do reboco.", "texto_na_tela": "4 tipos de rachadura", "broll": "parede com fissura em close; casa em construcao", "duracao_s": 30},
+    "2": {"narracao": "Tipo 1: a fissura capilar. Aquela linha fina, com menos de meio milimetro, na pintura ou no reboco. Aparece pela retracao natural da tinta ou da massa. Na maioria dos casos e puramente estetica. Resolve com massa corrida e uma nova demao de tinta.", "texto_na_tela": "1. Fissura capilar - estetica", "broll": "close de linha fina na pintura; mao passando massa", "duracao_s": 45},
+    "3": {"narracao": "Tipo 2: a trinca. A abertura passa de um milimetro e voce encaixa a unha. Costuma indicar movimentacao da alvenaria. Ainda nao e estrutural, mas e um aviso: acompanhe se ela cresce.", "texto_na_tela": "2. Trinca - acompanhe", "broll": "close de trinca com regua; parede de alvenaria", "duracao_s": 45},
+    "4": {"narracao": "Tipo 3, a que voce nao pode ignorar: a rachadura estrutural. Larga, funda, quase sempre na diagonal saindo de cantos de portas e janelas, ou em escada nas juntas dos tijolos. Indica fundacao se movimentando. Aqui voce chama um engenheiro.", "texto_na_tela": "3. Estrutural - CHAME UM ENGENHEIRO", "broll": "rachadura diagonal em canto de janela; fissura em escada", "duracao_s": 60},
+    "5": {"narracao": "Tipo 4: a rachadura horizontal no meio da parede. Mais rara e mais perigosa. Indica pressao lateral, como um muro de arrimo empurrado pela terra. Trate como emergencia.", "texto_na_tela": "4. Horizontal - urgente", "broll": "muro de arrimo; parede com fissura horizontal", "duracao_s": 40},
+    "6": {"narracao": "Resumindo o teste rapido: linha fina na tinta, relaxa. Trinca que encaixa a unha, acompanhe. Diagonal ou escada, chame engenheiro. Horizontal larga, urgencia. O truque dos profissionais: cole um pedaco de gesso sobre a rachadura. Se quebrar nas semanas seguintes, ela esta viva e crescendo.", "texto_na_tela": "O teste do gesso", "broll": "selo de gesso sobre fissura; calendario passando", "duracao_s": 40}
+  },
+  "cta": "Se esse video te ajudou, se inscreve - toda semana tem construcao explicada de um jeito simples.",
+  "shorts_sugeridos": [
+    {"trecho": "cena 4", "gancho_vertical": "A rachadura que voce NUNCA deve ignorar", "inicio": "00:02:45", "fim": "00:03:35"},
+    {"trecho": "cena 6", "gancho_vertical": "O teste de 1 minuto pra saber se a rachadura e perigosa", "inicio": "00:04:20", "fim": "00:05:00"},
+    {"trecho": "cena 2-3", "gancho_vertical": "Fissura x trinca: qual a diferenca?", "inicio": "00:00:30", "fim": "00:01:15"}
+  ],
+  "thumbnails": ["Parede com grande rachadura em escada + seta vermelha + PERIGO?", "Split: rachadura fina (verde OK) vs diagonal (vermelho ALERTA)", "Close de rachadura com lupa + O que significa?"],
+  "hashtags": ["construcao", "rachadura", "reforma", "engenhariacivil", "casa"]
+}
