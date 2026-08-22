@@ -12,7 +12,11 @@ Canal 2 (só depois de validar o 1º) = **Fazenda/Agro**. O dono também tem as 
 venda; o canal é editorial primeiro.
 
 ## Decisões travadas
+- **Nome do canal (recomendado):** "Obra Explicada".
 - **Formato:** faceless (narração IA + b-roll + legendas).
+- **Gerador de vídeo:** Fliki, plano pago (grátis só faz 1 min). Config fixa em `07-fliki-config.md`.
+  REGRA CRÍTICA: Scene media = STOCK, nunca AI images (rachadura de IA parece falsa).
+- **Shorts:** gerados como arquivos Fliki 9:16 separados (sem edição), não cortados.
 - **Idioma:** PT-BR, público Brasil.
 - **Orçamento:** até ~R$150/mês (ElevenLabs + vidIQ). Sem TubeGen, sem tráfego pago.
 - **Tempo:** 5–10h/semana, mais nos fins de semana (adiantar em lote).
@@ -25,6 +29,12 @@ venda; o canal é editorial primeiro.
 - R$ 5.000/mês só de AdSense de canal novo NÃO vem em 1–2 meses. Caminhos pra acelerar:
   leads B2B (ConstruData/AgroTorre), afiliados e micro-patrocínio antes do YPP.
 - Meta de views pra R$ 5.000 via ads: ~280–420k/mês (RPM nicho negócios R$ 12–18).
+
+## Ao gerar QUALQUER vídeo, SEMPRE entregue junto
+1. Config do Fliki a usar (de `07-fliki-config.md`).
+2. Spec da thumbnail para o Claude Design (elementos, texto ≤4 palavras, cores, layout).
+3. Os textos das narrações prontos pra colar.
+4. Lembrar do QA (`08-qa-checklist.md`) antes de publicar.
 
 ## Regra de ouro
 70% automatizado, 30% decisão editorial humana. Ir rápido = encurtar o LOOP de aprendizado
@@ -53,6 +63,9 @@ Se os symlinks sumirem (novo clone), recrie: `ln -sfn ../../YOUTUBE/skills/<nome
 - `04-loop-otimizacao.md` — o loop semanal de análise e otimização.
 - `05-ferramentas-e-mcp.md` — como usar ElevenLabs/CapCut/Descript e conectar MCPs.
 - `06-agentes-skills-loops.md` — como criar Skills/agentes/loops no Claude Code.
+- `07-fliki-config.md` — configuração fixa do Fliki (long-form e Shorts).
+- `08-qa-checklist.md` — checklist de QA antes de publicar + métricas-alvo.
+- `guia-primeiro-video.md` — passo a passo executável do 1º vídeo.
 - `dia-de-teste-01.md` — subnicho escolhido, 10 temas rankeados, 1º vídeo pronto.
 - `scripts/gerar_metadados.py` — gera título/descrição/tags do roteiro.
 - `scripts/cortar_shorts.sh` — corta Shorts do vídeo longo (FFmpeg).

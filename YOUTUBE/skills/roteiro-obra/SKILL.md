@@ -31,5 +31,14 @@ JSON exatamente neste formato (uma chave por cena), salvo em `YOUTUBE/scripts/ro
   "hashtags": ["construcao","..."]
 }
 ```
-Depois lembre o usuário de: revisar fato+gancho, rodar `scripts/gerar_metadados.py`, e gerar no Fliki.
-Veja exemplo completo em `YOUTUBE/dia-de-teste-01.md`.
+## SEMPRE entregue junto do roteiro (não só o JSON)
+1. **Narrações prontas** — a lista dos textos de cada cena, numerada, pronta pra colar no Fliki.
+2. **Config do Fliki** — lembre: 16:9, Start fresh, **Stock media (NÃO AI images)**, voz PT-BR fixa,
+   legenda bold, extras (highlight subtitles, música licenciada, on-screen text, pausas). Ver `07-fliki-config.md`.
+3. **Spec da thumbnail pro Claude Design** — descreva: elemento visual central, texto (≤4 palavras),
+   cores (verde=OK, vermelho=alerta quando fizer sentido), layout, emoção. 2 variações pra testar CTR.
+4. **Lembrete de QA** — apontar `08-qa-checklist.md` antes de publicar.
+5. Fluxo: revisar fato+gancho → `scripts/gerar_metadados.py` → Fliki → thumbnail no Claude Design →
+   3 Shorts como arquivos Fliki 9:16 separados → publicar.
+
+Veja exemplo completo em `YOUTUBE/dia-de-teste-01.md` e `YOUTUBE/guia-primeiro-video.md`.

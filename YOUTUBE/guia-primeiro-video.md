@@ -14,19 +14,26 @@ DESCRIÇÃO: ver bloco no chat / regerar com scripts/gerar_metadados.py
 TAGS: construcao, obra, engenharia civil, canteiro de obras, gestao de obras, rachadura,
       reforma, engenhariacivil, casa, tipos de rachadura
 
-## PASSO 2 — Fliki (texto → vídeo)
-- fliki.ai → New file → Text to video → Portuguese (Brazil) → escolher 1 voz (fixa).
-- Colar os 6 blocos de narração (campo "narracao" de cada cena do roteiro).
-- B-roll por cena: rachadura parede / massa corrida / trinca alvenaria /
-  rachadura diagonal janela / muro de arrimo / gesso parede. Trocar clipes ruins.
-- Legendas automáticas → gerar → baixar 1080p.
+## PASSO 2 — Fliki (texto → vídeo) — config completa em 07-fliki-config.md
+- Plano pago (grátis só faz 1 min).
+- New file → Script to video. Format **16:9**, Start fresh, **Scene media = STOCK** (NÃO AI images!),
+  Create scenes = Sentences, Narrator Portuguese (Brazil) voz fixa, Subtitles bold,
+  Extras: highlight subtitles + música licenciada + on-screen text + pausas.
+- Colar os 6 blocos de narração (campo "narracao" de cada cena).
+- Trocar clipes de stock que não combinarem (busca: rachadura parede / massa corrida /
+  trinca alvenaria / rachadura diagonal janela / muro de arrimo / gesso parede).
+- Gerar → baixar 1080p.
 
 ## PASSO 3 — Thumbnail
 Claude Design ou Canva. Conceito 2: split fina(verde OK) x diagonal(vermelho ALERTA),
 texto "PERIGO?". Fazer 2 versões pra teste de CTR.
 
-## PASSO 4 — Shorts (auto-reframe 9:16)
-02:45-03:35 · 04:20-05:00 · 00:30-01:15 (ganchos no roteiro/dia-de-teste-01.md).
+## PASSO 4 — Shorts (SEM cortar: 3 arquivos Fliki 9:16 separados)
+Para cada Short: New file → Format 9:16 Portrait → Stock media → mesma voz → colar SÓ a
+narração do trecho (abaixo). O Fliki gera o vertical direto. Zero edição.
+- Short 1: narração da cena 4 (rachadura estrutural) — gancho "A rachadura que você NUNCA deve ignorar"
+- Short 2: narração da cena 6 (teste do gesso) — gancho "O teste de 1 minuto..."
+- Short 3: narração das cenas 2+3 (fissura x trinca) — gancho "Fissura x trinca: qual a diferença?"
 
 ## PASSO 5 — Publicar
 Studio → Criar → Enviar vídeo → colar título/desc/tags → subir thumbnail →
