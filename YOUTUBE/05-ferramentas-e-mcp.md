@@ -46,6 +46,16 @@ Claude Code (roteiro JSON)
 - Veja score de keyword, competição, e "outliers" (vídeos que performaram acima da média
   do canal — ótimos pra achar formato).
 
+## 2.5. GERADOR texto→vídeo (pra quem não edita) — o "TubeGen barato"
+Se editar no CapCut é trabalhoso demais, use um gerador que monta o vídeo quase pronto:
+- **Fliki** (~US$8–28/mês) — **recomendado.** Cola o roteiro, escolhe voz PT-BR, e ele gera
+  narração + b-roll + legendas automaticamente. Cabe nos R$150 e quase elimina edição manual.
+- **InVideo AI** — você dá um prompt e ele monta o vídeo inteiro. Alternativa.
+- **MoneyPrinterTurbo** (grátis) — mesma ideia, resultado mais cru.
+
+Fluxo enxuto pro seu caso: **Claude Code (roteiro) → Fliki (gera o vídeo) → CapCut só pra
+thumbnail/ajuste leve → publicar.** Se usar Fliki, o ElevenLabs vira opcional (Fliki já narra).
+
 ## 3. TubeGen — por que NÃO agora
 Custa US$149+/mês (~US$1,94/min). Resultado com "cara de IA" (risco de política) e você perde
 controle editorial. Só considere DEPOIS de ter formato validado, e mesmo assim compare custo.

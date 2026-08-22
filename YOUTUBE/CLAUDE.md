@@ -44,8 +44,15 @@ provou funcionar.
 - `03-prompt-roteiro.md` — prompt reutilizável de roteiro (cole no Claude Code).
 - `04-loop-otimizacao.md` — o loop semanal de análise e otimização.
 - `05-ferramentas-e-mcp.md` — como usar ElevenLabs/CapCut/Descript e conectar MCPs.
+- `06-agentes-skills-loops.md` — como criar Skills/agentes/loops no Claude Code.
+- `dia-de-teste-01.md` — subnicho escolhido, 10 temas rankeados, 1º vídeo pronto.
 - `scripts/gerar_metadados.py` — gera título/descrição/tags do roteiro.
 - `scripts/cortar_shorts.sh` — corta Shorts do vídeo longo (FFmpeg).
+
+## Formato de conteúdo (definido)
+Subnicho: **"Construção Explicada"** — formato SEARCH-BASED EVERGREEN (explicativo/lista,
+buscado o ano todo). Fácil de produzir faceless. Geração de vídeo via **Fliki** (texto→vídeo,
+~US$8–28/mês) em vez de edição manual. 1º vídeo: "O que cada rachadura na parede significa".
 
 ## Stack
 Claude Code (roteiro/pesquisa/análise) · ElevenLabs (voz PT-BR) · MoneyPrinterTurbo
