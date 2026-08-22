@@ -30,6 +30,15 @@ venda; o canal é editorial primeiro.
   leads B2B (ConstruData/AgroTorre), afiliados e micro-patrocínio antes do YPP.
 - Meta de views pra R$ 5.000 via ads: ~280–420k/mês (RPM nicho negócios R$ 12–18).
 
+## Regra: fonte visual POR FORMATO (não é sempre stock)
+- **Explainer** (rachaduras, materiais, custos): Fliki modo **Stock media** — ele acha as fotos
+  reais sozinho, vídeo sai pronto, sem criar nada. Credibilidade > animação.
+- **História emocional** (empregado desvalorizado, obra que deu errado): cena não existe em stock →
+  Fliki modo **AI images** ou InVideo AI (também sai pronto, sem editar).
+- **Higgsfield:** só clipes curtos de IA; exige montar/sincronizar = edição. Não usar como gerador
+  principal enquanto o usuário não editar.
+- Começar pelo explainer (o único "pronto sem criar" hoje). História = formato de teste (2º vídeo/semana).
+
 ## Ao gerar QUALQUER vídeo, SEMPRE entregue junto
 1. Config do Fliki a usar (de `07-fliki-config.md`).
 2. Spec da thumbnail para o Claude Design (elementos, texto ≤4 palavras, cores, layout).
