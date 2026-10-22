@@ -3,13 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NERY — Software que transforma dados em decisão</title>
-  <meta name="description" content="O Grupo Nery desenvolve sistemas sob medida para organizações que operam em ambientes críticos. Cada processo funciona, cada dado é confiável, cada decisão é rastreável.">
+  <title>Grupo Nery — Consultoria, Tecnologia e Gestão</title>
+  <meta name="description" content="Consultoria, reestruturação administrativa, gestão e sistemas sob medida para empresas de engenharia, saneamento e construção.">
   
-  <!-- A FONTE FOO MUDADA PARA DM SANS: Ela possui os mesmos traços neo-grotescos geométricos da fonte da Palantir (g de um andar, y reto, t plano) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
   
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -920,6 +919,261 @@
     @media (min-width: 769px) {
       #mobile-menu { display: none; }
     }
+
+    /* ═══════════════════════════════════════════════════════════════
+       IDENTIDADE GRUPO NERY — marinho + azul (layout inspirado em logística integrada)
+    ═══════════════════════════════════════════════════════════════ */
+    :root {
+      --navy: #0B1F3A;
+      --navy-2: #12305A;
+      --blue: #2E8BC9;
+      --blue-dark: #1F6FA6;
+      --blue-soft: #E6F2FA;
+      --ink: #141414;
+      --grey: #545454;
+      --line: #E3E3E3;
+      --ease: cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; letter-spacing: 0; }
+    .fade-up { transform: translateY(16px); transition-duration: 0.7s; }
+
+    /* ─── Nav ─── */
+    #main-nav { border-bottom: 1px solid rgba(255,255,255,0.12); transition: background .3s, box-shadow .3s, border-color .3s; }
+    #main-nav.scrolled, #main-nav.theme-light { background: #fff; border-bottom-color: var(--line); box-shadow: 0 2px 12px rgba(11,31,58,0.06); }
+    .nav-logo { font-size: 22px; font-weight: 600; letter-spacing: 0.08em; }
+    .nav-logo .logo-mark { display: inline-block; width: 10px; height: 10px; background: var(--blue); border-radius: 2px; transform: rotate(45deg); margin-left: 2px; }
+    .nav-links { gap: 28px; }
+    .nav-links a { font-size: 15px; font-weight: 400; opacity: .92; }
+    .nav-links a::after { height: 2px; background: var(--blue); bottom: -6px; }
+    .btn-nav { border-radius: 4px; font-weight: 500; font-size: 14px; padding: 9px 18px; }
+    .btn-nav.btn-nav-solid { background: var(--blue); border-color: var(--blue); color: #fff; }
+    .btn-nav.btn-nav-solid:hover { background: var(--blue-dark); border-color: var(--blue-dark); color: #fff; }
+    #main-nav.scrolled .btn-nav, #main-nav.theme-light .btn-nav { border-color: var(--navy); color: var(--navy); }
+    #main-nav.scrolled .btn-nav:hover, #main-nav.theme-light .btn-nav:hover { background: var(--navy); color: #fff; }
+    #main-nav.scrolled .btn-nav.btn-nav-solid, #main-nav.theme-light .btn-nav.btn-nav-solid { background: var(--blue); border-color: var(--blue); color: #fff; }
+    #main-nav.scrolled .mobile-menu-btn, #main-nav.theme-light .mobile-menu-btn { color: var(--navy); }
+    .mobile-menu-btn { color: #fff; }
+    #mobile-menu .mobile-cta { background: var(--blue); border-radius: 4px; }
+
+    /* ─── Botões ─── */
+    .nx-btn { display: inline-flex; align-items: center; gap: 10px; font: 500 15px/1 'Inter', sans-serif; padding: 13px 20px; border-radius: 4px; border: 1px solid transparent; cursor: pointer; text-decoration: none; transition: background .25s, color .25s, border-color .25s; }
+    .nx-btn-white { background: #fff; color: var(--navy); }
+    .nx-btn-white:hover { background: var(--blue-soft); }
+    .nx-btn-ghost { background: transparent; color: #fff; border-color: rgba(255,255,255,.85); }
+    .nx-btn-ghost:hover { background: #fff; color: var(--navy); }
+    .nx-btn-blue { background: var(--blue); color: #fff; }
+    .nx-btn-blue:hover { background: var(--blue-dark); }
+    .nx-btn-navy { background: var(--navy); color: #fff; }
+    .nx-btn-navy:hover { background: var(--navy-2); }
+    .nx-btn-line { background: #fff; color: var(--navy); border-color: var(--navy); }
+    .nx-btn-line:hover { background: var(--navy); color: #fff; }
+    .nx-arrow { display: inline-block; transition: transform .25s var(--ease); }
+    .nx-btn:hover .nx-arrow, .nx-link:hover .nx-arrow, .nx-card:hover .nx-arrow { transform: translateX(4px); }
+    .nx-link { color: var(--blue-dark); font-weight: 500; font-size: 15px; text-decoration: none; display: inline-flex; gap: 8px; align-items: center; cursor: pointer; }
+
+    /* ─── Hero ─── */
+    .nx-hero { position: relative; min-height: 640px; height: 88vh; max-height: 860px; color: #fff; overflow: hidden; display: flex; align-items: center; }
+    .nx-hero-media { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; animation: nx-zoom 9s var(--ease) forwards; }
+    .nx-hero::after { content: ''; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(11,31,58,.82) 0%, rgba(11,31,58,.45) 55%, rgba(11,31,58,.15) 100%); }
+    .nx-hero .container { position: relative; z-index: 2; padding-bottom: 120px; }
+    .nx-hero-eyebrow { font-size: 15px; letter-spacing: .02em; opacity: .9; margin-bottom: 18px; }
+    .nx-hero h1 { font-weight: 300; font-size: clamp(36px, 5vw, 64px); line-height: 1.08; letter-spacing: -0.02em; max-width: 820px; margin-bottom: 22px; }
+    .nx-hero p.nx-hero-sub { font-size: 19px; line-height: 1.55; max-width: 600px; opacity: .92; margin-bottom: 32px; }
+    .nx-hero-ctas { display: flex; gap: 14px; flex-wrap: wrap; }
+    @keyframes nx-zoom { from { transform: scale(1.06); } to { transform: scale(1); } }
+
+    /* ─── Card de ferramenta (Diagnóstico) ─── */
+    .nx-tool-wrap { position: relative; z-index: 5; margin-top: -110px; }
+    .nx-tool { background: #fff; border-radius: 10px; box-shadow: 0 12px 40px rgba(11,31,58,.14); overflow: hidden; animation: nx-rise .8s var(--ease) .15s both; }
+    @keyframes nx-rise { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: none; } }
+    .nx-tabs { position: relative; display: flex; justify-content: center; border-bottom: 1px solid var(--line); overflow-x: auto; scrollbar-width: none; }
+    .nx-tabs::-webkit-scrollbar { display: none; }
+    .nx-tab { flex: 0 0 auto; background: none; border: 0; font: 400 16px 'Inter', sans-serif; color: var(--grey); padding: 20px 28px 18px; cursor: pointer; display: inline-flex; align-items: center; gap: 10px; transition: color .2s; }
+    .nx-tab svg { width: 22px; height: 22px; }
+    .nx-tab:hover, .nx-tab.active { color: var(--navy); }
+    .nx-tab-ind { position: absolute; bottom: -1px; height: 3px; background: var(--blue); border-radius: 2px 2px 0 0; transition: left .25s var(--ease), width .25s var(--ease); }
+    .nx-panel { display: none; padding: 32px 40px 36px; animation: nx-fade .35s ease; }
+    .nx-panel.active { display: block; }
+    @keyframes nx-fade { from { opacity: 0; } to { opacity: 1; } }
+    .nx-form { display: grid; grid-template-columns: 1fr 1fr auto; gap: 16px; align-items: end; max-width: 980px; margin: 0 auto; }
+    .nx-form.nx-form-3 { grid-template-columns: 1fr 1fr 1fr auto; }
+    .nx-field { display: flex; flex-direction: column; gap: 6px; }
+    .nx-field label { font-size: 13px; color: var(--grey); }
+    .nx-field select, .nx-field input, .nx-field textarea { font: 400 15px 'Inter', sans-serif; padding: 12px 14px; border: 1px solid #C9CED6; border-radius: 4px; background: #fff; color: var(--ink); width: 100%; transition: border-color .2s, box-shadow .2s; }
+    .nx-field select:focus, .nx-field input:focus, .nx-field textarea:focus { outline: none; border-color: var(--blue); box-shadow: 0 0 0 3px rgba(46,139,201,.18); }
+    .nx-form-note { max-width: 980px; margin: 14px auto 0; font-size: 13px; color: var(--grey); }
+    .nx-platform-links { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; max-width: 980px; margin: 0 auto; }
+    .nx-platform-link { display: flex; justify-content: space-between; align-items: center; padding: 18px 20px; border: 1px solid var(--line); border-radius: 6px; text-decoration: none; color: var(--navy); cursor: pointer; transition: border-color .2s, background .2s; }
+    .nx-platform-link:hover { border-color: var(--blue); background: var(--blue-soft); }
+    .nx-platform-link small { display: block; color: var(--grey); font-size: 13px; margin-top: 4px; }
+
+    /* ─── Seções ─── */
+    .nx-section { padding: 96px 0; }
+    .nx-section.nx-tight { padding: 64px 0; }
+    .nx-head { text-align: center; max-width: 820px; margin: 0 auto 48px; }
+    .nx-head h2, .nx-h2 { font-weight: 300; font-size: clamp(28px, 3.2vw, 42px); line-height: 1.15; letter-spacing: -0.015em; color: var(--ink); margin-bottom: 16px; }
+    .nx-head p, .nx-lead { font-size: 17px; line-height: 1.6; color: var(--grey); }
+    .nx-eyebrow { font-size: 13px; letter-spacing: .1em; text-transform: uppercase; color: var(--blue-dark); font-weight: 600; margin-bottom: 14px; }
+
+    /* Cards de entrada */
+    .nx-entry-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+    .nx-card { background: #fff; border: 1px solid var(--line); border-radius: 10px; padding: 32px; display: flex; flex-direction: column; gap: 14px; transition: transform .3s var(--ease), box-shadow .3s var(--ease), border-color .3s; cursor: pointer; text-decoration: none; color: inherit; }
+    .nx-card:hover { transform: translateY(-2px); box-shadow: 0 10px 28px rgba(11,31,58,.10); border-color: transparent; }
+    .nx-card h3 { font-size: 21px; font-weight: 500; color: var(--ink); }
+    .nx-card p { font-size: 15px; line-height: 1.6; color: var(--grey); flex: 1; }
+    .nx-card-icon { width: 44px; height: 44px; border-radius: 8px; background: var(--blue-soft); color: var(--blue-dark); display: grid; place-items: center; }
+    .nx-card-icon svg { width: 24px; height: 24px; }
+
+    /* Manifesto + vídeo */
+    .nx-manifesto { display: grid; grid-template-columns: 1fr 1.25fr; gap: 64px; align-items: center; }
+    .nx-video { position: relative; border-radius: 12px; overflow: hidden; background: var(--navy); aspect-ratio: 16/9; }
+    .nx-video video, .nx-video img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .nx-video-btn { position: absolute; left: 20px; bottom: 20px; background: #fff; color: var(--navy); border: 0; border-radius: 6px; padding: 12px 16px; font: 500 14px 'Inter', sans-serif; display: inline-flex; gap: 8px; align-items: center; cursor: pointer; transition: transform .2s; }
+    .nx-video-btn:hover { transform: scale(1.04); }
+
+    /* Soluções em abas + carrossel */
+    .nx-solutions .nx-tabs { margin-bottom: 40px; }
+    .nx-solutions .nx-panel { padding: 0; }
+    .nx-carousel { position: relative; }
+    .nx-track { display: grid; grid-auto-flow: column; grid-auto-columns: calc((100% - 48px) / 3); gap: 24px; overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth; scrollbar-width: none; padding: 4px 2px 12px; }
+    .nx-track::-webkit-scrollbar { display: none; }
+    .nx-track > * { scroll-snap-align: start; }
+    .nx-sol-card { border-radius: 10px; overflow: hidden; border: 1px solid var(--line); background: #fff; display: flex; flex-direction: column; transition: transform .3s var(--ease), box-shadow .3s var(--ease); }
+    .nx-sol-card:hover { transform: translateY(-2px); box-shadow: 0 10px 28px rgba(11,31,58,.10); }
+    .nx-sol-top { background: var(--navy); color: #fff; padding: 28px; min-height: 140px; display: flex; flex-direction: column; justify-content: flex-end; position: relative; overflow: hidden; }
+    .nx-sol-top::after { content: ''; position: absolute; right: -40px; top: -40px; width: 160px; height: 160px; border-radius: 50%; border: 28px solid rgba(46,139,201,.25); }
+    .nx-sol-top span { font-size: 12px; letter-spacing: .1em; text-transform: uppercase; opacity: .75; margin-bottom: 8px; }
+    .nx-sol-top h3 { font-size: 22px; font-weight: 500; line-height: 1.25; position: relative; z-index: 1; }
+    .nx-sol-body { padding: 24px 28px 28px; display: flex; flex-direction: column; gap: 16px; flex: 1; }
+    .nx-sol-body ul { list-style: none; display: flex; flex-direction: column; gap: 10px; flex: 1; }
+    .nx-sol-body li { font-size: 15px; color: var(--grey); padding-left: 22px; position: relative; line-height: 1.45; }
+    .nx-sol-body li::before { content: ''; position: absolute; left: 0; top: 7px; width: 8px; height: 8px; border-radius: 50%; background: var(--blue); }
+    .nx-car-nav { display: flex; justify-content: flex-end; gap: 10px; margin-top: 20px; }
+    .nx-car-btn { width: 44px; height: 44px; border-radius: 50%; border: 1px solid #C9CED6; background: #fff; color: var(--navy); cursor: pointer; display: grid; place-items: center; transition: background .2s, border-color .2s, opacity .2s; }
+    .nx-car-btn:hover { background: var(--navy); color: #fff; border-color: var(--navy); }
+    .nx-car-btn:disabled { opacity: .35; pointer-events: none; }
+
+    /* Faixa marinho — método */
+    .nx-band { background: var(--navy); color: #fff; border-radius: 14px; padding: 64px; display: grid; grid-template-columns: 1fr 1.4fr; gap: 56px; align-items: center; position: relative; overflow: hidden; }
+    .nx-band::before { content: ''; position: absolute; right: -120px; bottom: -160px; width: 420px; height: 420px; border-radius: 50%; border: 60px solid rgba(46,139,201,.18); }
+    .nx-band h2 { font-weight: 300; font-size: clamp(28px, 3vw, 40px); line-height: 1.15; margin-bottom: 16px; }
+    .nx-band p { color: rgba(255,255,255,.8); line-height: 1.6; margin-bottom: 28px; }
+    .nx-steps { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; position: relative; z-index: 1; }
+    .nx-step { background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.12); border-radius: 10px; padding: 22px; transition: background .25s, transform .25s var(--ease); }
+    .nx-step:hover { background: rgba(255,255,255,.1); transform: translateY(-2px); }
+    .nx-step b { display: block; color: var(--blue); font-size: 13px; letter-spacing: .1em; margin-bottom: 8px; }
+    .nx-step h4 { font-size: 18px; font-weight: 500; margin-bottom: 6px; }
+    .nx-step p { font-size: 14px; margin: 0; color: rgba(255,255,255,.72); }
+
+    /* Setores */
+    .nx-sector { position: relative; border-radius: 10px; overflow: hidden; aspect-ratio: 4/5; background: var(--navy); color: #fff; display: flex; align-items: flex-end; cursor: pointer; }
+    .nx-sector img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform .6s var(--ease); opacity: .9; }
+    .nx-sector::after { content: ''; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(11,31,58,0) 35%, rgba(11,31,58,.88) 100%); }
+    .nx-sector:hover img { transform: scale(1.05); }
+    .nx-sector-body { position: relative; z-index: 1; padding: 24px; }
+    .nx-sector-body h3 { font-size: 22px; font-weight: 500; margin-bottom: 6px; }
+    .nx-sector-body p { font-size: 14px; color: rgba(255,255,255,.82); line-height: 1.5; }
+    .nx-sector.nx-sector-plain { background: linear-gradient(135deg, var(--navy) 0%, var(--navy-2) 100%); }
+    .nx-sector-plain .nx-sector-glyph { position: absolute; top: 24px; left: 24px; width: 48px; height: 48px; color: var(--blue); z-index: 1; }
+
+    /* Números */
+    .nx-stats { display: grid; grid-template-columns: repeat(4, 1fr); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+    .nx-stat { padding: 36px 24px; text-align: center; }
+    .nx-stat + .nx-stat { border-left: 1px solid var(--line); }
+    .nx-stat strong { display: block; font-size: 42px; font-weight: 300; color: var(--navy); letter-spacing: -0.02em; }
+    .nx-stat span { font-size: 14px; color: var(--grey); }
+
+    /* Insights */
+    .nx-filters { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; margin-bottom: 36px; }
+    .nx-chip { border: 1px solid #C9CED6; background: #fff; color: var(--ink); border-radius: 999px; padding: 8px 16px; font: 400 14px 'Inter', sans-serif; cursor: pointer; transition: all .2s; }
+    .nx-chip:hover { border-color: var(--navy); }
+    .nx-chip.active { background: var(--navy); border-color: var(--navy); color: #fff; }
+    .nx-insight, .nx-insight * { text-decoration: none; }
+    .nx-insight { border-radius: 10px; border: 1px solid var(--line); overflow: hidden; background: #fff; display: flex; flex-direction: column; cursor: pointer; transition: transform .3s var(--ease), box-shadow .3s var(--ease); }
+    .nx-insight:hover { transform: translateY(-2px); box-shadow: 0 10px 28px rgba(11,31,58,.10); }
+    .nx-insight.hidden { display: none; }
+    .nx-insight-top { height: 8px; background: var(--blue); }
+    .nx-insight-body { padding: 24px; display: flex; flex-direction: column; gap: 12px; flex: 1; }
+    .nx-insight-tag { font-size: 12px; text-transform: uppercase; letter-spacing: .08em; color: var(--blue-dark); font-weight: 600; }
+    .nx-insight h3 { font-size: 19px; font-weight: 500; line-height: 1.35; color: var(--ink); flex: 1; }
+
+    /* CTA final */
+    .nx-cta { background: var(--blue-soft); border-radius: 14px; padding: 56px; display: grid; grid-template-columns: 1fr 1.2fr; gap: 48px; align-items: start; }
+    .nx-cta .nx-form { grid-template-columns: 1fr 1fr; max-width: none; }
+    .nx-cta .nx-field-full { grid-column: 1 / -1; }
+    .nx-cta-actions { grid-column: 1 / -1; display: flex; gap: 12px; flex-wrap: wrap; }
+    .nx-contact-list { margin-top: 24px; display: flex; flex-direction: column; gap: 10px; }
+
+    /* Faixa de aviso */
+    .nx-notice { position: fixed; left: 0; right: 0; bottom: 0; z-index: 9000; background: #fff; border-top: 1px solid var(--line); box-shadow: 0 -6px 24px rgba(11,31,58,.08); transform: translateY(100%); transition: transform .5s var(--ease); }
+    .nx-notice.show { transform: none; }
+    .nx-notice .container { display: flex; align-items: center; gap: 24px; padding-top: 18px; padding-bottom: 18px; }
+    .nx-notice-text { flex: 1; }
+    .nx-notice-text strong { display: block; font-weight: 500; color: var(--ink); margin-bottom: 4px; }
+    .nx-notice-text span { font-size: 14px; color: var(--grey); }
+    .nx-notice-close { background: none; border: 0; color: var(--ink); font: 400 14px 'Inter', sans-serif; cursor: pointer; display: inline-flex; gap: 6px; align-items: center; }
+
+    /* Rodapé */
+    .nx-footer { background: var(--navy); color: rgba(255,255,255,.78); padding: 72px 0 32px; margin-top: 96px; }
+    .nx-footer-grid { display: grid; grid-template-columns: 1.4fr repeat(4, 1fr); gap: 40px; }
+    .nx-footer .nav-logo { color: #fff; margin-bottom: 16px; }
+    .nx-footer p { font-size: 14px; line-height: 1.6; }
+    .nx-footer h5 { color: #fff; font-size: 14px; font-weight: 600; margin-bottom: 16px; }
+    .nx-footer a { display: block; color: rgba(255,255,255,.72); text-decoration: none; font-size: 14px; padding: 5px 0; cursor: pointer; transition: color .2s; }
+    .nx-footer a:hover { color: #fff; }
+    .nx-footer-bottom { border-top: 1px solid rgba(255,255,255,.12); margin-top: 48px; padding-top: 24px; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; font-size: 13px; }
+
+    /* Logos clientes no novo tema */
+    .clientes-section { padding: 80px 0; }
+
+    @media (max-width: 1100px) {
+      .nav-links { gap: 18px; }
+      .nav-links a { font-size: 14px; }
+      .nx-form, .nx-form.nx-form-3 { grid-template-columns: 1fr 1fr; }
+      .nx-track { grid-auto-columns: calc((100% - 24px) / 2); }
+      .nx-band, .nx-manifesto, .nx-cta { grid-template-columns: 1fr; gap: 40px; }
+      .nx-footer-grid { grid-template-columns: 1fr 1fr; }
+      .nx-footer-brand { grid-column: 1 / -1; }
+    }
+    @media (max-width: 960px) {
+      .nav-links, .btn-nav { display: none; }
+      .mobile-menu-btn { display: block; }
+    }
+    @media (max-width: 768px) {
+      .nx-hero { height: auto; min-height: 600px; padding-top: 96px; }
+      .nx-hero .container { padding-bottom: 130px; }
+      .nx-hero p.nx-hero-sub { font-size: 17px; }
+      .nx-hero-ctas .nx-btn { flex: 1 1 100%; justify-content: center; }
+      .nx-tabs { justify-content: flex-start; }
+      .nx-tab { padding: 16px 16px 14px; font-size: 15px; }
+      .nx-notice-text span { display: none; }
+      .nx-notice .container { flex-wrap: nowrap; padding-top: 12px; padding-bottom: 12px; }
+      .nx-notice .nx-btn { padding: 10px 14px; font-size: 14px; white-space: nowrap; }
+      .nx-notice-close .nx-close-label { display: none; }
+      .nx-tab .nx-tab-label-long { display: none; }
+      .nx-panel { padding: 24px 20px 28px; }
+      .nx-form, .nx-form.nx-form-3, .nx-cta .nx-form { grid-template-columns: 1fr; }
+      .nx-form .nx-btn { justify-content: center; }
+      .nx-platform-links { grid-template-columns: 1fr; }
+      .nx-section { padding: 64px 0; }
+      .nx-entry-grid { grid-template-columns: 1fr; }
+      .nx-track { grid-auto-columns: 86%; }
+      .nx-band { padding: 36px 24px; }
+      .nx-steps { grid-template-columns: 1fr; }
+      .nx-stats { grid-template-columns: 1fr 1fr; }
+      .nx-stat:nth-child(3) { border-left: 0; }
+      .nx-stat:nth-child(n+3) { border-top: 1px solid var(--line); }
+      .nx-stat strong { font-size: 34px; }
+      .nx-cta { padding: 32px 20px; }
+      .nx-footer-grid { grid-template-columns: 1fr; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .nx-hero-media, .nx-tool { animation: none; }
+      .fade-up { transform: none; transition: opacity .3s; }
+      .nx-card:hover, .nx-sol-card:hover, .nx-insight:hover, .nx-step:hover { transform: none; }
+      .nx-sector:hover img { transform: none; }
+      .nx-track { scroll-behavior: auto; }
+    }
   </style>
 </head>
 <body id="app-body">
@@ -927,23 +1181,24 @@
   <!-- ═══ NAVIGATION ══════════════════════════════════ -->
   <nav id="main-nav">
     <div class="container nav-inner">
-      <a class="nav-logo fade-up" id="nav-logo" onclick="switchView('landing')">
-        <span>NERY</span>
+      <a class="nav-logo" id="nav-logo" onclick="switchView('landing')" aria-label="Grupo Nery — início">
+        <span>NERY</span><span class="logo-mark" aria-hidden="true"></span>
         <span class="slash" id="logo-slash" style="display:none">&nbsp;/&nbsp;</span>
         <span class="sub" id="logo-sub" style="display:none">Notícias</span>
       </a>
 
-      <ul class="nav-links fade-up delay-1">
-        <li><a onclick="switchView('landing'); scrollToSection('sec-whatwedo')">O que fazemos</a></li>
-        <li><a onclick="switchView('landing'); scrollToSection('sec-platforms')">Plataformas</a></li>
-        <li><a onclick="switchView('landing'); scrollToSection('sec-consultoria')">Consultoria</a></li>
-        <li><a onclick="switchView('landing'); scrollToSection('sec-why')">Por que o Grupo Nery</a></li>
-        <li><a onclick="switchView('landing'); scrollToSection('sec-about')">Sobre</a></li>
+      <ul class="nav-links">
+        <li><a onclick="switchView('landing'); scrollToSection('sec-solucoes')">Soluções</a></li>
+        <li><a onclick="switchView('landing'); scrollToSection('sec-setores')">Setores</a></li>
+        <li><a onclick="switchView('landing'); scrollToSection('sec-metodo')">Método</a></li>
+        <li><a onclick="switchView('landing'); scrollToSection('sec-plataformas')">Plataformas</a></li>
+        <li><a onclick="switchView('landing'); scrollToSection('sec-insights')">Insights</a></li>
         <li><a onclick="switchView('blog')">Notícias</a></li>
       </ul>
 
-      <div class="nav-actions fade-up delay-2">
-        <button class="btn-nav" onclick="window.open('https://www.linkedin.com/in/joão-de-souza-nery-4380262b0', '_blank')">Fale Conosco</button>
+      <div class="nav-actions">
+        <button class="btn-nav" onclick="switchView('landing'); scrollToSection('sec-contato')">Fale conosco</button>
+        <button class="btn-nav btn-nav-solid" onclick="openDiagnostico()">Diagnóstico</button>
         <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Abrir menu" aria-expanded="false" onclick="toggleMobileMenu()">
           <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
         </button>
@@ -953,13 +1208,13 @@
 
   <!-- Menu Mobile (Drawer) -->
   <div id="mobile-menu">
-    <a onclick="closeMobileMenu(); switchView('landing'); scrollToSection('sec-whatwedo')">O que fazemos</a>
-    <a onclick="closeMobileMenu(); switchView('landing'); scrollToSection('sec-platforms')">Plataformas</a>
-    <a onclick="closeMobileMenu(); switchView('landing'); scrollToSection('sec-consultoria')">Consultoria</a>
-    <a onclick="closeMobileMenu(); switchView('landing'); scrollToSection('sec-why')">Por que o Grupo Nery</a>
-    <a onclick="closeMobileMenu(); switchView('landing'); scrollToSection('sec-about')">Sobre</a>
+    <a onclick="closeMobileMenu(); switchView('landing'); scrollToSection('sec-solucoes')">Soluções</a>
+    <a onclick="closeMobileMenu(); switchView('landing'); scrollToSection('sec-setores')">Setores</a>
+    <a onclick="closeMobileMenu(); switchView('landing'); scrollToSection('sec-metodo')">Método</a>
+    <a onclick="closeMobileMenu(); switchView('landing'); scrollToSection('sec-plataformas')">Plataformas</a>
+    <a onclick="closeMobileMenu(); switchView('landing'); scrollToSection('sec-insights')">Insights</a>
     <a onclick="closeMobileMenu(); switchView('blog')">Notícias</a>
-    <a class="mobile-cta" onclick="closeMobileMenu()" href="https://www.linkedin.com/in/joão-de-souza-nery-4380262b0" target="_blank">Fale Conosco</a>
+    <a class="mobile-cta" onclick="closeMobileMenu(); openDiagnostico()">Diagnóstico gratuito</a>
   </div>
 
   <!-- ═══════════════════════════════════════════════════
@@ -967,35 +1222,282 @@
   ════════════════════════════════════════════════════ -->
   <div id="view-landing" class="view active">
 
-    <!-- Hero Centralizada e Escura -->
-    <section class="hero">
-      <!-- Vídeo local adaptado -->
-      <video class="hero-video-bg" id="hero-video" autoplay loop muted playsinline poster="hero-poster.jpg">
+    <!-- 1. Abertura -->
+    <section class="nx-hero">
+      <video class="nx-hero-media" autoplay loop muted playsinline poster="hero-poster.jpg">
         <source src="vídeo hero section.mp4" type="video/mp4">
       </video>
-      <div class="hero-overlay"></div>
-
-      <div class="container fade-up delay-1">
-        <!-- Sem quebras de linha forçadas, alinhamento central e limites consertados -->
-        <h1 class="hero-title">Software que transforma<br>dados em decisão.</h1>
-        <p class="hero-phrase">Boas tecnologias te permitem fazer coisas mais rapidamente. <strong>Ótimas tecnologias te permitem fazer coisas que você não conseguia antes.</strong></p>
-        <p class="hero-sub">
-          O Grupo Nery desenvolve sistemas sob medida para organizações públicas e privadas que operam em ambientes críticos, em que cada processo precisa funcionar, cada dado precisa ser confiável e cada decisão precisa ser rastreável.
-        </p>
-        <div class="hero-ctas">
-          <button class="btn-solid-hero" onclick="window.open('https://www.linkedin.com/in/joão-de-souza-nery-4380262b0', '_blank')">Fale com um Especialista</button>
-          <button class="btn-outline-hero" onclick="scrollToSection('sec-whatwedo')">Conheça Nossas Soluções</button>
+      <div class="container">
+        <p class="nx-hero-eyebrow">Consultoria · Tecnologia · Gestão</p>
+        <h1>Gestão, tecnologia e consultoria para a empresa inteira</h1>
+        <p class="nx-hero-sub">Reestruturamos a administração, os contratos e os processos de empresas de engenharia, saneamento e construção, e entregamos os sistemas que mantêm tudo funcionando.</p>
+        <div class="nx-hero-ctas">
+          <a class="nx-btn nx-btn-white" onclick="scrollToSection('sec-solucoes')">Explore nossas soluções</a>
+          <a class="nx-btn nx-btn-ghost" onclick="scrollToSection('sec-contato')">Fale conosco</a>
         </div>
       </div>
     </section>
 
-    <!-- Plataformas (Grid 3 colunas) -->
-    <section class="section" id="sec-platforms">
+    <!-- 2. Ferramenta (Diagnóstico / Plataformas / Contato) -->
+    <div class="container nx-tool-wrap" id="sec-diagnostico">
+      <div class="nx-tool" data-tabs>
+        <div class="nx-tabs" role="tablist">
+          <button class="nx-tab active" role="tab" data-tab="diag">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 4h6l1 2h3v14H5V6h3z"/><path d="M9 13l2 2 4-4"/></svg>
+            Diagnóstico
+          </button>
+          <button class="nx-tab" role="tab" data-tab="plat">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="12" rx="1"/><path d="M8 20h8M12 16v4"/></svg>
+            Plataformas
+          </button>
+          <button class="nx-tab" role="tab" data-tab="cont">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 5h16v11H8l-4 4z"/></svg>
+            Contato
+          </button>
+          <span class="nx-tab-ind"></span>
+        </div>
+
+        <div class="nx-panel active" data-panel="diag">
+          <form class="nx-form nx-form-3" onsubmit="event.preventDefault(); enviarDiagnostico(this)">
+            <div class="nx-field">
+              <label for="diag-setor">Setor da empresa</label>
+              <select id="diag-setor" name="setor" required>
+                <option value="">Selecione</option>
+                <option>Engenharia</option>
+                <option>Saneamento</option>
+                <option>Construção civil</option>
+                <option>Concessionária</option>
+                <option>Agronegócio</option>
+                <option>Setor público</option>
+                <option>Outro</option>
+              </select>
+            </div>
+            <div class="nx-field">
+              <label for="diag-dor">Principal desafio</label>
+              <select id="diag-dor" name="desafio" required>
+                <option value="">Selecione</option>
+                <option>Custos e margem das obras</option>
+                <option>Contratos e medições</option>
+                <option>Processos administrativos</option>
+                <option>Gestão e indicadores</option>
+                <option>Sistemas e dados desorganizados</option>
+                <option>Reestruturação da empresa</option>
+              </select>
+            </div>
+            <div class="nx-field">
+              <label for="diag-porte">Porte</label>
+              <select id="diag-porte" name="porte">
+                <option>Até 50 colaboradores</option>
+                <option>51 a 200 colaboradores</option>
+                <option>Mais de 200 colaboradores</option>
+              </select>
+            </div>
+            <button class="nx-btn nx-btn-blue" type="submit">Receber diagnóstico <span class="nx-arrow">→</span></button>
+          </form>
+          <p class="nx-form-note">Um especialista responde em até 1 dia útil com os primeiros pontos de atenção para o seu caso.</p>
+        </div>
+
+        <div class="nx-panel" data-panel="plat">
+          <div class="nx-platform-links">
+            <a class="nx-platform-link" href="https://www.construdata.software/" target="_blank" rel="noopener"><span>ConstruData<small>Gestão de obras em tempo real</small></span><span class="nx-arrow">↗</span></a>
+            <a class="nx-platform-link" onclick="openModal('jurimetria')"><span>Jurimetria Regulatória<small>Inteligência regulatória</small></span><span class="nx-arrow">→</span></a>
+            <a class="nx-platform-link" onclick="switchView('blog')"><span>Nery Notícias<small>Portais Regulatório e Saneamento</small></span><span class="nx-arrow">→</span></a>
+          </div>
+        </div>
+
+        <div class="nx-panel" data-panel="cont">
+          <form class="nx-form" onsubmit="event.preventDefault(); enviarContato(this, 'email')">
+            <div class="nx-field">
+              <label for="tool-nome">Nome e empresa</label>
+              <input id="tool-nome" name="nome" required placeholder="Ex.: Ana — Construtora XYZ">
+            </div>
+            <div class="nx-field">
+              <label for="tool-msg">Como podemos ajudar?</label>
+              <input id="tool-msg" name="mensagem" required placeholder="Conte em uma frase">
+            </div>
+            <div style="display:flex; gap:10px; flex-wrap:wrap">
+              <button class="nx-btn nx-btn-navy" type="submit">E-mail</button>
+              <button class="nx-btn nx-btn-blue" type="button" onclick="enviarContato(this.form, 'whatsapp')">WhatsApp</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3. Cards de entrada -->
+    <section class="nx-section">
       <div class="container">
-        <p class="section-eyebrow fade-up">Plataformas</p>
-        
+        <div class="nx-entry-grid">
+          <a class="nx-card fade-up" onclick="scrollToSection('sec-metodo')">
+            <div class="nx-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 12h12M12 6l6 6-6 6"/></svg></div>
+            <h3>Como iniciar</h3>
+            <p>Entenda o passo a passo: diagnóstico, plano de reestruturação, implantação de sistemas e acompanhamento de resultados.</p>
+            <span class="nx-link">Saiba mais <span class="nx-arrow">→</span></span>
+          </a>
+          <a class="nx-card fade-up delay-1" onclick="openDiagnostico()">
+            <div class="nx-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 20c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg></div>
+            <h3>Primeira vez com o Grupo Nery?</h3>
+            <p>Faça um diagnóstico gratuito em menos de um minuto e descubra onde sua empresa perde margem, tempo e controle.</p>
+            <span class="nx-link">Fazer diagnóstico <span class="nx-arrow">→</span></span>
+          </a>
+          <a class="nx-card fade-up delay-2" onclick="scrollToSection('sec-insights')">
+            <div class="nx-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 4h11l3 3v13H5z"/><path d="M8 10h8M8 14h8M8 18h5"/></svg></div>
+            <h3>Conteúdos e Insights</h3>
+            <p>Artigos, análises regulatórias e boas práticas de gestão para engenharia, saneamento e construção.</p>
+            <span class="nx-link">Ver conteúdos <span class="nx-arrow">→</span></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Manifesto + vídeo -->
+    <section class="nx-section" style="padding-top:0">
+      <div class="container nx-manifesto">
+        <div class="fade-up">
+          <p class="nx-eyebrow">Por que o Grupo Nery</p>
+          <h2 class="nx-h2">Organize a gestão e vá além</h2>
+          <p class="nx-lead">Obra boa com gestão fraca vira prejuízo. Assumimos o lado administrativo da sua empresa (custos, contratos, processos, pessoas e dados) para que a operação cresça com controle. Da consultoria ao sistema, um único parceiro.</p>
+          <div style="margin-top:28px"><a class="nx-btn nx-btn-line" onclick="scrollToSection('sec-metodo')">Conheça o método <span class="nx-arrow">→</span></a></div>
+        </div>
+        <div class="nx-video fade-up delay-1">
+          <video id="nx-manifesto-video" muted playsinline loop preload="none" poster="hero-poster.jpg">
+            <source src="vídeo hero section.mp4" type="video/mp4">
+          </video>
+          <button class="nx-video-btn" type="button" onclick="toggleManifestoVideo(this)">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M7 4l13 8-13 8z"/></svg>
+            <span>Assistir</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Soluções em abas -->
+    <section class="nx-section nx-solutions" id="sec-solucoes" style="background:#F7F9FB">
+      <div class="container">
+        <div class="nx-head fade-up">
+          <h2>Serviços e soluções de gestão</h2>
+          <p>Seja um ponto específico ou a empresa inteira, combinamos consultoria e tecnologia para resolver o que trava o seu crescimento.</p>
+        </div>
+        <div data-tabs class="fade-up delay-1">
+          <div class="nx-tabs" role="tablist">
+            <button class="nx-tab active" data-tab="s1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg><span>Gestão<span class="nx-tab-label-long"> Empresarial</span></span></button>
+            <button class="nx-tab" data-tab="s2"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 7h16M4 12h10M4 17h7"/><path d="M17 14l3 3-3 3"/></svg><span>Reestruturação<span class="nx-tab-label-long"> Administrativa</span></span></button>
+            <button class="nx-tab" data-tab="s3"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="3" width="14" height="18" rx="1"/><path d="M8 7h8M8 11h2M12 11h2M8 15h2M12 15h4"/></svg><span>Custos<span class="nx-tab-label-long"> e Contratos</span></span></button>
+            <button class="nx-tab" data-tab="s4"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 8l-4 4 4 4M16 8l4 4-4 4M13 6l-2 12"/></svg><span>Tecnologia<span class="nx-tab-label-long"> e Sistemas</span></span></button>
+            <button class="nx-tab" data-tab="s5"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 20h18M5 20V10l7-5 7 5v10M10 20v-5h4v5"/></svg><span>Gestão<span class="nx-tab-label-long"> de Obras</span></span></button>
+            <span class="nx-tab-ind"></span>
+          </div>
+
+          <div class="nx-panel active" data-panel="s1">
+            <div class="nx-carousel">
+              <div class="nx-track">
+                <div class="nx-sol-card"><div class="nx-sol-top"><span>Gestão</span><h3>Diagnóstico organizacional</h3></div><div class="nx-sol-body"><ul><li>Mapeamento de áreas, papéis e responsabilidades</li><li>Pontos de perda de margem e de controle</li><li>Plano de ação priorizado</li></ul><a class="nx-link" onclick="openDiagnostico()">Solicitar <span class="nx-arrow">→</span></a></div></div>
+                <div class="nx-sol-card"><div class="nx-sol-top"><span>Gestão</span><h3>Indicadores e governança</h3></div><div class="nx-sol-body"><ul><li>KPIs por área e por obra</li><li>Rituais de gestão e reuniões de resultado</li><li>Painéis para a diretoria</li></ul><a class="nx-link" onclick="openDiagnostico()">Solicitar <span class="nx-arrow">→</span></a></div></div>
+                <div class="nx-sol-card"><div class="nx-sol-top"><span>Gestão</span><h3>Planejamento estratégico</h3></div><div class="nx-sol-body"><ul><li>Metas e orçamento anual</li><li>Desdobramento por área</li><li>Acompanhamento mensal</li></ul><a class="nx-link" onclick="openDiagnostico()">Solicitar <span class="nx-arrow">→</span></a></div></div>
+                <div class="nx-sol-card"><div class="nx-sol-top"><span>Gestão</span><h3>Conselho consultivo</h3></div><div class="nx-sol-body"><ul><li>Apoio à diretoria nas decisões críticas</li><li>Visão externa e independente</li><li>Encontros periódicos</li></ul><a class="nx-link" onclick="openDiagnostico()">Solicitar <span class="nx-arrow">→</span></a></div></div>
+              </div>
+              <div class="nx-car-nav"><button class="nx-car-btn" data-dir="-1" aria-label="Anterior">←</button><button class="nx-car-btn" data-dir="1" aria-label="Seguinte">→</button></div>
+            </div>
+          </div>
+
+          <div class="nx-panel" data-panel="s2">
+            <div class="nx-carousel">
+              <div class="nx-track">
+                <div class="nx-sol-card"><div class="nx-sol-top"><span>Reestruturação</span><h3>Processos administrativos</h3></div><div class="nx-sol-body"><ul><li>Compras, financeiro, RH e jurídico</li><li>Fluxos padronizados e documentados</li><li>Fim do retrabalho e das planilhas paralelas</li></ul><a class="nx-link" onclick="openDiagnostico()">Solicitar <span class="nx-arrow">→</span></a></div></div>
+                <div class="nx-sol-card"><div class="nx-sol-top"><span>Reestruturação</span><h3>Diagnóstico de contratos e carteira</h3></div><div class="nx-sol-body"><ul><li>Saúde financeira de cada contrato</li><li>Monitoramento da carteira</li><li>Plano de recuperação de margem</li></ul><a class="nx-link" onclick="openDiagnostico()">Solicitar <span class="nx-arrow">→</span></a></div></div>
+                <div class="nx-sol-card"><div class="nx-sol-top"><span>Reestruturação</span><h3>Estrutura organizacional</h3></div><div class="nx-sol-body"><ul><li>Organograma e alçadas de decisão</li><li>Dimensionamento de equipes</li><li>Transição acompanhada</li></ul><a class="nx-link" onclick="openDiagnostico()">Solicitar <span class="nx-arrow">→</span></a></div></div>
+                <div class="nx-sol-card"><div class="nx-sol-top"><span>Reestruturação</span><h3>Turnaround</h3></div><div class="nx-sol-body"><ul><li>Caixa e capital de giro</li><li>Renegociação com fornecedores</li><li>Execução lado a lado com a gestão</li></ul><a class="nx-link" onclick="openDiagnostico()">Solicitar <span class="nx-arrow">→</span></a></div></div>
+              </div>
+              <div class="nx-car-nav"><button class="nx-car-btn" data-dir="-1" aria-label="Anterior">←</button><button class="nx-car-btn" data-dir="1" aria-label="Seguinte">→</button></div>
+            </div>
+          </div>
+
+          <div class="nx-panel" data-panel="s3">
+            <div class="nx-carousel">
+              <div class="nx-track">
+                <div class="nx-sol-card"><div class="nx-sol-top"><span>Custos e Contratos</span><h3>Orçamento executivo de obras</h3></div><div class="nx-sol-body"><ul><li>Levantamento de quantitativos</li><li>Composições de custo</li><li>Curva ABC e cronograma físico-financeiro</li></ul><a class="nx-link" onclick="openDiagnostico()">Solicitar <span class="nx-arrow">→</span></a></div></div>
+                <div class="nx-sol-card"><div class="nx-sol-top"><span>Custos e Contratos</span><h3>Propostas técnicas e comerciais</h3></div><div class="nx-sol-body"><ul><li>Apoio em licitações e concorrências</li><li>Análise de edital e riscos</li><li>Precificação competitiva</li></ul><a class="nx-link" onclick="openDiagnostico()">Solicitar <span class="nx-arrow">→</span></a></div></div>
+                <div class="nx-sol-card"><div class="nx-sol-top"><span>Custos e Contratos</span><h3>Gestão contratual e medições</h3></div><div class="nx-sol-body"><ul><li>Controle de medições e aditivos</li><li>Reequilíbrio econômico-financeiro</li><li>Pleitos e documentação</li></ul><a class="nx-link" onclick="openDiagnostico()">Solicitar <span class="nx-arrow">→</span></a></div></div>
+              </div>
+              <div class="nx-car-nav"><button class="nx-car-btn" data-dir="-1" aria-label="Anterior">←</button><button class="nx-car-btn" data-dir="1" aria-label="Seguinte">→</button></div>
+            </div>
+          </div>
+
+          <div class="nx-panel" data-panel="s4">
+            <div class="nx-carousel">
+              <div class="nx-track">
+                <div class="nx-sol-card"><div class="nx-sol-top"><span>Tecnologia</span><h3>Sistemas sob medida</h3></div><div class="nx-sol-body"><ul><li>Feitos para o seu processo, não o contrário</li><li>Código próprio, sem dependência</li><li>Implantação e treinamento</li></ul><a class="nx-link" onclick="openDiagnostico()">Solicitar <span class="nx-arrow">→</span></a></div></div>
+                <div class="nx-sol-card"><div class="nx-sol-top"><span>Tecnologia</span><h3>Integração de dados</h3></div><div class="nx-sol-body"><ul><li>Planilhas, ERPs e sistemas legados unificados</li><li>Uma única fonte de verdade</li><li>Automação de rotinas</li></ul><a class="nx-link" onclick="openDiagnostico()">Solicitar <span class="nx-arrow">→</span></a></div></div>
+                <div class="nx-sol-card"><div class="nx-sol-top"><span>Tecnologia</span><h3>Dashboards e BI</h3></div><div class="nx-sol-body"><ul><li>Indicadores em tempo real</li><li>Visão por obra, contrato e área</li><li>Alertas para a diretoria</li></ul><a class="nx-link" onclick="openDiagnostico()">Solicitar <span class="nx-arrow">→</span></a></div></div>
+                <div class="nx-sol-card"><div class="nx-sol-top"><span>Tecnologia</span><h3>Plataformas Nery</h3></div><div class="nx-sol-body"><ul><li>ConstruData para gestão de obras</li><li>Jurimetria Regulatória</li><li>Portais de notícias setoriais</li></ul><a class="nx-link" onclick="scrollToSection('sec-plataformas')">Conhecer <span class="nx-arrow">→</span></a></div></div>
+              </div>
+              <div class="nx-car-nav"><button class="nx-car-btn" data-dir="-1" aria-label="Anterior">←</button><button class="nx-car-btn" data-dir="1" aria-label="Seguinte">→</button></div>
+            </div>
+          </div>
+
+          <div class="nx-panel" data-panel="s5">
+            <div class="nx-carousel">
+              <div class="nx-track">
+                <div class="nx-sol-card"><div class="nx-sol-top"><span>Obras</span><h3>Planejamento de obras</h3></div><div class="nx-sol-body"><ul><li>Cronogramas e linha de base</li><li>Planejamento de recursos</li><li>Gestão de riscos</li></ul><a class="nx-link" onclick="openDiagnostico()">Solicitar <span class="nx-arrow">→</span></a></div></div>
+                <div class="nx-sol-card"><div class="nx-sol-top"><span>Obras</span><h3>Gerenciamento de obras e projetos</h3></div><div class="nx-sol-body"><ul><li>RDO, medição e avanço físico</li><li>Controle de custo realizado x previsto</li><li>Relatórios gerenciais</li></ul><a class="nx-link" onclick="openDiagnostico()">Solicitar <span class="nx-arrow">→</span></a></div></div>
+                <div class="nx-sol-card"><div class="nx-sol-top"><span>Obras</span><h3>Obras de saneamento</h3></div><div class="nx-sol-body"><ul><li>Adequação ao Marco Legal do Saneamento</li><li>Gestão de contratos com concessionárias</li><li>Indicadores operacionais</li></ul><a class="nx-link" onclick="openDiagnostico()">Solicitar <span class="nx-arrow">→</span></a></div></div>
+              </div>
+              <div class="nx-car-nav"><button class="nx-car-btn" data-dir="-1" aria-label="Anterior">←</button><button class="nx-car-btn" data-dir="1" aria-label="Seguinte">→</button></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Método (faixa marinho) -->
+    <section class="nx-section" id="sec-metodo">
+      <div class="container">
+        <div class="nx-band fade-up">
+          <div style="position:relative; z-index:1">
+            <p class="nx-eyebrow" style="color:var(--blue)">O método Nery</p>
+            <h2>Da desordem ao controle, em quatro etapas</h2>
+            <p>Não entregamos relatório e vamos embora. Acompanhamos a implantação até os resultados aparecerem nos números da empresa.</p>
+            <a class="nx-btn nx-btn-white" onclick="openDiagnostico()">Começar pelo diagnóstico <span class="nx-arrow">→</span></a>
+          </div>
+          <div class="nx-steps">
+            <div class="nx-step"><b>01</b><h4>Diagnóstico</h4><p>Raio-X de custos, contratos, processos e sistemas.</p></div>
+            <div class="nx-step"><b>02</b><h4>Reestruturação</h4><p>Novo desenho de processos, papéis e indicadores.</p></div>
+            <div class="nx-step"><b>03</b><h4>Sistemas</h4><p>Tecnologia sob medida que sustenta a nova gestão.</p></div>
+            <div class="nx-step"><b>04</b><h4>Acompanhamento</h4><p>Rituais de gestão e evolução contínua dos resultados.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Setores -->
+    <section class="nx-section" id="sec-setores" style="padding-top:0">
+      <div class="container">
+        <div class="nx-head fade-up">
+          <h2>Setores de atuação</h2>
+          <p>Começamos onde a gestão faz mais diferença: empresas com obras, contratos longos e operação em campo.</p>
+        </div>
+        <div class="nx-carousel fade-up delay-1">
+          <div class="nx-track" style="grid-auto-columns: calc((100% - 72px) / 4)">
+            <div class="nx-sector"><img src="consultoria-obras.svg" alt="" loading="lazy"><div class="nx-sector-body"><h3>Engenharia</h3><p>Construtoras, projetistas e gerenciadoras.</p></div></div>
+            <div class="nx-sector"><img src="consultoria-saneamento.svg" alt="" loading="lazy"><div class="nx-sector-body"><h3>Saneamento</h3><p>Concessionárias, operadoras e consórcios.</p></div></div>
+            <div class="nx-sector"><img src="imagem construdata.webp" alt="" loading="lazy"><div class="nx-sector-body"><h3>Construção</h3><p>Incorporadoras e obras civis e industriais.</p></div></div>
+            <div class="nx-sector nx-sector-plain"><svg class="nx-sector-glyph" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M3 21h18M6 21V9M10 21V9M14 21V9M18 21V9M2 9l10-6 10 6z"/></svg><div class="nx-sector-body"><h3>Setor público</h3><p>Órgãos, autarquias e agências reguladoras.</p></div></div>
+            <div class="nx-sector"><img src="consultoria-agro.svg" alt="" loading="lazy"><div class="nx-sector-body"><h3>Agronegócio</h3><p>Operações de campo, logística e capital de giro.</p></div></div>
+            <div class="nx-sector nx-sector-plain"><svg class="nx-sector-glyph" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="3" y="7" width="18" height="13" rx="1"/><path d="M8 7V4h8v3"/></svg><div class="nx-sector-body"><h3>Empresas de serviços</h3><p>Gestão e sistemas para qualquer operação.</p></div></div>
+          </div>
+          <div class="nx-car-nav"><button class="nx-car-btn" data-dir="-1" aria-label="Anterior">←</button><button class="nx-car-btn" data-dir="1" aria-label="Seguinte">→</button></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. Plataformas -->
+    <section class="nx-section" id="sec-plataformas" style="background:#F7F9FB">
+      <div class="container">
+        <div class="nx-head fade-up">
+          <h2>Plataformas Nery</h2>
+          <p>Tecnologia própria que sustenta a gestão depois da consultoria.</p>
+        </div>
         <div class="platforms-grid fade-up delay-1">
-          <!-- Card 1 -->
           <div class="platform-card" onclick="window.open('https://www.construdata.software/', '_blank')">
             <img src="imagem construdata.webp" alt="ConstruData" class="platform-card-img">
             <div class="platform-card-content">
@@ -1004,8 +1506,6 @@
               <span class="platform-card-cta">Clique e conheça ↗</span>
             </div>
           </div>
-
-          <!-- Card 2 -->
           <div class="platform-card" onclick="openModal('jurimetria')">
             <img src="imagem jurimetria.jpg" alt="Jurimetria Regulatória" class="platform-card-img">
             <div class="platform-card-content">
@@ -1014,8 +1514,6 @@
               <span class="platform-card-cta">Conheça a solução ↗</span>
             </div>
           </div>
-
-          <!-- Card 3 -->
           <div class="platform-card" onclick="window.open('https://www.agrotorre.com.br/', '_blank')">
             <img src="IMG_9652.JPG" alt="AgroTorre" class="platform-card-img">
             <div class="platform-card-content">
@@ -1028,50 +1526,11 @@
       </div>
     </section>
 
-    <!-- Consultoria -->
-    <section class="section" id="sec-consultoria">
-      <div class="container">
-        <p class="section-eyebrow fade-up">Consultoria</p>
-        <h2 class="section-title fade-up">Transformação Corporativa.</h2>
-        <p class="section-desc fade-up delay-1">Trabalhamos em parceria com nossos clientes na elaboração e implementação de programas de melhoria de desempenho operacional, baseados em aumento de receitas, redução de custos, melhoria de capital de giro e otimização de investimentos e ativos — buscando, assim, maior lucratividade e rentabilidade.</p>
-
-        <div class="platforms-grid fade-up delay-1">
-          <!-- Card 1 — Obras (foco) -->
-          <div class="platform-card">
-            <img src="consultoria-obras.svg" alt="Obras & Infraestrutura" class="platform-card-img">
-            <div class="platform-card-content">
-              <span class="platform-card-name">Obras &amp; Infraestrutura</span>
-              <h3 class="platform-card-title">Ganhos de produtividade, controle de custos e otimização de ativos ao longo de todo o ciclo da obra.</h3>
-            </div>
-          </div>
-
-          <!-- Card 2 — Saneamento -->
-          <div class="platform-card">
-            <img src="consultoria-saneamento.svg" alt="Saneamento" class="platform-card-img">
-            <div class="platform-card-content">
-              <span class="platform-card-name">Saneamento</span>
-              <h3 class="platform-card-title">Eficiência operacional e financeira para concessionárias e operadores de saneamento.</h3>
-            </div>
-          </div>
-
-          <!-- Card 3 — Agro & Logística -->
-          <div class="platform-card">
-            <img src="consultoria-agro.svg" alt="Agronegócio & Logística" class="platform-card-img">
-            <div class="platform-card-content">
-              <span class="platform-card-name">Agronegócio &amp; Logística</span>
-              <h3 class="platform-card-title">Redução de custos e otimização de capital de giro em operações de agro e logística.</h3>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Clientes (Esteira de Logos) -->
+    <!-- 9. Clientes (Esteira de Logos) -->
     <section class="clientes-section" id="sec-clientes">
       <div class="container">
-        <div class="clientes-header fade-up">
-          <p class="section-eyebrow" style="margin-bottom: 16px;">Clientes</p>
-          <h2 class="section-title" style="margin-bottom: 0;">Quem confia no Grupo Nery.</h2>
+        <div class="nx-head fade-up" style="margin-bottom:40px">
+          <h2>Quem confia no Grupo Nery</h2>
         </div>
       </div>
       <div class="clientes-marquee fade-up delay-1">
@@ -1104,72 +1563,13 @@
       </div>
     </section>
 
-    <!-- O que fazemos -->
-    <section class="section" id="sec-whatwedo">
-      <div class="container">
-        <div class="whatwedo-header fade-up">
-          <p class="section-eyebrow">O que fazemos</p>
-          <h2 class="section-title">Software sob medida.<br>Nenhum atalho.</h2>
-          <p class="section-desc">
-            Não vendemos plataformas genéricas. Construímos sistemas a partir da complexidade real do seu negócio — integrando fontes de dados legadas, automatizando fluxos críticos e entregando interfaces que as equipes realmente usam.
-          </p>
-        </div>
-        <div class="whatwedo-grid">
-          <div class="whatwedo-card fade-up delay-1">
-            <h3>Desenvolvimento sob medida</h3>
-            <p>Sistemas projetados para o seu processo, não o contrário. Cada módulo é construído para se encaixar perfeitamente na realidade operacional da sua organização.</p>
-          </div>
-          <div class="whatwedo-card fade-up delay-2">
-            <h3>Integração de dados</h3>
-            <p>Unificação de fontes heterogêneas em um único fluxo operacional. Conectamos sistemas legados, APIs modernas e bancos de dados em uma visão consolidada.</p>
-          </div>
-          <div class="whatwedo-card fade-up delay-1">
-            <h3>Setor público e privado</h3>
-            <p>Experiência comprovada em conformidade regulatória, LGPD e ambientes de missão crítica — onde não há espaço para falhas ou improvisos.</p>
-          </div>
-          <div class="whatwedo-card fade-up delay-2">
-            <h3>Inteligência operacional</h3>
-            <p>Dashboards e automações que transformam volume em visibilidade. Dados brutos viram insights acionáveis para quem toma decisão.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Por que a Nery -->
-    <section class="section" id="sec-why">
-      <div class="container">
-        <p class="section-eyebrow fade-up">Por que o Grupo Nery</p>
-        <h2 class="section-title fade-up">Outros entregam software.<br>Nós entregamos sistemas que funcionam.</h2>
-        <div class="why-content">
-          <div class="why-text fade-up delay-1">
-            <p>A diferença entre um software que passa na homologação e um software que transforma uma operação está na profundidade do entendimento do problema. É aí que trabalhamos.</p>
-            <div style="margin-top: 32px; padding: 24px; border: 1px solid var(--border); background: var(--off-white);">
-              <h4 style="font-size: 16px; margin-bottom: 8px; font-weight: 500;">Nossa Metodologia em Ação.</h4>
-              <p style="font-size: 15px; color: var(--text-med); line-height: 1.5; margin-bottom: 16px;">
-                Acesse o conteúdo e entenda como pensamos o ciclo de vida dos nossos projetos do início ao fim.
-              </p>
-              <a href="https://www.linkedin.com/feed/update/urn:li:activity:7454469394803531776" target="_blank" style="font-size: 14px; font-weight: 600; color: var(--text-dark); text-decoration: underline;">Ver Publicação no LinkedIn ↗</a>
-            </div>
-          </div>
-          <div class="why-quote fade-up delay-2">
-            <blockquote>
-              "O sistema do Grupo Nery substituiu três planilhas críticas e dois processos manuais. Em 60 dias, nossa equipe tinha visibilidade em tempo real do que levava semanas para consolidar."
-            </blockquote>
-            <cite>— Diretor de Operações, empresa de infraestrutura</cite>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Depoimentos (What Partners talk about us) -->
+    <!-- 10. Depoimentos -->
     <section class="testimonials-section">
       <div class="container fade-up">
-        <div class="testimonials-header">
-          <h2 class="section-title" style="margin-bottom: 0;">O que nossos parceiros dizem<br>sobre nós</h2>
+        <div class="nx-head" style="margin-bottom:40px">
+          <h2>O que nossos parceiros dizem</h2>
         </div>
-        
         <div class="testimonials-grid fade-up delay-1">
-          <!-- Card 1 -->
           <div class="testimonial-card">
             <p class="testimonial-quote">"A plataforma coloca o dado de campo no centro da decisão, sem depender de consolidação manual."</p>
             <div class="testimonial-author-wrapper">
@@ -1177,7 +1577,6 @@
               <span class="testimonial-role">ENGENHEIRO</span>
             </div>
           </div>
-          <!-- Card 2 -->
           <div class="testimonial-card">
             <p class="testimonial-quote">"Quando RDO, planejamento e medição conversam, a gestão deixa de discutir planilha e passa a discutir decisão."</p>
             <div class="testimonial-author-wrapper">
@@ -1185,7 +1584,6 @@
               <span class="testimonial-role">CONSÓRCIO SE LIGA NA REDE</span>
             </div>
           </div>
-          <!-- Card 3 -->
           <div class="testimonial-card">
             <p class="testimonial-quote">"O valor está em rastrear origem, pendência e responsabilidade antes que o problema chegue ao fechamento."</p>
             <div class="testimonial-author-wrapper">
@@ -1197,75 +1595,121 @@
       </div>
     </section>
 
-    <!-- Sobre a Empresa -->
-    <section class="section" id="sec-about">
+    <!-- 11. Insights -->
+    <section class="nx-section" id="sec-insights">
       <div class="container">
-        <p class="section-eyebrow fade-up">Sobre a Empresa</p>
-        <h2 class="section-title fade-up">A camada invisível que move<br>organizações inteiras.</h2>
-        <div class="about-grid">
-          <div class="about-text fade-up delay-1">
-            <p>
-              O Grupo Nery nasceu com uma convicção: o verdadeiro potencial de uma organização está nos seus dados — mas só se realiza quando esses dados se tornam operação. Não somos uma empresa de consultoria que entrega relatórios. Somos engenheiros de software que constroem sistemas que funcionam no mundo real.
-            </p>
-            <p>
-              Atuamos como a camada estrutural entre os dados brutos e as decisões que movem empresas, governos e operações críticas. Nossa tecnologia amplifica a inteligência humana em vez de substituí-la, respeitando a privacidade dos dados dos nossos parceiros com governança intransigente.
-            </p>
+        <div class="nx-head fade-up">
+          <h2>Últimas informações</h2>
+          <p>Análises, tendências e boas práticas para orientar a gestão da sua empresa.</p>
+        </div>
+        <div class="nx-filters fade-up" role="group" aria-label="Filtrar conteúdos">
+          <button class="nx-chip active" data-filter="all">Todas as categorias</button>
+          <button class="nx-chip" data-filter="gestao">Gestão</button>
+          <button class="nx-chip" data-filter="saneamento">Saneamento</button>
+          <button class="nx-chip" data-filter="regulatorio">Regulatório</button>
+          <button class="nx-chip" data-filter="tecnologia">Tecnologia</button>
+        </div>
+        <div class="nx-carousel fade-up delay-1">
+          <div class="nx-track" id="nx-insights-track">
+            <a class="nx-insight" data-cat="saneamento" onclick="switchView('landing-saneamento')"><div class="nx-insight-top"></div><div class="nx-insight-body"><span class="nx-insight-tag">Saneamento</span><h3>Portal de Notícias de Saneamento: tudo o que muda no setor, em um só lugar</h3><span class="nx-link">Acessar <span class="nx-arrow">→</span></span></div></a>
+            <a class="nx-insight" data-cat="regulatorio" href="/regulatorio"><div class="nx-insight-top"></div><div class="nx-insight-body"><span class="nx-insight-tag">Regulatório</span><h3>Monitoramento de normas e decisões das agências reguladoras federais</h3><span class="nx-link">Acessar <span class="nx-arrow">→</span></span></div></a>
+            <a class="nx-insight" data-cat="gestao" href="https://www.linkedin.com/feed/update/urn:li:activity:7454469394803531776" target="_blank" rel="noopener"><div class="nx-insight-top"></div><div class="nx-insight-body"><span class="nx-insight-tag">Gestão</span><h3>Nossa metodologia em ação: o ciclo de vida de um projeto do início ao fim</h3><span class="nx-link">Ler no LinkedIn <span class="nx-arrow">↗</span></span></div></a>
+            <a class="nx-insight" data-cat="tecnologia" href="https://www.construdata.software/" target="_blank" rel="noopener"><div class="nx-insight-top"></div><div class="nx-insight-body"><span class="nx-insight-tag">Tecnologia</span><h3>Como RDO, planejamento e medição integrados mudam a gestão de obras</h3><span class="nx-link">Conhecer o ConstruData <span class="nx-arrow">↗</span></span></div></a>
+            <a class="nx-insight" data-cat="regulatorio" onclick="openModal('jurimetria')"><div class="nx-insight-top"></div><div class="nx-insight-body"><span class="nx-insight-tag">Regulatório</span><h3>Jurimetria regulatória: decisões das agências transformadas em dados</h3><span class="nx-link">Saiba mais <span class="nx-arrow">→</span></span></div></a>
           </div>
-          <div class="about-values">
-            <div class="about-value fade-up delay-1">
-              <h4>Engenharia de verdade</h4>
-              <p>Código nosso, de ponta a ponta. Sem dependência de terceiros.</p>
-            </div>
-            <div class="about-value fade-up delay-2">
-              <h4>Privacidade radical</h4>
-              <p>Nunca vendemos dados. Nunca venderemos.</p>
-            </div>
-            <div class="about-value fade-up delay-3">
-              <h4>Foco em resultado</h4>
-              <p>Se não funciona em produção, não funciona.</p>
-            </div>
-            <div class="about-value fade-up delay-4">
-              <h4>Parceria de longo prazo</h4>
-              <p>Construímos junto. Evoluímos junto.</p>
+          <div class="nx-car-nav"><button class="nx-car-btn" data-dir="-1" aria-label="Anterior">←</button><button class="nx-car-btn" data-dir="1" aria-label="Seguinte">→</button></div>
+        </div>
+        <div style="text-align:center; margin-top:24px"><a class="nx-btn nx-btn-line" onclick="switchView('blog')">Ver todas as notícias <span class="nx-arrow">→</span></a></div>
+      </div>
+    </section>
+
+    <!-- 12. Contato (CTA final) -->
+    <section class="nx-section" id="sec-contato" style="padding-top:0">
+      <div class="container">
+        <div class="nx-cta fade-up">
+          <div>
+            <p class="nx-eyebrow">Contato</p>
+            <h2 class="nx-h2">Precisa reestruturar a gestão da sua empresa?</h2>
+            <p class="nx-lead">Conte o seu cenário. Respondemos com um primeiro diagnóstico e uma proposta de caminho, sem compromisso.</p>
+            <div class="nx-contact-list">
+              <a class="nx-link" onclick="abrirWhatsApp('Olá! Vim pelo site do Grupo Nery e gostaria de conversar.')">WhatsApp <span class="nx-arrow">→</span></a>
+              <a class="nx-link" id="nx-email-link">E-mail <span class="nx-arrow">→</span></a>
+              <a class="nx-link" href="https://www.linkedin.com/in/joão-de-souza-nery-4380262b0" target="_blank" rel="noopener">LinkedIn <span class="nx-arrow">↗</span></a>
             </div>
           </div>
+          <form class="nx-form" onsubmit="event.preventDefault(); enviarContato(this, 'email')">
+            <div class="nx-field"><label for="ct-nome">Nome</label><input id="ct-nome" name="nome" required></div>
+            <div class="nx-field"><label for="ct-empresa">Empresa</label><input id="ct-empresa" name="empresa"></div>
+            <div class="nx-field"><label for="ct-tel">Telefone / WhatsApp</label><input id="ct-tel" name="telefone" type="tel"></div>
+            <div class="nx-field"><label for="ct-setor">Setor</label>
+              <select id="ct-setor" name="setor"><option>Engenharia</option><option>Saneamento</option><option>Construção civil</option><option>Setor público</option><option>Agronegócio</option><option>Outro</option></select>
+            </div>
+            <div class="nx-field nx-field-full"><label for="ct-msg">Mensagem</label><textarea id="ct-msg" name="mensagem" rows="4" required></textarea></div>
+            <div class="nx-cta-actions">
+              <button class="nx-btn nx-btn-navy" type="submit">Enviar por e-mail <span class="nx-arrow">→</span></button>
+              <button class="nx-btn nx-btn-blue" type="button" onclick="if (this.form.reportValidity()) enviarContato(this.form, 'whatsapp')">Enviar por WhatsApp <span class="nx-arrow">→</span></button>
+            </div>
+          </form>
         </div>
       </div>
     </section>
 
-    <!-- Footer Landing -->
-    <footer class="site-footer" id="sec-contact">
-      <div class="container fade-up">
-        <div class="footer-grid">
-          <div class="footer-brand">
-            <span class="fbrand-name">NERY</span>
-            <p>Software que transforma dados em decisão.<br>Construído para quem não pode errar.</p>
+    <!-- 13. Rodapé -->
+    <footer class="nx-footer">
+      <div class="container">
+        <div class="nx-footer-grid">
+          <div class="nx-footer-brand">
+            <a class="nav-logo" onclick="window.scrollTo({top:0, behavior:'smooth'})"><span>NERY</span><span class="logo-mark" aria-hidden="true"></span></a>
+            <p>Consultoria, tecnologia e gestão para empresas de engenharia, saneamento e construção.</p>
           </div>
-          <div class="footer-col">
+          <div>
             <h5>Soluções</h5>
-            <a href="#">Infraestrutura e Obras</a>
-            <a href="#">Governança Regulatória</a>
-            <a href="#">Operações Logísticas</a>
+            <a onclick="scrollToSection('sec-solucoes')">Gestão empresarial</a>
+            <a onclick="scrollToSection('sec-solucoes')">Reestruturação administrativa</a>
+            <a onclick="scrollToSection('sec-solucoes')">Custos e contratos</a>
+            <a onclick="scrollToSection('sec-solucoes')">Tecnologia e sistemas</a>
           </div>
-          <div class="footer-col">
-            <h5>A Empresa</h5>
-            <a href="#">Quem Somos</a>
-            <a onclick="switchView('blog')">Notícias & Portais</a>
-            <a href="#">Contato</a>
+          <div>
+            <h5>Setores</h5>
+            <a onclick="scrollToSection('sec-setores')">Engenharia</a>
+            <a onclick="scrollToSection('sec-setores')">Saneamento</a>
+            <a onclick="scrollToSection('sec-setores')">Construção</a>
+            <a onclick="scrollToSection('sec-setores')">Setor público</a>
           </div>
-          <div class="footer-col">
-            <h5>Legal</h5>
-            <a href="#">Privacidade</a>
-            <a href="#">Termos de Serviço</a>
+          <div>
+            <h5>Empresa</h5>
+            <a onclick="scrollToSection('sec-metodo')">Método</a>
+            <a onclick="scrollToSection('sec-plataformas')">Plataformas</a>
+            <a onclick="switchView('blog')">Notícias</a>
+            <a href="/privacidade">Privacidade</a>
+          </div>
+          <div>
+            <h5>Contato</h5>
+            <a onclick="openDiagnostico()">Diagnóstico gratuito</a>
+            <a onclick="abrirWhatsApp('Olá! Vim pelo site do Grupo Nery.')">WhatsApp</a>
+            <a onclick="scrollToSection('sec-contato')">Formulário</a>
+            <a href="https://www.linkedin.com/in/joão-de-souza-nery-4380262b0" target="_blank" rel="noopener">LinkedIn</a>
           </div>
         </div>
-        <div class="footer-bottom">
+        <div class="nx-footer-bottom">
           <span>&copy; 2026 Grupo Nery. Todos os direitos reservados.</span>
           <span>Desenvolvido no Brasil</span>
         </div>
       </div>
     </footer>
 
+  </div>
+
+  <!-- Faixa de aviso (fixa, pode ser fechada) -->
+  <div class="nx-notice" id="nx-notice" role="region" aria-label="Aviso">
+    <div class="container">
+      <div class="nx-notice-text">
+        <strong>Novo Marco Legal do Saneamento</strong>
+        <span>Sua empresa está preparada para as novas exigências de gestão e contratos? Veja como adequar.</span>
+      </div>
+      <a class="nx-btn nx-btn-navy" onclick="switchView('landing-saneamento'); closeNotice()">Ler atualizações</a>
+      <button class="nx-notice-close" onclick="closeNotice()" aria-label="Fechar aviso"><span class="nx-close-label">Fechar</span> ✕</button>
+    </div>
   </div>
 
   <!-- ═══════════════════════════════════════════════════
@@ -1551,6 +1995,7 @@
     function switchView(name) {
       document.querySelectorAll('.view').forEach(v => v.classList.remove('active'));
       document.getElementById('view-' + name).classList.add('active');
+      document.getElementById('nx-notice').style.display = name === 'landing' ? '' : 'none';
 
       const logoSlash = document.getElementById('logo-slash');
       const logoSub = document.getElementById('logo-sub');
@@ -1606,6 +2051,116 @@
     document.querySelectorAll('.fade-up').forEach(el => {
       observer.observe(el);
     });
+
+    // ─── Contato: preencha aqui o WhatsApp (DDI+DDD+número, só dígitos) e o e-mail comercial ───
+    const WHATSAPP_NUMBER = '';
+    const CONTACT_EMAIL = '';
+    const LINKEDIN_URL = 'https://www.linkedin.com/in/joão-de-souza-nery-4380262b0';
+
+    function abrirWhatsApp(texto) {
+      if (!WHATSAPP_NUMBER) { window.open(LINKEDIN_URL, '_blank'); return; }
+      window.open('https://wa.me/' + WHATSAPP_NUMBER + '?text=' + encodeURIComponent(texto), '_blank');
+    }
+    function abrirEmail(assunto, corpo) {
+      if (!CONTACT_EMAIL) { window.open(LINKEDIN_URL, '_blank'); return; }
+      window.location.href = 'mailto:' + CONTACT_EMAIL + '?subject=' + encodeURIComponent(assunto) + '&body=' + encodeURIComponent(corpo);
+    }
+    function enviarContato(form, canal) {
+      const d = Object.fromEntries(new FormData(form));
+      const linhas = [
+        d.nome && 'Nome: ' + d.nome,
+        d.empresa && 'Empresa: ' + d.empresa,
+        d.telefone && 'Telefone: ' + d.telefone,
+        d.setor && 'Setor: ' + d.setor,
+        d.mensagem && 'Mensagem: ' + d.mensagem
+      ].filter(Boolean).join('\n');
+      if (canal === 'whatsapp') abrirWhatsApp('Olá, Grupo Nery!\n' + linhas);
+      else abrirEmail('Contato pelo site — ' + (d.nome || ''), linhas);
+    }
+    function enviarDiagnostico(form) {
+      const d = Object.fromEntries(new FormData(form));
+      abrirWhatsApp('Olá! Quero um diagnóstico do Grupo Nery.\nSetor: ' + d.setor + '\nPrincipal desafio: ' + d.desafio + '\nPorte: ' + d.porte);
+    }
+    function openDiagnostico() {
+      if (!document.getElementById('view-landing').classList.contains('active')) switchView('landing');
+      setTab(document.querySelector('.nx-tool'), 'diag');
+      scrollToSection('sec-diagnostico');
+    }
+    document.getElementById('nx-email-link').addEventListener('click', () => abrirEmail('Contato pelo site', ''));
+
+    // ─── Abas com indicador deslizante ───
+    function moveIndicator(group) {
+      const active = group.querySelector(':scope > .nx-tabs .nx-tab.active');
+      const ind = group.querySelector(':scope > .nx-tabs .nx-tab-ind');
+      if (!active || !ind) return;
+      ind.style.left = active.offsetLeft + 'px';
+      ind.style.width = active.offsetWidth + 'px';
+    }
+    function setTab(group, name) {
+      group.querySelectorAll(':scope > .nx-tabs .nx-tab').forEach(t => t.classList.toggle('active', t.dataset.tab === name));
+      group.querySelectorAll(':scope > .nx-panel').forEach(p => p.classList.toggle('active', p.dataset.panel === name));
+      moveIndicator(group);
+      group.querySelectorAll(':scope > .nx-panel.active .nx-carousel').forEach(updateCarousel);
+    }
+    document.querySelectorAll('[data-tabs]').forEach(group => {
+      group.querySelectorAll(':scope > .nx-tabs .nx-tab').forEach(tab => {
+        tab.addEventListener('click', () => setTab(group, tab.dataset.tab));
+      });
+      moveIndicator(group);
+    });
+    window.addEventListener('resize', () => document.querySelectorAll('[data-tabs]').forEach(moveIndicator));
+    document.fonts && document.fonts.ready.then(() => document.querySelectorAll('[data-tabs]').forEach(moveIndicator));
+
+    // ─── Carrosséis (scroll-snap + Anterior/Seguinte) ───
+    function updateCarousel(car) {
+      const track = car.querySelector('.nx-track');
+      const [prev, next] = car.querySelectorAll('.nx-car-btn');
+      if (!track || !prev) return;
+      prev.disabled = track.scrollLeft <= 2;
+      next.disabled = track.scrollLeft + track.clientWidth >= track.scrollWidth - 2;
+    }
+    document.querySelectorAll('.nx-carousel').forEach(car => {
+      const track = car.querySelector('.nx-track');
+      car.querySelectorAll('.nx-car-btn').forEach(btn => {
+        btn.addEventListener('click', () => track.scrollBy({ left: Number(btn.dataset.dir) * track.clientWidth * 0.9 }));
+      });
+      track.addEventListener('scroll', () => updateCarousel(car), { passive: true });
+      updateCarousel(car);
+    });
+    window.addEventListener('resize', () => document.querySelectorAll('.nx-carousel').forEach(updateCarousel));
+
+    // ─── Filtros de Insights ───
+    document.querySelectorAll('.nx-chip').forEach(chip => {
+      chip.addEventListener('click', () => {
+        document.querySelectorAll('.nx-chip').forEach(c => c.classList.toggle('active', c === chip));
+        const f = chip.dataset.filter;
+        document.querySelectorAll('#nx-insights-track .nx-insight').forEach(card => {
+          card.classList.toggle('hidden', f !== 'all' && card.dataset.cat !== f);
+        });
+        const track = document.getElementById('nx-insights-track');
+        track.scrollLeft = 0;
+        updateCarousel(track.closest('.nx-carousel'));
+      });
+    });
+
+    // ─── Vídeo do manifesto ───
+    function toggleManifestoVideo(btn) {
+      const v = document.getElementById('nx-manifesto-video');
+      if (v.paused) { v.play(); btn.querySelector('span').textContent = 'Pausar'; }
+      else { v.pause(); btn.querySelector('span').textContent = 'Assistir'; }
+    }
+
+    // ─── Faixa de aviso ───
+    const NOTICE_KEY = 'nery-notice-saneamento-closed';
+    function closeNotice() {
+      document.getElementById('nx-notice').classList.remove('show');
+      try { localStorage.setItem(NOTICE_KEY, '1'); } catch (e) {}
+    }
+    (function () {
+      let closed = false;
+      try { closed = localStorage.getItem(NOTICE_KEY) === '1'; } catch (e) {}
+      if (!closed) setTimeout(() => document.getElementById('nx-notice').classList.add('show'), 1200);
+    })();
   </script>
 </body>
 </html>
